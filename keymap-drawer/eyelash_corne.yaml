@@ -89,15 +89,15 @@ layers:
   - RGB EFR
   - RGB SPI
   - RGB BRI
-  - RGB BRD
+  - {t: '-', s: _}
   - END
   - PG DN
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '0', s: )}
   - INS
   - $$mdi:backspace-reverse-outline$$
-  - {t: '$$mdi:transfer$$', type: trans}
   SYMBOL:
   - {t: '$$mdi:transfer$$', type: trans}
   - '!'
