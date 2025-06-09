@@ -34,6 +34,31 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
+
+        rotary_toggle: rotary_toggle {
+            compatible = "zmk,behavior-hold-tap";
+            label = "ROTARY_TOGGLE";
+            bindings = <&tog>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <1>;
+        };
+
+        rotary_rgb_toggle: rotary_rgb_toggle {
+            compatible = "zmk,behavior-hold-tap";
+            label = "ROTARY_RGB_TOGGLE";
+            bindings = <&to>, <&rgb_ug>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <1>;
+        };
+
+        rotary_bt: rotary_bt {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "ROTARY_BT";
+            #sensor-binding-cells = <0>;
+            bindings = <&bt BT_NXT>, <&bt BT_PRV>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -56,10 +81,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T                           &kp UP                &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&td0       &kp A  &kp S  &kp D     &kp F  &kp G                 &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LCTRL  &kp Z  &kp X  &kp C     &kp V  &kp B        &to 1              &kp DOWN              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                         &kp LGUI  &mo 1  &lt 3 SPACE                                           &lt 4 ENTER  &mo 2  &kp RALT
+&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T                                             &kp UP                &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
+&td0       &kp A  &kp S  &kp D     &kp F  &kp G                                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LCTRL  &kp Z  &kp X  &kp C     &kp V  &kp B        &rotary_toggle 4 C_MUTE              &kp DOWN              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+                         &kp LGUI  &mo 1  &lt 3 SPACE                                                             &lt 0 ENTER  &mo 2  &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -92,37 +117,25 @@
         layer_3 {
             display-name = "Fn";
             bindings = <
-&studio_unlock  &kp F12  &kp F9  &kp F8  &kp F7  &kp PAGE_UP                                  &mmv MOVE_UP                     &kp F6       &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
-&trans          &kp F11  &kp F6  &kp F5  &kp F4  &kp PAGE_DOWN                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &bootloader  &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
-&trans          &kp F10  &kp F3  &kp F2  &kp F1  &kp HOME       &kp C_MUTE                    &mmv MOVE_DOWN                   &trans       &trans     &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
-                                 &trans  &trans  &trans                                                                        &trans       &trans     &trans
+&bt BT_CLR   &trans           &trans     &trans     &trans     &trans                                  &mmv MOVE_UP                     &kp PAGE_UP    &kp F7  &kp F8  &kp F9  &kp F12  &studio_unlock
+&trans       &kp PRINTSCREEN  &mkp RCLK  &mkp MCLK  &mkp LCLK  &mkp MB4                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp PAGE_DOWN  &kp F4  &kp F5  &kp F6  &kp F11  &trans
+&bootloader  &kp SCROLLLOCK   &trans     &trans     &trans     &mkp MB5  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp HOME       &kp F1  &kp F2  &kp F3  &kp F10  &bootloader
+                                         &trans     &trans     &trans                                                                   &trans         &trans  &trans
             >;
 
-            sensor-bindings = <&scroll_encoder>;
-        };
-
-        layer_6 {
-            display-name = "Fn";
-            bindings = <
-&studio_unlock  &kp F1      &kp F2     &kp F3       &kp F4     &kp F5                                  &mmv MOVE_UP                     &kp F6       &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
-&trans          &trans      &mkp LCLK  &mkp MCLK    &mkp RCLK  &mkp MB4                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &bootloader  &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
-&trans          &sys_reset  &trans     &bootloader  &trans     &mkp MB5  &kp C_MUTE                    &mmv MOVE_DOWN                   &trans       &trans     &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
-                                       &trans       &trans     &trans                                                                   &trans       &trans     &trans
-            >;
-
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&rotary_bt>;
         };
 
         rgb {
             display-name = "NUMBER";
             bindings = <
-&trans  &kp N1           &kp N2          &kp N3        &kp N4        &kp N5                                         &mmv MOVE_UP                     &kp N7        &kp N8        &kp N9        &kp PERCENT  &kp N0    &kp BSPC
-&trans  &bt BT_CLR_ALL   &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp EQUAL    &kp HOME  &kp PG_UP
-&trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &trans        &trans        &rgb_ug RGB_EFF  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp MINUS    &kp END   &kp PG_DN
-                                         &trans        &trans        &trans                                                                          &kp N0        &kp INS       &kp DELETE
+&trans  &rgb_ug RGB_COLOR_HSB(0,0,100)  &rgb_ug RGB_COLOR_HSB(0,100,50)  &rgb_ug RGB_COLOR_HSB(302,100,50)  &rgb_ug RGB_COLOR_HSB(293,100,50)  &rgb_ug RGB_COLOR_HSB(176,100,50)                                                   &rgb_ug RGB_HUI                   &rgb_ug RGB_COLOR_HSB(241,100,50)  &rgb_ug RGB_COLOR_HSB(36,100,50)  &rgb_ug RGB_COLOR_HSB(58,100,50)  &rgb_ug RGB_COLOR_HSB(97,100,50)  &rgb_ug RGB_COLOR_HSB(360,0,0)  &trans
+&trans  &trans                          &trans                           &trans                             &trans                             &trans                                                             &rgb_ug RGB_SPD  &rgb_ug RGB_EFF  &rgb_ug RGB_SPI  &rgb_ug RGB_SAI                    &trans                            &trans                            &trans                            &trans                          &trans
+&trans  &rgb_ug RGB_OFF                 &rgb_ug RGB_ON                   &trans                             &trans                             &rgb_ug RGB_EFF                    &rotary_rgb_toggle 0 RGB_TOG                     &rgb_ug RGB_HUD                   &rgb_ug RGB_SAD                    &trans                            &trans                            &trans                            &trans                          &trans
+                                                                         &trans                             &trans                             &trans                                                                                                                &kp N0                             &kp INS                           &kp DELETE
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&rgb_encoder>;
             label = "rgb";
         };
 
