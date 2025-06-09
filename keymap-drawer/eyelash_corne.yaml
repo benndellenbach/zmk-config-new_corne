@@ -35,7 +35,7 @@ layers:
   - C
   - V
   - B
-  - MUTE
+  - {t: MUTE, h: rgb}
   - $$mdi:arrow-down-bold$$
   - N
   - M
@@ -203,7 +203,7 @@ layers:
   - RGB COLOR HSB(302,100,50)
   - RGB COLOR HSB(293,100,50)
   - RGB COLOR HSB(176,100,50)
-  - RGB HUI
+  - RGB SAI
   - RGB COLOR HSB(241,100,50)
   - RGB COLOR HSB(36,100,50)
   - RGB COLOR HSB(58,100,50)
@@ -211,8 +211,8 @@ layers:
   - RGB COLOR HSB(360,0,0)
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - RGB ON
+  - RGB HUI
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -227,12 +227,12 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - RGB OFF
-  - RGB ON
+  - RGB HUD
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - RGB EFF
-  - RGB TOG
-  - RGB HUD
+  - {t: RGB TOG, h: QWERTY}
+  - RGB SAD
   - RGB SAD
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
