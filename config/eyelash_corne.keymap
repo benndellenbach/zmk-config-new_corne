@@ -132,32 +132,11 @@
 &trans  &rgb_ug RGB_COLOR_HSB(0,0,100)  &rgb_ug RGB_COLOR_HSB(0,100,50)  &rgb_ug RGB_COLOR_HSB(302,100,50)  &rgb_ug RGB_COLOR_HSB(293,100,50)  &rgb_ug RGB_COLOR_HSB(176,100,50)                                      &rgb_ug RGB_HUI                   &rgb_ug RGB_COLOR_HSB(241,100,50)  &rgb_ug RGB_COLOR_HSB(36,100,50)  &rgb_ug RGB_COLOR_HSB(58,100,50)  &rgb_ug RGB_COLOR_HSB(97,100,50)  &rgb_ug RGB_COLOR_HSB(360,0,0)  &trans
 &trans  &trans                          &trans                           &trans                             &trans                             &trans                                                &rgb_ug RGB_SPD  &rgb_ug RGB_EFF  &rgb_ug RGB_SPI  &rgb_ug RGB_SAI                    &trans                            &trans                            &trans                            &trans                          &trans
 &trans  &rgb_ug RGB_OFF                 &rgb_ug RGB_ON                   &trans                             &trans                             &rgb_ug RGB_EFF                    &rgb_ug RGB_TOG                     &rgb_ug RGB_HUD                   &rgb_ug RGB_SAD                    &trans                            &trans                            &trans                            &trans                          &trans
-                                                                         &trans                             &trans                             &trans                                                                                                   &kp N0                             &kp INS                           &kp DELETE
+                                                                         &trans                             &trans                             &trans                                                                                                   &trans                             &trans                            &trans
             >;
 
             sensor-bindings = <&rgb_encoder>;
             label = "rgb";
-        };
-
-        layer_6 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                                    &trans  &trans  &trans
-            >;
-        };
-
-        layer_7 {
-            display-name = "SYMBOL";
-            bindings = <
-&trans  &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT                            &mmv MOVE_UP                     &kp LEFT_BRACE        &kp AMPS    &kp ASTRK    &kp LPAR   &kp RIGHT_BRACE  &kp BSPC
-&trans  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp PLUS              &kp DOLLAR  &kp PERCENT  &kp CARET  &kp COLON        &kp GRAVE
-&trans  &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5   &trans                    &mmv MOVE_DOWN                   &kp UNDER             &kp EXCL    &kp AT       &kp HASH   &kp TILDE        &kp TILDE
-                                    &trans     &trans     &kp SPACE                                                             &kp LEFT_PARENTHESIS  &trans      &trans
-            >;
-
-            sensor-bindings = <&rgb_encoder>;
         };
     };
 };
