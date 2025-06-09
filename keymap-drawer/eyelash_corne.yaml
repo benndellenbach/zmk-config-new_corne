@@ -35,7 +35,7 @@ layers:
   - C
   - V
   - B
-  - {t: '$$mdi:volume-off$$', h: rgb}
+  - MUTE
   - $$mdi:arrow-down-bold$$
   - N
   - M
@@ -231,7 +231,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - RGB EFF
-  - {t: RGB TOG, h: QWERTY}
+  - RGB TOG
   - RGB HUD
   - RGB SAD
   - {t: '$$mdi:transfer$$', type: trans}
