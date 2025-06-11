@@ -47,7 +47,7 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: Mouse}
   - {t: '$$mdi:keyboard-tab$$', h: NUM/FN}
   - {t: '$$mdi:keyboard-return$$', h: NUM/FN}
-  - {t: rgb, h: toggle}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:backspace-reverse-outline$$
   NUM/FN:
   - $$mdi:keyboard-tab$$
@@ -196,6 +196,55 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  NAV:
+  - $$mdi:bluetooth-off$$
+  - UNDO
+  - CUT
+  - COPY
+  - PASTE
+  - REDO
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-up-bold$$
+  - $$mdi:arrow-right-bold$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
+  - $$mdi:mouse-left-click-outline$$
+  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-option$$
+  - RIGHT WIN
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:progress-download$$
+  - END
+  - PG UP
+  - PgDn
+  - HOME
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: rgb, h: toggle}
+  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:mouse-right-click-outline$$
+  - '&mkp MB3'
+  - $$mdi:mouse-left-click-outline$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   rgb:
   - {t: '$$mdi:transfer$$', type: trans}
   - RGB COLOR HSB(0,0,100)
@@ -246,8 +295,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
-- p: [16, 17]
+- p: [17, 16]
   k: $$mdi:apple-keyboard-option$$
+  l: [QWERTY]
 - p: [16, 15]
   k: $$mdi:apple-keyboard-shift$$
   l: [QWERTY, NUM/FN]
@@ -256,12 +306,15 @@ combos:
   l: [QWERTY, Mouse]
 - p: [14, 17]
   k: LEFT WIN
-- p: [23, 26]
+- p: [26, 23]
   k: RIGHT WIN
-- p: [26, 25]
+  l: [QWERTY]
+- p: [25, 26]
   k: $$mdi:apple-keyboard-control$$
+  l: [QWERTY]
 - p: [24, 25]
   k: $$mdi:apple-keyboard-shift$$
   l: [QWERTY]
 - p: [23, 24]
   k: $$mdi:apple-keyboard-option$$
+  l: [QWERTY]
