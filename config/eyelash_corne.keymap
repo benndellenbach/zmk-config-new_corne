@@ -138,7 +138,7 @@
         };
 
         lower_layer {
-            display-name = "NUMBER";
+            display-name = "NUM/FN";
             bindings = <
 &kp TAB  &kp F12  &kp F9  &kp F8  &kp F7  &kp PG_UP                            &mmv MOVE_UP                     &kp LEFT_BRACKET  &kp N7  &kp N8  &kp N9  &kp RIGHT_BRACKET  &kp BSPC
 &trans   &kp F11  &kp F6  &kp F5  &kp F4  &kp PG_DN            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp EQUAL         &kp N4  &kp N5  &kp N6  &kp HOME           &kp PG_UP
@@ -152,10 +152,10 @@
         raise_layer {
             display-name = "SYMBOL";
             bindings = <
-&trans  &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT                            &mmv MOVE_UP                     &kp LEFT_BRACE  &kp AMPS              &kp ASTRK    &kp LPAR   &kp RIGHT_BRACE  &kp BSPC
-&trans  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp PLUS        &kp DOLLAR            &kp PERCENT  &kp CARET  &kp COLON        &kp GRAVE
-&trans  &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5   &tog 3                    &mmv MOVE_DOWN                   &kp UNDER       &kp EXCL              &kp AT       &kp HASH   &kp TILDE        &kp TILDE
-                                    &trans     &trans     &kp SPACE                                                             &kp ENTER       &kp LEFT_PARENTHESIS  &trans
+&trans  &kp EXCL      &kp AT        &kp HASH  &kp DLLR  &kp PRCNT                            &mmv MOVE_UP                     &kp LEFT_BRACE  &kp AMPS              &kp ASTRK    &kp LPAR   &kp RIGHT_BRACE  &kp BSPC
+&trans  &trans        &trans        &trans    &trans    &trans               &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp PLUS        &kp DOLLAR            &kp PERCENT  &kp CARET  &kp COLON        &kp GRAVE
+&trans  &out OUT_USB  &out OUT_BLE  &none     &trans    &mkp MB5   &tog 3                    &mmv MOVE_DOWN                   &kp UNDER       &kp EXCL              &kp AT       &kp HASH   &kp TILDE        &kp TILDE
+                                    &trans    &trans    &kp SPACE                                                             &kp ENTER       &kp LEFT_PARENTHESIS  &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -164,10 +164,10 @@
         Mouse_Layer {
             display-name = "Mouse";
             bindings = <
-&bt BT_CLR   &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                              &mmv MOVE_UP                     &kp PAGE_UP    &kp F7  &kp F8  &kp F9  &kp F12  &studio_unlock
-&trans       &kp PRINTSCREEN  &mkp RCLK     &mkp MCLK     &mkp LCLK     &msc SCRL_UP              &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp PAGE_DOWN  &kp F4  &kp F5  &kp F6  &kp F11  &trans
-&bootloader  &kp SCROLLLOCK   &trans        &mkp MB4      &mkp MB5      &msc SCRL_DOWN  &tog 4                    &mmv MOVE_DOWN                   &kp HOME       &kp F1  &kp F2  &kp F3  &kp F10  &bootloader
-                                            &trans        &trans        &trans                                                                     &trans         &tog 0  &trans
+&bt BT_CLR   &kp SCROLLLOCK   &trans     &mkp MB4    &mkp MB5     &bt BT_SEL 4                              &mmv MOVE_UP                     &kp PAGE_UP    &trans  &trans  &trans  &trans  &studio_unlock
+&trans       &kp PRINTSCREEN  &mkp RCLK  &mkp MCLK   &mkp LCLK    &msc SCRL_UP              &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp PAGE_DOWN  &trans  &trans  &trans  &trans  &trans
+&bootloader  &kp K_UNDO       &kp K_CUT  &kp K_COPY  &kp K_PASTE  &msc SCRL_DOWN  &tog 4                    &mmv MOVE_DOWN                   &kp HOME       &trans  &trans  &trans  &trans  &bootloader
+                                         &trans      &trans       &trans                                                                     &trans         &trans  &trans
             >;
 
             sensor-bindings = <&rotary_bt>;
