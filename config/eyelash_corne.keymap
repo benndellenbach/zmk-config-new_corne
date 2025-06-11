@@ -189,10 +189,10 @@
         layer_5 {
             display-name = "NUM/FN";
             bindings = <
-&kp TAB  &kp F12  &kp F9  &kp F8             &kp F7     &kp PG_UP                            &mmv MOVE_UP                     &trans     &kp N7  &kp N8  &kp N9  &kp RIGHT_BRACKET  &kp BSPC
-&trans   &kp F11  &kp F6  &kp F5             &kp F4     &kp PG_DN            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp EQUAL  &kp N4  &kp N5  &kp N6  &kp HOME           &kp PG_UP
-&trans   &kp F10  &kp F3  &kp F2             &kp F1     &kp HOME   &tog 2                    &mmv MOVE_DOWN                   &kp MINUS  &kp N1  &kp N2  &kp N3  &kp BACKSLASH      &kp PG_DN
-                          &kp K_APPLICATION  &kp SPACE  &kp TAB                                                               &kp INS    &kp N0  &trans
+&kp TAB  &kp F12  &kp F9  &kp F8             &kp F7     &kp PG_UP                            &mmv MOVE_UP                     &trans  &trans  &trans  &trans  &trans  &trans
+&trans   &kp F11  &kp F6  &kp F5             &kp F4     &kp PG_DN            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans  &trans  &trans  &trans  &trans  &trans
+&trans   &kp F10  &kp F3  &kp F2             &kp F1     &kp HOME   &tog 2                    &mmv MOVE_DOWN                   &trans  &trans  &trans  &trans  &trans  &trans
+                          &kp K_APPLICATION  &kp SPACE  &kp TAB                                                               &trans  &trans  &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
