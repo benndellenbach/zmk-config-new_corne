@@ -75,6 +75,50 @@
         tap-ms = <100>;
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        LeftAlt {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <14 15>;
+        };
+
+        LeftShift {
+            bindings = <&kp LEFT_SHIFT>;
+            key-positions = <15 16>;
+        };
+
+        LeftCtrl {
+            bindings = <&kp LEFT_CONTROL>;
+            key-positions = <16 17>;
+        };
+
+        LeftSuper {
+            bindings = <&kp LEFT_WIN>;
+            key-positions = <14 17>;
+        };
+
+        RSuper {
+            bindings = <&kp RIGHT_WIN>;
+            key-positions = <23 26>;
+        };
+
+        RCtrl {
+            bindings = <&kp RIGHT_CONTROL>;
+            key-positions = <23 24>;
+        };
+
+        RShift {
+            bindings = <&kp RIGHT_SHIFT>;
+            key-positions = <24 25>;
+        };
+
+        RAlt {
+            bindings = <&kp RIGHT_ALT>;
+            key-positions = <25 26>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
