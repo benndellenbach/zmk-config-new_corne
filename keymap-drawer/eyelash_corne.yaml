@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
   QWERTY:
-  - $$mdi:backspace-reverse-outline$$
+  - $$mdi:keyboard-tab$$
   - Q
   - W
   - E
@@ -29,7 +29,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
-  - $$mdi:keyboard-tab$$
+  - $$mdi:apple-keyboard-control$$
   - Z
   - X
   - C
@@ -43,12 +43,12 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - $$mdi:keyboard-esc$$
-  - LGUI
+  - {t: Mouse, h: toggle}
   - SYMBOL
   - {t: '$$mdi:keyboard-space$$', h: NUMBER}
-  - {t: '$$mdi:keyboard-return$$', h: rgb}
-  - {t: Mouse, h: toggle}
-  - $$mdi:apple-keyboard-option$$
+  - {t: '$$mdi:keyboard-return$$', h: NUMBER}
+  - {t: rgb, h: toggle}
+  - $$mdi:backspace-reverse-outline$$
   NUMBER:
   - $$mdi:keyboard-tab$$
   - F12
@@ -95,9 +95,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - INS
+  - {t: INS, type: held alternate}
   - {t: '0', s: )}
-  - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:transfer$$', type: trans}
   SYMBOL:
   - {t: '$$mdi:transfer$$', type: trans}
   - '!'
@@ -242,7 +242,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: rgb, h: toggle, type: held}
+  - {t: rgb, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
