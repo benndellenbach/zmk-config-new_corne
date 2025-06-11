@@ -80,7 +80,8 @@
 
         LeftAlt {
             bindings = <&kp LEFT_ALT>;
-            key-positions = <16 17>;
+            key-positions = <17 16>;
+            layers = <0>;
         };
 
         LeftShift {
@@ -102,12 +103,14 @@
 
         RSuper {
             bindings = <&kp RIGHT_WIN>;
-            key-positions = <23 26>;
+            key-positions = <26 23>;
+            layers = <0>;
         };
 
         RCtrl {
             bindings = <&kp RIGHT_CONTROL>;
-            key-positions = <26 25>;
+            key-positions = <25 26>;
+            layers = <0>;
         };
 
         RShift {
@@ -119,6 +122,7 @@
         RAlt {
             bindings = <&kp RIGHT_ALT>;
             key-positions = <23 24>;
+            layers = <0>;
         };
     };
 
@@ -128,10 +132,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E         &kp R        &kp T                          &kp UP                &kp Y        &kp U   &kp I      &kp O    &kp P     &kp BSPC
-&td0       &kp A  &kp S  &kp D         &kp F        &kp G                &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J   &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LCTRL  &kp Z  &kp X  &kp C         &kp V        &kp B      &tog 1              &kp DOWN              &kp N        &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                         &lt 2 ESCAPE  &lt 3 SPACE  &lt 1 TAB                                            &lt 1 ENTER  &tog 4  &kp DEL
+&kp TAB    &kp Q  &kp W  &kp E         &kp R        &kp T                          &kp UP                &kp Y        &kp U          &kp I      &kp O    &kp P     &kp BSPC
+&td0       &kp A  &kp S  &kp D         &kp F        &kp G                &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J          &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LCTRL  &kp Z  &kp X  &kp C         &kp V        &kp B      &tog 1              &kp DOWN              &kp N        &kp M          &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+                         &lt 2 ESCAPE  &lt 3 SPACE  &lt 1 TAB                                            &lt 1 ENTER  &kp BACKSPACE  &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -166,24 +170,11 @@
             bindings = <
 &bt BT_CLR   &kp K_UNDO      &kp K_CUT       &kp K_COPY     &kp K_PASTE      &kp K_REDO                              &mmv MOVE_UP                     &trans  &trans           &trans             &trans         &trans         &trans
 &trans       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP   &mmv MOVE_RIGHT  &kp CAPSLOCK            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans  &kp RIGHT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_WIN  &trans
-&bootloader  &kp END         &kp PG_UP       &kp PAGE_DOWN  &kp HOME         &kp INS       &tog 4                    &mmv MOVE_DOWN                   &trans  &trans           &trans             &trans         &trans         &trans
+&bootloader  &kp END         &kp PG_UP       &kp PAGE_DOWN  &kp HOME         &kp INS       &tog 6                    &mmv MOVE_DOWN                   &trans  &trans           &trans             &trans         &trans         &trans
                                              &kp BACKSPACE  &kp DELETE       &trans                                                                   &trans  &trans           &trans
             >;
 
             sensor-bindings = <&rotary_bt>;
-        };
-
-        rgb {
-            display-name = "NUMBER";
-            bindings = <
-&trans  &rgb_ug RGB_COLOR_HSB(0,0,100)  &rgb_ug RGB_COLOR_HSB(0,100,50)  &rgb_ug RGB_COLOR_HSB(302,100,50)  &rgb_ug RGB_COLOR_HSB(293,100,50)  &rgb_ug RGB_COLOR_HSB(176,100,50)                             &rgb_ug RGB_HUI                   &rgb_ug RGB_COLOR_HSB(241,100,50)  &rgb_ug RGB_COLOR_HSB(36,100,50)  &rgb_ug RGB_COLOR_HSB(58,100,50)  &rgb_ug RGB_COLOR_HSB(97,100,50)  &rgb_ug RGB_COLOR_HSB(360,0,0)  &trans
-&trans  &rgb_ug RGB_SPI                 &rgb_ug RGB_HUI                  &rgb_ug RGB_SAI                    &rgb_ug RGB_ON                     &trans                                       &rgb_ug RGB_SPD  &rgb_ug RGB_EFF  &rgb_ug RGB_SPI  &rgb_ug RGB_SAI                    &trans                            &trans                            &trans                            &trans                          &trans
-&trans  &rgb_ug RGB_SPD                 &rgb_ug RGB_HUD                  &rgb_ug RGB_SAD                    &rgb_ug RGB_OFF                    &trans                             &tog 0                     &rgb_ug RGB_HUD                   &rgb_ug RGB_SAD                    &trans                            &trans                            &trans                            &trans                          &trans
-                                                                         &trans                             &trans                             &trans                                                                                          &tog 4                             &trans                            &trans
-            >;
-
-            sensor-bindings = <&rgb_encoder>;
-            label = "rgb";
         };
 
         layer_5 {
@@ -196,6 +187,31 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
+        };
+
+        layer_8 {
+            display-name = "NAV";
+            bindings = <
+&bt BT_CLR   &kp K_UNDO  &kp K_CUT  &kp K_COPY     &kp K_PASTE      &kp K_REDO                            &mmv MOVE_UP                     &trans  &trans           &trans             &trans         &trans         &trans
+&trans       &kp LEFT    &kp DOWN   &kp UP_ARROW   &kp RIGHT_ARROW  &trans                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans  &kp RIGHT_SHIFT  &kp RIGHT_CONTROL  &kp RIGHT_ALT  &kp RIGHT_WIN  &trans
+&bootloader  &kp END     &kp PG_UP  &kp PAGE_DOWN  &kp HOME         &trans      &tog 6                    &mmv MOVE_DOWN                   &trans  &trans           &trans             &trans         &trans         &trans
+                                    &mkp RCLK      &mkp MB3         &mkp LCLK                                                              &trans  &trans           &trans
+            >;
+
+            sensor-bindings = <&rotary_bt>;
+        };
+
+        rgb {
+            display-name = "NUMBER";
+            bindings = <
+&trans  &rgb_ug RGB_COLOR_HSB(0,0,100)  &rgb_ug RGB_COLOR_HSB(0,100,50)  &rgb_ug RGB_COLOR_HSB(302,100,50)  &rgb_ug RGB_COLOR_HSB(293,100,50)  &rgb_ug RGB_COLOR_HSB(176,100,50)                             &rgb_ug RGB_HUI                   &rgb_ug RGB_COLOR_HSB(241,100,50)  &rgb_ug RGB_COLOR_HSB(36,100,50)  &rgb_ug RGB_COLOR_HSB(58,100,50)  &rgb_ug RGB_COLOR_HSB(97,100,50)  &rgb_ug RGB_COLOR_HSB(360,0,0)  &trans
+&trans  &rgb_ug RGB_SPI                 &rgb_ug RGB_HUI                  &rgb_ug RGB_SAI                    &rgb_ug RGB_ON                     &trans                                       &rgb_ug RGB_SPD  &rgb_ug RGB_EFF  &rgb_ug RGB_SPI  &rgb_ug RGB_SAI                    &trans                            &trans                            &trans                            &trans                          &trans
+&trans  &rgb_ug RGB_SPD                 &rgb_ug RGB_HUD                  &rgb_ug RGB_SAD                    &rgb_ug RGB_OFF                    &trans                             &tog 0                     &rgb_ug RGB_HUD                   &rgb_ug RGB_SAD                    &trans                            &trans                            &trans                            &trans                          &trans
+                                                                         &trans                             &trans                             &trans                                                                                          &tog 6                             &trans                            &trans
+            >;
+
+            sensor-bindings = <&rgb_encoder>;
+            label = "rgb";
         };
     };
 };
