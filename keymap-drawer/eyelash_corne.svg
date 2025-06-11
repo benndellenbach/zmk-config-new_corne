@@ -6,6 +6,9 @@
 <svg id="mdi:apple-keyboard-option">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-apple-keyboard-option" viewBox="0 0 24 24"><path d="M3,4H9.11L16.15,18H21V20H14.88L7.84,6H3V4M14,4H21V6H14V4Z" /></svg>
 </svg>
+<svg id="mdi:apple-keyboard-shift">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-apple-keyboard-shift" viewBox="0 0 24 24"><path d="M15,18V12H17.17L12,6.83L6.83,12H9V18H15M12,4L22,14H17V20H7V14H2L12,4Z" /></svg>
+</svg>
 <svg id="mdi:arrow-down-bold">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-arrow-down-bold" viewBox="0 0 24 24"><path d="M9,4H15V12H19.84L12,19.84L4.16,12H9V4Z" /></svg>
 </svg>
@@ -543,6 +546,46 @@ rect.held, rect.combo.held {
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <use href="#mdi:apple-keyboard-option" xlink:href="#mdi:apple-keyboard-option" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:apple-keyboard-option"/>
 </g>
+<g class="combo combopos-0">
+<rect rx="6" ry="6" x="98" y="85" width="28" height="26" class="combo"/>
+<use href="#mdi:apple-keyboard-option" xlink:href="#mdi:apple-keyboard-option" x="103" y="89" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-option"/>
+</g>
+<g class="combo combopos-1">
+<rect rx="6" ry="6" x="154" y="74" width="28" height="26" class="combo"/>
+<use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="159" y="78" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-shift"/>
+</g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="210" y="74" width="28" height="26" class="combo"/>
+<use href="#mdi:apple-keyboard-control" xlink:href="#mdi:apple-keyboard-control" x="215" y="78" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-control"/>
+</g>
+<g class="combo combopos-3">
+<path d="M168,98 l-65,5" class="combo"/>
+<path d="M168,98 l65,-5" class="combo"/>
+<rect rx="6" ry="6" x="154" y="85" width="28" height="26" class="combo"/>
+<text x="168" y="98" class="combo tap">
+<tspan x="168" dy="-0.6em">LEFT</tspan><tspan x="168" dy="1.2em">WIN</tspan>
+</text>
+</g>
+<g class="combo combopos-4">
+<path d="M812,98 l-65,-5" class="combo"/>
+<path d="M812,98 l65,5" class="combo"/>
+<rect rx="6" ry="6" x="798" y="85" width="28" height="26" class="combo"/>
+<text x="812" y="98" class="combo tap">
+<tspan x="812" dy="-0.6em">RIGHT</tspan><tspan x="812" dy="1.2em">WIN</tspan>
+</text>
+</g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="742" y="74" width="28" height="26" class="combo"/>
+<use href="#mdi:apple-keyboard-control" xlink:href="#mdi:apple-keyboard-control" x="747" y="78" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-control"/>
+</g>
+<g class="combo combopos-6">
+<rect rx="6" ry="6" x="798" y="74" width="28" height="26" class="combo"/>
+<use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="803" y="78" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-shift"/>
+</g>
+<g class="combo combopos-7">
+<rect rx="6" ry="6" x="854" y="85" width="28" height="26" class="combo"/>
+<use href="#mdi:apple-keyboard-option" xlink:href="#mdi:apple-keyboard-option" x="859" y="89" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-option"/>
+</g>
 </g>
 </g>
 <g transform="translate(40, 318)" class="layer-NUMBER">
@@ -816,6 +859,46 @@ rect.held, rect.combo.held {
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <use href="#mdi:backspace-reverse-outline" xlink:href="#mdi:backspace-reverse-outline" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:backspace-reverse-outline"/>
 </g>
+<g class="combo combopos-0">
+<rect rx="6" ry="6" x="98" y="85" width="28" height="26" class="combo"/>
+<use href="#mdi:apple-keyboard-option" xlink:href="#mdi:apple-keyboard-option" x="103" y="89" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-option"/>
+</g>
+<g class="combo combopos-1">
+<rect rx="6" ry="6" x="154" y="74" width="28" height="26" class="combo"/>
+<use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="159" y="78" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-shift"/>
+</g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="210" y="74" width="28" height="26" class="combo"/>
+<use href="#mdi:apple-keyboard-control" xlink:href="#mdi:apple-keyboard-control" x="215" y="78" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-control"/>
+</g>
+<g class="combo combopos-3">
+<path d="M168,98 l-65,5" class="combo"/>
+<path d="M168,98 l65,-5" class="combo"/>
+<rect rx="6" ry="6" x="154" y="85" width="28" height="26" class="combo"/>
+<text x="168" y="98" class="combo tap">
+<tspan x="168" dy="-0.6em">LEFT</tspan><tspan x="168" dy="1.2em">WIN</tspan>
+</text>
+</g>
+<g class="combo combopos-4">
+<path d="M812,98 l-65,-5" class="combo"/>
+<path d="M812,98 l65,5" class="combo"/>
+<rect rx="6" ry="6" x="798" y="85" width="28" height="26" class="combo"/>
+<text x="812" y="98" class="combo tap">
+<tspan x="812" dy="-0.6em">RIGHT</tspan><tspan x="812" dy="1.2em">WIN</tspan>
+</text>
+</g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="742" y="74" width="28" height="26" class="combo"/>
+<use href="#mdi:apple-keyboard-control" xlink:href="#mdi:apple-keyboard-control" x="747" y="78" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-control"/>
+</g>
+<g class="combo combopos-6">
+<rect rx="6" ry="6" x="798" y="74" width="28" height="26" class="combo"/>
+<use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="803" y="78" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-shift"/>
+</g>
+<g class="combo combopos-7">
+<rect rx="6" ry="6" x="854" y="85" width="28" height="26" class="combo"/>
+<use href="#mdi:apple-keyboard-option" xlink:href="#mdi:apple-keyboard-option" x="859" y="89" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-option"/>
+</g>
 </g>
 </g>
 <g transform="translate(40, 637)" class="layer-SYMBOL">
@@ -1074,6 +1157,46 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key trans"/>
 <use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
+</g>
+<g class="combo combopos-0">
+<rect rx="6" ry="6" x="98" y="85" width="28" height="26" class="combo"/>
+<use href="#mdi:apple-keyboard-option" xlink:href="#mdi:apple-keyboard-option" x="103" y="89" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-option"/>
+</g>
+<g class="combo combopos-1">
+<rect rx="6" ry="6" x="154" y="74" width="28" height="26" class="combo"/>
+<use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="159" y="78" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-shift"/>
+</g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="210" y="74" width="28" height="26" class="combo"/>
+<use href="#mdi:apple-keyboard-control" xlink:href="#mdi:apple-keyboard-control" x="215" y="78" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-control"/>
+</g>
+<g class="combo combopos-3">
+<path d="M168,98 l-65,5" class="combo"/>
+<path d="M168,98 l65,-5" class="combo"/>
+<rect rx="6" ry="6" x="154" y="85" width="28" height="26" class="combo"/>
+<text x="168" y="98" class="combo tap">
+<tspan x="168" dy="-0.6em">LEFT</tspan><tspan x="168" dy="1.2em">WIN</tspan>
+</text>
+</g>
+<g class="combo combopos-4">
+<path d="M812,98 l-65,-5" class="combo"/>
+<path d="M812,98 l65,5" class="combo"/>
+<rect rx="6" ry="6" x="798" y="85" width="28" height="26" class="combo"/>
+<text x="812" y="98" class="combo tap">
+<tspan x="812" dy="-0.6em">RIGHT</tspan><tspan x="812" dy="1.2em">WIN</tspan>
+</text>
+</g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="742" y="74" width="28" height="26" class="combo"/>
+<use href="#mdi:apple-keyboard-control" xlink:href="#mdi:apple-keyboard-control" x="747" y="78" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-control"/>
+</g>
+<g class="combo combopos-6">
+<rect rx="6" ry="6" x="798" y="74" width="28" height="26" class="combo"/>
+<use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="803" y="78" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-shift"/>
+</g>
+<g class="combo combopos-7">
+<rect rx="6" ry="6" x="854" y="85" width="28" height="26" class="combo"/>
+<use href="#mdi:apple-keyboard-option" xlink:href="#mdi:apple-keyboard-option" x="859" y="89" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-option"/>
 </g>
 </g>
 </g>
@@ -1336,6 +1459,46 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key trans"/>
 <use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
+</g>
+<g class="combo combopos-0">
+<rect rx="6" ry="6" x="98" y="85" width="28" height="26" class="combo"/>
+<use href="#mdi:apple-keyboard-option" xlink:href="#mdi:apple-keyboard-option" x="103" y="89" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-option"/>
+</g>
+<g class="combo combopos-1">
+<rect rx="6" ry="6" x="154" y="74" width="28" height="26" class="combo"/>
+<use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="159" y="78" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-shift"/>
+</g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="210" y="74" width="28" height="26" class="combo"/>
+<use href="#mdi:apple-keyboard-control" xlink:href="#mdi:apple-keyboard-control" x="215" y="78" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-control"/>
+</g>
+<g class="combo combopos-3">
+<path d="M168,98 l-65,5" class="combo"/>
+<path d="M168,98 l65,-5" class="combo"/>
+<rect rx="6" ry="6" x="154" y="85" width="28" height="26" class="combo"/>
+<text x="168" y="98" class="combo tap">
+<tspan x="168" dy="-0.6em">LEFT</tspan><tspan x="168" dy="1.2em">WIN</tspan>
+</text>
+</g>
+<g class="combo combopos-4">
+<path d="M812,98 l-65,-5" class="combo"/>
+<path d="M812,98 l65,5" class="combo"/>
+<rect rx="6" ry="6" x="798" y="85" width="28" height="26" class="combo"/>
+<text x="812" y="98" class="combo tap">
+<tspan x="812" dy="-0.6em">RIGHT</tspan><tspan x="812" dy="1.2em">WIN</tspan>
+</text>
+</g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="742" y="74" width="28" height="26" class="combo"/>
+<use href="#mdi:apple-keyboard-control" xlink:href="#mdi:apple-keyboard-control" x="747" y="78" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-control"/>
+</g>
+<g class="combo combopos-6">
+<rect rx="6" ry="6" x="798" y="74" width="28" height="26" class="combo"/>
+<use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="803" y="78" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-shift"/>
+</g>
+<g class="combo combopos-7">
+<rect rx="6" ry="6" x="854" y="85" width="28" height="26" class="combo"/>
+<use href="#mdi:apple-keyboard-option" xlink:href="#mdi:apple-keyboard-option" x="859" y="89" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-option"/>
 </g>
 </g>
 </g>
@@ -1635,6 +1798,46 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key trans"/>
 <use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
+</g>
+<g class="combo combopos-0">
+<rect rx="6" ry="6" x="98" y="85" width="28" height="26" class="combo"/>
+<use href="#mdi:apple-keyboard-option" xlink:href="#mdi:apple-keyboard-option" x="103" y="89" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-option"/>
+</g>
+<g class="combo combopos-1">
+<rect rx="6" ry="6" x="154" y="74" width="28" height="26" class="combo"/>
+<use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="159" y="78" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-shift"/>
+</g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="210" y="74" width="28" height="26" class="combo"/>
+<use href="#mdi:apple-keyboard-control" xlink:href="#mdi:apple-keyboard-control" x="215" y="78" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-control"/>
+</g>
+<g class="combo combopos-3">
+<path d="M168,98 l-65,5" class="combo"/>
+<path d="M168,98 l65,-5" class="combo"/>
+<rect rx="6" ry="6" x="154" y="85" width="28" height="26" class="combo"/>
+<text x="168" y="98" class="combo tap">
+<tspan x="168" dy="-0.6em">LEFT</tspan><tspan x="168" dy="1.2em">WIN</tspan>
+</text>
+</g>
+<g class="combo combopos-4">
+<path d="M812,98 l-65,-5" class="combo"/>
+<path d="M812,98 l65,5" class="combo"/>
+<rect rx="6" ry="6" x="798" y="85" width="28" height="26" class="combo"/>
+<text x="812" y="98" class="combo tap">
+<tspan x="812" dy="-0.6em">RIGHT</tspan><tspan x="812" dy="1.2em">WIN</tspan>
+</text>
+</g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="742" y="74" width="28" height="26" class="combo"/>
+<use href="#mdi:apple-keyboard-control" xlink:href="#mdi:apple-keyboard-control" x="747" y="78" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-control"/>
+</g>
+<g class="combo combopos-6">
+<rect rx="6" ry="6" x="798" y="74" width="28" height="26" class="combo"/>
+<use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="803" y="78" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-shift"/>
+</g>
+<g class="combo combopos-7">
+<rect rx="6" ry="6" x="854" y="85" width="28" height="26" class="combo"/>
+<use href="#mdi:apple-keyboard-option" xlink:href="#mdi:apple-keyboard-option" x="859" y="89" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-option"/>
 </g>
 </g>
 </g>

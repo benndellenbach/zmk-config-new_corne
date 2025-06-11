@@ -245,3 +245,20 @@ layers:
   - {t: rgb, h: toggle, type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+combos:
+- p: [14, 15]
+  k: $$mdi:apple-keyboard-option$$
+- p: [15, 16]
+  k: $$mdi:apple-keyboard-shift$$
+- p: [16, 17]
+  k: $$mdi:apple-keyboard-control$$
+- p: [14, 17]
+  k: LEFT WIN
+- p: [23, 26]
+  k: RIGHT WIN
+- p: [23, 24]
+  k: $$mdi:apple-keyboard-control$$
+- p: [24, 25]
+  k: $$mdi:apple-keyboard-shift$$
+- p: [25, 26]
+  k: $$mdi:apple-keyboard-option$$
