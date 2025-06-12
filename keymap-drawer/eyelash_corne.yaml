@@ -367,3 +367,21 @@ combos:
 - p: [23, 24]
   k: $$mdi:apple-keyboard-option$$
   l: [QWERTY]
+- p: [46, 23]
+  k: {t: NAV, h: toggle}
+  l: [QWERTY, NAV, Mouse, FUN, NUMPAD, SYMBOL, MEDIA]
+- p: [23, 47]
+  k: {t: Mouse, h: toggle}
+  l: [QWERTY, NAV, Mouse, FUN, NUMPAD, SYMBOL, MEDIA]
+- p: [23, 45]
+  k: {t: FUN, h: toggle}
+  l: [QWERTY, NAV, Mouse, FUN, NUMPAD, SYMBOL, MEDIA]
+- p: [17, 43]
+  k: {t: NUMPAD, h: toggle}
+  l: [QWERTY, NAV, Mouse, FUN, NUMPAD, SYMBOL, MEDIA]
+- p: [17, 44]
+  k: {t: SYMBOL, h: toggle}
+  l: [QWERTY, NAV, Mouse, FUN, NUMPAD, SYMBOL, MEDIA]
+- p: [17, 42]
+  k: {t: MEDIA, h: toggle}
+  l: [QWERTY, NAV, Mouse, FUN, NUMPAD, SYMBOL, MEDIA]
