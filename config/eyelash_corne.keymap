@@ -181,25 +181,25 @@
         NAVIGATION {
             display-name = "NAV";
             bindings = <
-&bt BT_CLR   &kp K_UNDO  &kp K_CUT  &kp K_COPY     &kp K_PASTE      &kp K_REDO                            &mmv MOVE_UP                     &trans  &trans             &trans           &trans         &trans         &trans
-&trans       &kp LEFT    &kp DOWN   &kp UP_ARROW   &kp RIGHT_ARROW  &trans                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans  &kp RIGHT_CONTROL  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &kp RIGHT_WIN  &trans
-&bootloader  &kp END     &kp PG_UP  &kp PAGE_DOWN  &kp HOME         &trans      &tog 0                    &mmv MOVE_DOWN                   &trans  &trans             &trans           &trans         &trans         &trans
-                                    &mkp RCLK      &mkp MB3         &mkp LCLK                                                              &trans  &trans             &trans
+&bt BT_CLR   &kp K_UNDO  &kp K_CUT  &kp K_COPY     &kp K_PASTE      &kp K_REDO                             &mmv MOVE_UP                     &trans  &trans             &trans           &trans         &trans         &trans
+&trans       &kp LEFT    &kp DOWN   &kp UP_ARROW   &kp RIGHT_ARROW  &trans                 &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans  &kp RIGHT_CONTROL  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &kp RIGHT_WIN  &trans
+&bootloader  &kp END     &kp PG_UP  &kp PAGE_DOWN  &kp HOME         &trans      &kp TAB                    &mmv MOVE_DOWN                   &trans  &trans             &trans           &trans         &trans         &trans
+                                    &mkp RCLK      &mkp MB3         &mkp LCLK                                                               &trans  &trans             &trans
             >;
 
-            sensor-bindings = <&rotary_bt>;
+            sensor-bindings = <&scroll_encoder>;
         };
 
         Mouse_Layer {
             display-name = "Mouse";
             bindings = <
-&bt BT_CLR   &kp K_UNDO      &kp K_CUT       &kp K_COPY     &kp K_PASTE      &kp K_REDO                              &mmv MOVE_UP                     &trans  &trans             &trans           &trans         &trans         &trans
-&trans       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP   &mmv MOVE_RIGHT  &kp CAPSLOCK            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans  &kp RIGHT_CONTROL  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &kp RIGHT_WIN  &trans
-&bootloader  &kp END         &kp PG_UP       &kp PAGE_DOWN  &kp HOME         &kp INS       &tog 0                    &mmv MOVE_DOWN                   &trans  &trans             &trans           &trans         &trans         &trans
-                                             &kp BACKSPACE  &kp DELETE       &trans                                                                   &trans  &trans             &trans
+&bt BT_CLR   &kp K_UNDO      &kp K_CUT       &kp K_COPY     &kp K_PASTE      &kp K_REDO                                  &mmv MOVE_UP                     &mkp LCLK  &mkp RCLK          &mkp MB3         &trans         &trans         &trans
+&trans       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP   &mmv MOVE_RIGHT  &kp CAPSLOCK                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans     &kp RIGHT_CONTROL  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &kp RIGHT_WIN  &trans
+&bootloader  &kp END         &kp PG_UP       &kp PAGE_DOWN  &kp HOME         &kp INS       &kp K_MUTE                    &mmv MOVE_DOWN                   &trans     &trans             &trans           &trans         &trans         &trans
+                                             &kp BACKSPACE  &mkp MB1         &mkp MB2                                                                     &trans     &trans             &trans
             >;
 
-            sensor-bindings = <&rotary_bt>;
+            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
         FUNCTION {
@@ -241,10 +241,10 @@
         MEDIA {
             display-name = "MEDIA";
             bindings = <
-&trans  &bootloader   &trans        &trans          &trans            &trans                             &rgb_ug RGB_SAI                   &rgb_ug RGB_EFF    &rgb_ug RGB_SPD   &rgb_ug RGB_SPI  &trans        &trans        &trans
-&trans  &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &trans            &rgb_ug RGB_HUD  &rgb_ug RGB_TOG  &rgb_ug RGB_HUI  &ext_power EP_TOG  &kp K_PREV        &kp C_VOL_DN     &kp C_VOL_UP  &kp K_NEXT    &trans
-&trans  &trans        &trans        &trans          &trans            &trans  &tog 2                     &rgb_ug RGB_SAD                   &out OUT_TOG       &bt BT_SEL 0      &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-                                    &trans          &trans            &trans                                                               &kp K_STOP         &kp K_PLAY_PAUSE  &kp K_MUTE
+&trans  &bootloader   &trans        &trans          &trans            &trans                                 &rgb_ug RGB_SAI                   &rgb_ug RGB_EFF    &rgb_ug RGB_SPD   &rgb_ug RGB_SPI  &trans        &trans        &trans
+&trans  &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &trans                &rgb_ug RGB_HUD  &rgb_ug RGB_TOG  &rgb_ug RGB_HUI  &ext_power EP_TOG  &kp K_PREV        &kp C_VOL_DN     &kp C_VOL_UP  &kp K_NEXT    &trans
+&trans  &trans        &trans        &trans          &trans            &trans  &kp C_MUTE                     &rgb_ug RGB_SAD                   &out OUT_TOG       &bt BT_SEL 0      &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+                                    &trans          &trans            &trans                                                                   &kp K_STOP         &kp K_PLAY_PAUSE  &kp K_MUTE
             >;
 
             sensor-bindings = <&rgb_encoder>;
