@@ -35,7 +35,7 @@ layers:
   - C
   - V
   - B
-  - {t: NUMPAD, h: toggle}
+  - MUTE
   - $$mdi:arrow-down-bold$$
   - N
   - M
