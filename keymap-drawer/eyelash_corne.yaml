@@ -302,7 +302,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - RGB SAI
-  - RGB EFF
+  - RGB EFR
   - RGB SPD
   - RGB SPI
   - {t: '$$mdi:transfer$$', type: trans}
@@ -315,7 +315,7 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:transfer$$', type: trans}
   - RGB HUD
-  - RGB TOG
+  - RGB EFF
   - RGB HUI
   - EP TOG
   - PREV
@@ -329,7 +329,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:volume-off$$
+  - RGB TOG
   - RGB SAD
   - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
