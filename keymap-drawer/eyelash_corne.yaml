@@ -50,12 +50,12 @@ layers:
   - {t: '$$mdi:backspace$$', h: NAV}
   - {t: '$$mdi:backspace-reverse-outline$$', h: Mouse}
   NAV:
-  - $$mdi:bluetooth-off$$
-  - UNDO
-  - CUT
-  - COPY
-  - PASTE
-  - REDO
+  - {t: '$$mdi:transfer$$', type: trans}
+  - AC UNDO
+  - AC CUT
+  - AC COPY
+  - AC PASTE
+  - AC REDO
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
