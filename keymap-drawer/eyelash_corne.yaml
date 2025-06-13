@@ -35,7 +35,7 @@ layers:
   - C
   - V
   - B
-  - MUTE
+  - {t: 'Gui+$$mdi:apple-keyboard-option$$', h: toggle}
   - $$mdi:arrow-down-bold$$
   - N
   - M
