@@ -182,7 +182,7 @@ layers:
   - F2
   - F1
   - HOME
-  - {t: SYMBOL, h: toggle}
+  - MUTE
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
