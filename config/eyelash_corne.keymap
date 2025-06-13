@@ -198,7 +198,7 @@
                          &lt 6 ESCAPE  &lt 4 SPACE  &lt 5 TAB                                                &lt 3 ENTER  &lt 1 BACKSPACE  &lt 2 DEL
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp TAB LS(TAB)>;
         };
 
         NAVIGATION {
@@ -228,13 +228,13 @@
         FUNCTION {
             display-name = "FUN";
             bindings = <
-&kp TAB  &kp F12  &kp F9  &kp F8             &kp F7     &kp PG_UP                            &mmv MOVE_UP                     &mkp LCLK  &mkp RCLK  &to 0            &trans         &bootloader    &trans
-&trans   &kp F11  &kp F6  &kp F5             &kp F4     &kp PG_DN            &mmv MOVE_LEFT  &mkp MB3        &mmv MOVE_RIGHT  &trans     &kp RCTRL  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &kp RIGHT_WIN  &trans
-&trans   &kp F10  &kp F3  &kp F2             &kp F1     &kp HOME   &tog 5                    &mmv MOVE_DOWN                   &trans     &trans     &trans           &trans         &trans         &trans
-                          &kp K_APPLICATION  &kp SPACE  &kp TAB                                                               &trans     &trans     &trans
+&kp TAB  &kp F12  &kp F9  &kp F8             &kp F7     &kp PG_UP                                &mmv MOVE_UP                     &mkp LCLK  &mkp RCLK  &to 0            &trans         &bootloader    &trans
+&trans   &kp F11  &kp F6  &kp F5             &kp F4     &kp PG_DN                &mmv MOVE_LEFT  &mkp MB3        &mmv MOVE_RIGHT  &trans     &kp RCTRL  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &kp RIGHT_WIN  &trans
+&trans   &kp F10  &kp F3  &kp F2             &kp F1     &kp HOME   &kp K_MUTE                    &mmv MOVE_DOWN                   &trans     &trans     &trans           &trans         &trans         &trans
+                          &kp K_APPLICATION  &kp SPACE  &kp TAB                                                                   &trans     &trans     &trans
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         NUMPAD {
