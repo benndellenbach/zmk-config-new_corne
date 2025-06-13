@@ -204,13 +204,13 @@
         NAVIGATION {
             display-name = "NAV";
             bindings = <
-&trans       &kp C_AC_UNDO  &kp C_AC_CUT  &kp C_AC_COPY  &kp C_AC_PASTE   &kp C_AC_REDO                             &mmv MOVE_UP                     &trans  &trans             &to 0            &trans         &bootloader    &trans
-&trans       &kp LEFT       &kp DOWN      &kp UP_ARROW   &kp RIGHT_ARROW  &trans                    &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans  &kp RIGHT_CONTROL  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &kp RIGHT_WIN  &trans
-&bootloader  &kp END        &kp PG_UP     &kp PAGE_DOWN  &kp HOME         &trans         &kp TAB                    &mmv MOVE_DOWN                   &trans  &trans             &trans           &trans         &trans         &trans
-                                          &mkp RCLK      &mkp MB3         &mkp LCLK                                                                  &trans  &trans             &trans
+&trans       &kp C_AC_UNDO  &kp C_AC_CUT  &kp C_AC_COPY  &kp C_AC_PASTE   &kp C_AC_REDO                             &mmv MOVE_UP                     &mkp LCLK  &mkp RCLK          &to 0            &trans         &bootloader    &trans
+&trans       &kp LEFT       &kp DOWN      &kp UP_ARROW   &kp RIGHT_ARROW  &trans                    &mmv MOVE_LEFT  &mkp MB3        &mmv MOVE_RIGHT  &trans     &kp RIGHT_CONTROL  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &kp RIGHT_WIN  &trans
+&bootloader  &kp END        &kp PG_UP     &kp PAGE_DOWN  &kp HOME         &trans         &kp TAB                    &mmv MOVE_DOWN                   &trans     &trans             &trans           &trans         &trans         &trans
+                                          &mkp RCLK      &mkp MB3         &mkp LCLK                                                                  &trans     &trans             &trans
             >;
 
-            sensor-bindings = <&AppSwitch>;
+            sensor-bindings = <&inc_dec_kp LA(RG(TAB)) RA(LG(LS(TAB)))>;
         };
 
         Mouse_Layer {
@@ -228,10 +228,10 @@
         FUNCTION {
             display-name = "FUN";
             bindings = <
-&kp TAB  &kp F12  &kp F9  &kp F8             &kp F7     &kp PG_UP                            &mmv MOVE_UP                     &trans  &trans     &to 0            &trans         &bootloader    &trans
-&trans   &kp F11  &kp F6  &kp F5             &kp F4     &kp PG_DN            &mmv MOVE_LEFT  &mkp MB3        &mmv MOVE_RIGHT  &trans  &kp RCTRL  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &kp RIGHT_WIN  &trans
-&trans   &kp F10  &kp F3  &kp F2             &kp F1     &kp HOME   &tog 5                    &mmv MOVE_DOWN                   &trans  &trans     &trans           &trans         &trans         &trans
-                          &kp K_APPLICATION  &kp SPACE  &kp TAB                                                               &trans  &trans     &trans
+&kp TAB  &kp F12  &kp F9  &kp F8             &kp F7     &kp PG_UP                            &mmv MOVE_UP                     &mkp LCLK  &mkp RCLK  &to 0            &trans         &bootloader    &trans
+&trans   &kp F11  &kp F6  &kp F5             &kp F4     &kp PG_DN            &mmv MOVE_LEFT  &mkp MB3        &mmv MOVE_RIGHT  &trans     &kp RCTRL  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &kp RIGHT_WIN  &trans
+&trans   &kp F10  &kp F3  &kp F2             &kp F1     &kp HOME   &tog 5                    &mmv MOVE_DOWN                   &trans     &trans     &trans           &trans         &trans         &trans
+                          &kp K_APPLICATION  &kp SPACE  &kp TAB                                                               &trans     &trans     &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
