@@ -174,14 +174,14 @@
         FApp: FApp {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT &kp TAB>;
+            bindings = <&kp RIGHT_ALT &kp LEFT_WIN &kp TAB>;
             label = "FAPP";
         };
 
         RApp: RApp {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT &kp LEFT_SHIFT &kp TAB>;
+            bindings = <&kp LEFT_ALT &kp LEFT_WIN &kp LEFT_SHIFT &kp TAB>;
             label = "RAPP";
         };
     };
