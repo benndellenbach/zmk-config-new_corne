@@ -60,6 +60,13 @@
             #sensor-binding-cells = <0>;
             bindings = <&bt BT_NXT>, <&bt BT_PRV>;
         };
+
+        AppSwitch: AppSwitch {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "APPSWITCH";
+            #sensor-binding-cells = <0>;
+            bindings = <&FApp>, <&RApp>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -163,6 +170,22 @@
         };
     };
 
+    macros {
+        FApp: FApp {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp TAB>;
+            label = "FAPP";
+        };
+
+        RApp: RApp {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp LEFT_SHIFT &kp TAB>;
+            label = "RAPP";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -175,7 +198,7 @@
                          &lt 6 ESCAPE  &lt 4 SPACE  &lt 5 TAB                                            &lt 3 ENTER  &lt 1 BACKSPACE  &lt 2 DEL
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&AppSwitch>;
         };
 
         NAVIGATION {
@@ -199,7 +222,7 @@
                                              &kp BACKSPACE  &mkp MB1         &mkp MB2                                                                     &trans     &trans             &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
 
         FUNCTION {
