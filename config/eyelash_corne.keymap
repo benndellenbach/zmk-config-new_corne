@@ -219,7 +219,7 @@
 &bt BT_CLR   &kp LC(Z)       &kp LC(X)       &kp LC(C)      &kp LC(K_PASTE)  &kp K_REDO                            &mmv MOVE_UP                     &mkp LCLK  &mkp RCLK          &to 0            &trans         &bootloader    &trans
 &trans       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP   &mmv MOVE_RIGHT  &kp TAB               &mmv MOVE_LEFT  &trans          &mmv MOVE_RIGHT  &trans     &kp RIGHT_CONTROL  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &kp RIGHT_WIN  &trans
 &bootloader  &kp END         &kp PG_UP       &kp PAGE_DOWN  &kp HOME         &kp INS     &trans                    &mmv MOVE_DOWN                   &trans     &trans             &trans           &trans         &trans         &trans
-                                             &mkp MB4       &mkp MB3         &mkp MB2                                                               &trans     &trans             &trans
+                                             &mkp MB4       &mkp MB3         &kp ENTER                                                              &trans     &trans             &trans
             >;
 
             sensor-bindings = <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
