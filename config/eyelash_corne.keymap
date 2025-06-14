@@ -204,10 +204,10 @@
         NAVIGATION {
             display-name = "NAV";
             bindings = <
-&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)      &kp LC(V)        &kp LC(Y)                                 &mmv MOVE_UP                     &mkp LCLK  &mkp RCLK          &to 0            &trans         &bootloader    &trans
-&trans  &kp LEFT   &kp DOWN   &kp UP_ARROW   &kp RIGHT_ARROW  &trans                    &mmv MOVE_LEFT  &mkp MB3        &mmv MOVE_RIGHT  &trans     &kp RIGHT_CONTROL  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &kp RIGHT_WIN  &trans
-&trans  &kp END    &kp PG_UP  &kp PAGE_DOWN  &kp HOME         &trans     &kp LA(TAB)                    &mmv MOVE_DOWN                   &trans     &trans             &trans           &trans         &trans         &trans
-                              &mkp RCLK      &mkp MB3         &mkp LCLK                                                                  &trans     &trans             &trans
+&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)      &kp LC(V)        &kp LC(Y)                                 &mmv MOVE_UP                     &trans  &trans             &trans           &trans         &trans         &bootloader
+&trans  &kp LEFT   &kp DOWN   &kp UP_ARROW   &kp RIGHT_ARROW  &trans                    &mmv MOVE_LEFT  &mkp MB3        &mmv MOVE_RIGHT  &trans  &kp RIGHT_CONTROL  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &kp RIGHT_WIN  &to 0
+&trans  &kp END    &kp PG_UP  &kp PAGE_DOWN  &kp HOME         &trans     &kp LA(TAB)                    &mmv MOVE_DOWN                   &trans  &trans             &trans           &trans         &trans         &trans
+                              &mkp RCLK      &mkp MB3         &mkp LCLK                                                                  &trans  &trans             &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(RIGHT) LC(LEFT_ARROW)>;
@@ -216,7 +216,7 @@
         Mouse_Layer {
             display-name = "MOUSE";
             bindings = <
-&trans  &kp LC(Z)       &kp LC(X)       &kp LC(C)      &kp LC(K_PASTE)  &kp K_REDO                            &mmv MOVE_UP                     &mkp MCLK  &mkp LCLK          &mkp RCLK        &trans         &bootloader    &bootloader
+&trans  &kp LC(Z)       &kp LC(X)       &kp LC(C)      &kp LC(K_PASTE)  &kp K_REDO                            &mmv MOVE_UP                     &mkp MCLK  &mkp LCLK          &mkp RCLK        &trans         &trans         &bootloader
 &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP   &mmv MOVE_RIGHT  &kp TAB               &mmv MOVE_LEFT  &trans          &mmv MOVE_RIGHT  &trans     &kp RIGHT_CONTROL  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &kp RIGHT_WIN  &to 0
 &trans  &kp END         &kp PG_UP       &kp PAGE_DOWN  &kp HOME         &kp INS     &trans                    &mmv MOVE_DOWN                   &trans     &trans             &trans           &trans         &trans         &trans
                                         &mkp MB5       &mkp MB4         &kp ENTER                                                              &trans     &trans             &trans
@@ -240,10 +240,10 @@
         NUMPAD {
             display-name = "NUMPAD";
             bindings = <
-&trans  &bootloader   &trans        &to 0           &trans            &trans                                &msc SCRL_UP                     &kp LEFT_BRACKET  &kp N7  &kp N8  &kp N9  &kp RIGHT_BRACKET  &kp BSPC
-&trans  &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &trans                &msc SCRL_LEFT  &mkp LCLK       &msc SCRL_RIGHT  &kp EQUAL         &kp N4  &kp N5  &kp N6  &kp HOME           &kp PG_UP
-&trans  &trans        &trans        &trans          &trans            &trans  &kp K_MUTE                    &msc SCRL_DOWN                   &kp MINUS         &kp N1  &kp N2  &kp N3  &kp BACKSLASH      &kp PG_DN
-                                    &trans          &trans            &trans                                                                 &kp INS           &kp N0  &trans
+&bootloader  &trans        &trans        &trans          &trans            &trans                                &msc SCRL_UP                     &kp LEFT_BRACKET  &kp N7  &kp N8  &kp N9  &kp RIGHT_BRACKET  &kp BSPC
+&to 0        &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &trans                &msc SCRL_LEFT  &mkp LCLK       &msc SCRL_RIGHT  &kp EQUAL         &kp N4  &kp N5  &kp N6  &kp HOME           &kp PG_UP
+&trans       &trans        &trans        &trans          &trans            &trans  &kp K_MUTE                    &msc SCRL_DOWN                   &kp MINUS         &kp N1  &kp N2  &kp N3  &kp BACKSLASH      &kp PG_DN
+                                         &trans          &trans            &trans                                                                 &kp INS           &kp N0  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
