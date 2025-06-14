@@ -67,6 +67,15 @@
             #sensor-binding-cells = <0>;
             bindings = <&FApp>, <&RAlt>;
         };
+
+        new_behavior: new_behavior {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
+            tap-ms = <200>;
+            label = "NEW_BEHAVIOR";
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -216,7 +225,7 @@
         Mouse_Layer {
             display-name = "MOUSE";
             bindings = <
-&trans  &kp LC(Z)       &kp LC(X)       &kp LC(C)      &kp LC(K_PASTE)  &kp K_REDO                            &mmv MOVE_UP                     &mkp MCLK  &mkp LCLK          &mkp RCLK        &trans         &trans         &bootloader
+&trans  &kp LC(Z)       &kp LC(X)       &kp LC(C)      &kp LC(K_PASTE)  &kp K_REDO                            &mmv MOVE_UP                     &mkp LCLK  &mkp MB3           &mkp RCLK        &trans         &trans         &trans
 &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP   &mmv MOVE_RIGHT  &kp TAB               &mmv MOVE_LEFT  &trans          &mmv MOVE_RIGHT  &trans     &kp RIGHT_CONTROL  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &kp RIGHT_WIN  &to 0
 &trans  &kp END         &kp PG_UP       &kp PAGE_DOWN  &kp HOME         &kp INS     &trans                    &mmv MOVE_DOWN                   &trans     &trans             &trans           &trans         &trans         &trans
                                         &mkp MB5       &mkp MB4         &kp ENTER                                                              &trans     &trans             &trans
