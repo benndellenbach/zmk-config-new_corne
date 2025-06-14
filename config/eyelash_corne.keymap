@@ -226,9 +226,9 @@
             display-name = "MOUSE";
             bindings = <
 &trans  &kp LC(Z)       &kp LC(X)       &kp LC(C)      &kp LC(K_PASTE)  &kp K_REDO                            &mmv MOVE_UP                     &mkp LCLK  &mkp MB3           &mkp RCLK        &trans         &trans         &trans
-&trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP   &mmv MOVE_RIGHT  &kp TAB               &mmv MOVE_LEFT  &trans          &mmv MOVE_RIGHT  &trans     &kp RIGHT_CONTROL  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &kp RIGHT_WIN  &to 0
-&trans  &kp END         &kp PG_UP       &kp PAGE_DOWN  &kp HOME         &kp INS     &trans                    &mmv MOVE_DOWN                   &trans     &trans             &trans           &trans         &trans         &trans
-                                        &mkp MB5       &mkp MB4         &kp ENTER                                                              &trans     &trans             &trans
+&trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP   &mmv MOVE_RIGHT  &kp TAB               &mmv MOVE_LEFT  &trans          &mmv MOVE_RIGHT  &mkp MB4   &kp RIGHT_CONTROL  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &kp RIGHT_WIN  &to 0
+&trans  &kp END         &kp PG_UP       &kp PAGE_DOWN  &kp HOME         &kp INS     &trans                    &mmv MOVE_DOWN                   &mkp MB5   &trans             &trans           &trans         &trans         &trans
+                                        &kp BACKSPACE  &trans           &kp ENTER                                                              &trans     &trans             &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -237,7 +237,7 @@
         FUNCTION {
             display-name = "FUN";
             bindings = <
-&trans  &kp F12  &kp F7  &kp F8             &kp F9     &kp PG_UP                                &mmv MOVE_UP                     &trans  &trans     &trans           &trans         &trans         &bootloader
+&trans  &kp F12  &kp F7  &kp F8             &kp F9     &kp PG_UP                                &mmv MOVE_UP                     &trans  &trans     &trans           &trans         &trans         &trans
 &trans  &kp F11  &kp F4  &kp F5             &kp F6     &kp PG_DN                &mmv MOVE_LEFT  &mkp MB3        &mmv MOVE_RIGHT  &trans  &kp RCTRL  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &kp RIGHT_WIN  &to 0
 &trans  &kp F10  &kp F1  &kp F2             &kp F3     &kp HOME   &kp K_MUTE                    &mmv MOVE_DOWN                   &trans  &trans     &trans           &trans         &trans         &trans
                          &kp K_APPLICATION  &kp SPACE  &kp TAB                                                                   &trans  &trans     &trans
@@ -249,10 +249,10 @@
         NUMPAD {
             display-name = "NUMPAD";
             bindings = <
-&bootloader  &trans        &trans        &trans          &trans            &trans                                &msc SCRL_UP                     &kp LEFT_BRACKET  &kp N7  &kp N8  &kp N9  &kp RIGHT_BRACKET  &kp BSPC
-&to 0        &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &trans                &msc SCRL_LEFT  &mkp LCLK       &msc SCRL_RIGHT  &kp EQUAL         &kp N4  &kp N5  &kp N6  &kp HOME           &kp PG_UP
-&trans       &trans        &trans        &trans          &trans            &trans  &kp K_MUTE                    &msc SCRL_DOWN                   &kp MINUS         &kp N1  &kp N2  &kp N3  &kp BACKSLASH      &kp PG_DN
-                                         &trans          &trans            &trans                                                                 &kp INS           &kp N0  &trans
+&trans  &trans        &trans        &trans          &trans            &trans                                &msc SCRL_UP                     &kp LEFT_BRACKET  &kp N7  &kp N8  &kp N9  &kp RIGHT_BRACKET  &kp BSPC
+&to 0   &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &trans                &msc SCRL_LEFT  &mkp LCLK       &msc SCRL_RIGHT  &kp EQUAL         &kp N4  &kp N5  &kp N6  &kp HOME           &kp PG_UP
+&trans  &trans        &trans        &trans          &trans            &trans  &kp K_MUTE                    &msc SCRL_DOWN                   &kp MINUS         &kp N1  &kp N2  &kp N3  &kp BACKSLASH      &kp PG_DN
+                                    &trans          &trans            &trans                                                                 &kp INS           &kp N0  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -261,10 +261,10 @@
         SYMBOL {
             display-name = "SYMBOL";
             bindings = <
-&bootloader  &trans        &trans        &trans          &trans            &trans                            &mmv MOVE_UP                     &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp ASTRK              &kp AMPERSAND  &kp RIGHT_BRACE  &trans
-&to 0        &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &trans            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp PLUS        &kp CARET             &kp PERCENT            &kp DOLLAR     &kp COLON        &trans
-&trans       &trans        &trans        &trans          &trans            &trans  &tog 2                    &mmv MOVE_DOWN                   &kp PIPE        &kp HASH              &kp AT                 &kp EXCL       &kp TILDE        &trans
-                                         &trans          &trans            &trans                                                             &kp UNDERSCORE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&trans  &trans        &trans        &trans          &trans            &trans                            &mmv MOVE_UP                     &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp ASTRK              &kp AMPERSAND  &kp RIGHT_BRACE  &trans
+&to 0   &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &trans            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp PLUS        &kp CARET             &kp PERCENT            &kp DOLLAR     &kp COLON        &trans
+&trans  &trans        &trans        &trans          &trans            &trans  &tog 2                    &mmv MOVE_DOWN                   &kp PIPE        &kp HASH              &kp AT                 &kp EXCL       &kp TILDE        &trans
+                                    &trans          &trans            &trans                                                             &kp UNDERSCORE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
             >;
 
             sensor-bindings = <&inc_dec_kp LC(Y) LC(Z)>;
@@ -273,7 +273,7 @@
         MEDIA {
             display-name = "MEDIA";
             bindings = <
-&bootloader  &trans        &trans        &trans          &trans            &trans                             &rgb_ug RGB_SAI                   &rgb_ug RGB_TOG    &rgb_ug RGB_SPD   &rgb_ug RGB_SPI  &trans        &trans        &trans
+&bootloader  &trans        &trans        &trans          &trans            &trans                             &rgb_ug RGB_SAI                   &rgb_ug RGB_TOG    &rgb_ug RGB_SPD   &rgb_ug RGB_SPI  &trans        &trans        &bootloader
 &to 0        &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &trans            &rgb_ug RGB_HUD  &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &ext_power EP_TOG  &kp K_PREV        &kp C_VOL_DN     &kp C_VOL_UP  &kp K_NEXT    &trans
 &trans       &trans        &trans        &trans          &trans            &trans  &trans                     &rgb_ug RGB_SAD                   &out OUT_TOG       &bt BT_SEL 0      &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
                                          &trans          &trans            &trans                                                               &kp K_STOP         &kp K_PLAY_PAUSE  &kp K_MUTE
