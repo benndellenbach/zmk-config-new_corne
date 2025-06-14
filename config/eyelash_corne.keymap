@@ -252,10 +252,10 @@
         SYMBOL {
             display-name = "SYMBOL";
             bindings = <
-&trans  &bootloader   &trans        &to 0           &trans            &trans                            &mmv MOVE_UP                     &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp ASTRK              &kp AMPERSAND  &kp RIGHT_BRACE  &trans
-&trans  &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &trans            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp PLUS        &kp CARET             &kp PERCENT            &kp DOLLAR     &kp COLON        &trans
-&trans  &trans        &trans        &trans          &trans            &trans  &tog 2                    &mmv MOVE_DOWN                   &kp PIPE        &kp HASH              &kp AT                 &kp EXCL       &kp TILDE        &trans
-                                    &trans          &trans            &trans                                                             &kp UNDERSCORE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&bootloader  &trans        &trans        &trans          &trans            &trans                            &mmv MOVE_UP                     &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp ASTRK              &kp AMPERSAND  &kp RIGHT_BRACE  &trans
+&to 0        &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &trans            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp PLUS        &kp CARET             &kp PERCENT            &kp DOLLAR     &kp COLON        &trans
+&trans       &trans        &trans        &trans          &trans            &trans  &tog 2                    &mmv MOVE_DOWN                   &kp PIPE        &kp HASH              &kp AT                 &kp EXCL       &kp TILDE        &trans
+                                         &trans          &trans            &trans                                                             &kp UNDERSCORE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
             >;
 
             sensor-bindings = <&inc_dec_kp LC(Y) LC(Z)>;
@@ -264,10 +264,10 @@
         MEDIA {
             display-name = "MEDIA";
             bindings = <
-&trans  &bootloader   &trans        &to 0           &trans            &trans                             &rgb_ug RGB_SAI                   &rgb_ug RGB_TOG    &rgb_ug RGB_SPD   &rgb_ug RGB_SPI  &trans        &trans        &trans
-&trans  &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &trans            &rgb_ug RGB_HUD  &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &ext_power EP_TOG  &kp K_PREV        &kp C_VOL_DN     &kp C_VOL_UP  &kp K_NEXT    &trans
-&trans  &trans        &trans        &trans          &trans            &trans  &trans                     &rgb_ug RGB_SAD                   &out OUT_TOG       &bt BT_SEL 0      &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-                                    &trans          &trans            &trans                                                               &kp K_STOP         &kp K_PLAY_PAUSE  &kp K_MUTE
+&bootloader  &trans        &trans        &trans          &trans            &trans                             &rgb_ug RGB_SAI                   &rgb_ug RGB_TOG    &rgb_ug RGB_SPD   &rgb_ug RGB_SPI  &trans        &trans        &trans
+&to 0        &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &trans            &rgb_ug RGB_HUD  &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &ext_power EP_TOG  &kp K_PREV        &kp C_VOL_DN     &kp C_VOL_UP  &kp K_NEXT    &trans
+&trans       &trans        &trans        &trans          &trans            &trans  &trans                     &rgb_ug RGB_SAD                   &out OUT_TOG       &bt BT_SEL 0      &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+                                         &trans          &trans            &trans                                                               &kp K_STOP         &kp K_PLAY_PAUSE  &kp K_MUTE
             >;
 
             sensor-bindings = <&rgb_encoder>;
