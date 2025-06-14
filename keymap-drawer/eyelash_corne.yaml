@@ -148,11 +148,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   FUN:
-  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - F12
-  - F9
-  - F8
   - F7
+  - F8
+  - F9
   - PG UP
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
@@ -163,9 +163,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - F11
-  - F6
-  - F5
   - F4
+  - F5
+  - F6
   - PG DN
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - '&mkp MB3'
@@ -178,9 +178,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - F10
-  - F3
-  - F2
   - F1
+  - F2
+  - F3
   - HOME
   - MUTE
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
