@@ -57,12 +57,12 @@ layers:
   - Ctl+V
   - Ctl+Y
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - $$mdi:mouse-left-click-outline$$
-  - $$mdi:mouse-right-click-outline$$
-  - {t: QWERTY, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:progress-download$$
-  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
@@ -77,7 +77,7 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-option$$
   - RIGHT WIN
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: QWERTY, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - END
   - PG UP
@@ -110,7 +110,7 @@ layers:
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:mouse-right-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:progress-download$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:progress-download$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
@@ -197,10 +197,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   NUMPAD:
-  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:progress-download$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: QWERTY, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:pan-up$$
@@ -210,7 +210,7 @@ layers:
   - {t: '9', s: (}
   - {t: ']', s: '}'}
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: QWERTY, h: toggle}
   - LEFT WIN
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-shift$$
