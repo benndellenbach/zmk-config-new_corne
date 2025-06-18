@@ -44,8 +44,8 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:keyboard-esc$$
   - {t: '$$mdi:keyboard-esc$$', h: MOUSE}
-  - {t: '$$mdi:keyboard-space$$', h: NUMPAD}
-  - {t: '$$mdi:keyboard-tab$$', h: SYMBOL}
+  - {t: '$$mdi:keyboard-space$$', h: SYMBOL}
+  - {t: '$$mdi:keyboard-tab$$', h: NUMPAD}
   - {t: '$$mdi:keyboard-return$$', h: NAV}
   - {t: '$$mdi:backspace$$', h: FUN}
   - {t: '$$mdi:backspace-reverse-outline$$', h: MEDIA}
@@ -240,8 +240,8 @@ layers:
   - {t: \, s: '|'}
   - PG DN
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - INS
   - {t: '0', s: )}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -289,8 +289,8 @@ layers:
   - '~'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - _
   - (
   - )
@@ -367,21 +367,21 @@ combos:
 - p: [23, 24]
   k: $$mdi:apple-keyboard-option$$
   l: [QWERTY]
-- p: [46, 23]
+- p: [23, 45]
   k: {t: FUN, h: toggle}
   l: [QWERTY, NAV, MOUSE, NUMPAD, SYMBOL, SYMBOL, MEDIA]
-- p: [23, 47]
+- p: [42, 17]
   k: {t: MEDIA, h: toggle}
   l: [QWERTY, NAV, MOUSE, NUMPAD, SYMBOL, SYMBOL, MEDIA]
-- p: [23, 45]
+- p: [23, 46]
   k: {t: NAV, h: toggle}
   l: [QWERTY, NAV, MOUSE, NUMPAD, SYMBOL, SYMBOL, MEDIA]
-- p: [17, 43]
+- p: [17, 44]
   k: {t: NUMPAD, h: toggle}
   l: [QWERTY, NAV, MOUSE, NUMPAD, SYMBOL, SYMBOL, MEDIA]
-- p: [17, 44]
+- p: [17, 43]
   k: {t: SYMBOL, h: toggle}
   l: [QWERTY, NAV, MOUSE, NUMPAD, SYMBOL, SYMBOL, MEDIA]
-- p: [17, 42]
+- p: [47, 23]
   k: {t: MOUSE, h: toggle}
   l: [QWERTY, NAV, MOUSE, NUMPAD, SYMBOL, SYMBOL, MEDIA]
