@@ -100,48 +100,49 @@
         LeftAlt {
             bindings = <&kp LEFT_ALT>;
             key-positions = <17 16>;
-            layers = <0>;
+            layers = <0 1 2 4 5>;
         };
 
         LeftShift {
             bindings = <&kp LEFT_SHIFT>;
             key-positions = <16 15>;
-            layers = <0 5>;
+            layers = <0 5 1 4 2>;
         };
 
         LeftCtrl {
             bindings = <&kp LEFT_CONTROL>;
             key-positions = <15 14>;
-            layers = <0 2>;
+            layers = <0 2 4 5>;
         };
 
         LeftSuper {
             bindings = <&kp LEFT_WIN>;
             key-positions = <14 17>;
+            layers = <0 2 4 5>;
         };
 
         RSuper {
             bindings = <&kp RIGHT_WIN>;
             key-positions = <26 23>;
-            layers = <0>;
+            layers = <0 1 3>;
         };
 
         RCtrl {
             bindings = <&kp RIGHT_CONTROL>;
             key-positions = <25 26>;
-            layers = <0>;
+            layers = <0 1 3>;
         };
 
         RShift {
             bindings = <&kp RIGHT_SHIFT>;
             key-positions = <24 25>;
-            layers = <0>;
+            layers = <0 1 3>;
         };
 
         RAlt {
             bindings = <&kp RIGHT_ALT>;
             key-positions = <23 24>;
-            layers = <0>;
+            layers = <0 1 3>;
         };
 
         Navlock {
@@ -151,7 +152,7 @@
         };
 
         MouseLock {
-            bindings = <&tog 6>;
+            bindings = <&tog 5>;
             key-positions = <42 17>;
             layers = <0 1 2 4 5 5 6>;
         };
@@ -169,13 +170,13 @@
         };
 
         SymLock {
-            bindings = <&tog 5>;
+            bindings = <&tog 2>;
             key-positions = <17 43>;
             layers = <0 1 2 4 5 5 6>;
         };
 
         RGBLock {
-            bindings = <&tog 2>;
+            bindings = <&tog 6>;
             key-positions = <47 23>;
             layers = <0 1 2 4 5 5 6>;
         };
@@ -206,7 +207,7 @@
 &kp TAB    &kp Q  &kp W  &kp E         &kp R        &kp T                          &kp UP               &kp Y        &kp U            &kp I      &kp O    &kp P     &kp BSPC
 &td0       &kp A  &kp S  &kp D         &kp F        &kp G                &kp LEFT  &tog 2    &kp RIGHT  &kp H        &kp J            &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LCTRL  &kp Z  &kp X  &kp C         &kp V        &kp B      &tog 6              &kp DOWN             &kp N        &kp M            &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                         &lt 2 ESCAPE  &lt 5 SPACE  &lt 4 TAB                                           &lt 1 ENTER  &lt 3 BACKSPACE  &lt 6 DEL
+                         &lt 5 ESCAPE  &lt 2 SPACE  &lt 4 TAB                                           &lt 1 ENTER  &lt 3 BACKSPACE  &lt 6 DEL
             >;
 
             sensor-bindings = <&inc_dec_kp TAB LS(TAB)>;
@@ -227,10 +228,10 @@
         Mouse_Layer {
             display-name = "MOUSE";
             bindings = <
-&trans  &kp LC(Z)       &kp LC(X)       &kp LC(C)      &kp LC(K_PASTE)  &kp K_REDO                            &mmv MOVE_UP                     &mkp LCLK  &mkp MB3           &mkp RCLK        &trans         &trans         &trans
-&trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP   &mmv MOVE_RIGHT  &kp TAB               &mmv MOVE_LEFT  &trans          &mmv MOVE_RIGHT  &mkp MB4   &kp RIGHT_CONTROL  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &kp RIGHT_WIN  &to 0
-&trans  &kp END         &kp PG_UP       &kp PAGE_DOWN  &kp HOME         &kp INS     &trans                    &mmv MOVE_DOWN                   &mkp MB5   &trans             &trans           &trans         &trans         &trans
-                                        &kp BACKSPACE  &trans           &kp ENTER                                                              &trans     &trans             &trans
+&trans  &kp END         &kp PG_UP       &kp PAGE_DOWN  &kp C_AC_HOME    &kp INS                              &mmv MOVE_UP                     &mkp LCLK  &mkp MB3           &mkp RCLK        &trans         &trans         &trans
+&trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP   &mmv MOVE_RIGHT  &kp TAB              &mmv MOVE_LEFT  &trans          &mmv MOVE_RIGHT  &mkp MB4   &kp RIGHT_CONTROL  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &kp RIGHT_WIN  &to 0
+&trans  &kp LS(Z)       &kp LC(X)       &kp LC(C)      &kp LC(V)        &kp LC(Y)  &trans                    &mmv MOVE_DOWN                   &mkp MB5   &trans             &trans           &trans         &trans         &trans
+                                        &kp BACKSPACE  &trans           &kp ENTER                                                             &trans     &trans             &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -239,22 +240,22 @@
         FUNCTION {
             display-name = "FUN";
             bindings = <
-&trans  &kp F12  &kp F7  &kp F8             &kp F9     &kp PG_UP                                &mmv MOVE_UP                     &trans  &trans     &trans           &trans         &trans         &trans
-&trans  &kp F11  &kp F4  &kp F5             &kp F6     &kp PG_DN                &mmv MOVE_LEFT  &mkp MB3        &mmv MOVE_RIGHT  &trans  &kp RCTRL  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &kp RIGHT_WIN  &to 0
-&trans  &kp F10  &kp F1  &kp F2             &kp F3     &kp HOME   &kp K_MUTE                    &mmv MOVE_DOWN                   &trans  &trans     &trans           &trans         &trans         &trans
-                         &kp K_APPLICATION  &kp SPACE  &kp TAB                                                                   &trans  &trans     &trans
+&trans  &kp F12  &kp F7  &kp F8             &kp F9     &kp PG_UP                            &mmv MOVE_UP                     &trans  &trans     &trans           &trans         &trans         &trans
+&trans  &kp F11  &kp F4  &kp F5             &kp F6     &kp PG_DN            &mmv MOVE_LEFT  &mkp MB3        &mmv MOVE_RIGHT  &trans  &kp RCTRL  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &kp RIGHT_WIN  &to 0
+&trans  &kp F10  &kp F1  &kp F2             &kp F3     &kp HOME   &kp F5                    &mmv MOVE_DOWN                   &trans  &trans     &trans           &trans         &trans         &trans
+                         &kp K_APPLICATION  &kp SPACE  &kp TAB                                                               &trans  &trans     &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(PLUS) LC(MINUS)>;
+            sensor-bindings = <&inc_dec_kp F8 F7>;
         };
 
         NUMPAD {
             display-name = "NUMPAD";
             bindings = <
-&trans  &trans        &trans        &trans          &trans            &trans                                &msc SCRL_UP                     &kp LEFT_BRACKET  &kp N7  &kp N8  &kp N9  &kp RIGHT_BRACKET  &kp BSPC
-&to 0   &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &trans                &msc SCRL_LEFT  &mkp LCLK       &msc SCRL_RIGHT  &kp EQUAL         &kp N4  &kp N5  &kp N6  &kp HOME           &kp PG_UP
-&trans  &trans        &trans        &trans          &trans            &trans  &kp K_MUTE                    &msc SCRL_DOWN                   &kp MINUS         &kp N1  &kp N2  &kp N3  &kp BACKSLASH      &kp PG_DN
-                                    &trans          &trans            &trans                                                                 &kp INS           &kp N0  &trans
+&trans  &trans        &trans        &trans          &trans            &trans                                &msc SCRL_UP                     &kp N7  &kp N8     &kp N9   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BSPC
+&to 0   &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &trans                &msc SCRL_LEFT  &mkp LCLK       &msc SCRL_RIGHT  &kp N4  &kp N5     &kp N6   &kp EQUAL         &kp HOME           &kp PG_UP
+&trans  &trans        &trans        &trans          &trans            &trans  &kp K_MUTE                    &msc SCRL_DOWN                   &kp N1  &kp N2     &kp N3   &kp MINUS         &kp BACKSLASH      &kp PG_DN
+                                    &trans          &trans            &trans                                                                 &kp N0  &kp SPACE  &kp INS
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -263,10 +264,10 @@
         SYMBOL {
             display-name = "SYMBOL";
             bindings = <
-&trans  &trans        &trans        &trans          &trans            &trans                            &mmv MOVE_UP                     &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp ASTRK              &kp AMPERSAND  &kp RIGHT_BRACE  &trans
-&to 0   &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &trans            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp PLUS        &kp CARET             &kp PERCENT            &kp DOLLAR     &kp COLON        &trans
-&trans  &trans        &trans        &trans          &trans            &trans  &tog 2                    &mmv MOVE_DOWN                   &kp PIPE        &kp HASH              &kp AT                 &kp EXCL       &kp TILDE        &trans
-                                    &trans          &trans            &trans                                                             &kp UNDERSCORE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&trans  &trans        &trans        &trans          &trans            &trans                            &mmv MOVE_UP                     &kp RIGHT_BRACE       &kp ASTERISK           &kp AMPERSAND    &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans
+&to 0   &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &trans            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp CARET             &kp PERCENT            &kp DOLLAR       &kp PLUS        &kp COLON        &trans
+&trans  &trans        &trans        &trans          &trans            &trans  &tog 2                    &mmv MOVE_DOWN                   &kp HASH              &kp AT_SIGN            &kp EXCLAMATION  &kp PIPE        &kp TILDE        &trans
+                                    &trans          &trans            &trans                                                             &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDER
             >;
 
             sensor-bindings = <&inc_dec_kp LC(Y) LC(Z)>;
