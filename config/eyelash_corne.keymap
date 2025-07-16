@@ -227,7 +227,7 @@
         NAVIGATION {
             display-name = "MEDIA";
             bindings = <
-&trans  &trans  &kp F   &trans  &trans  &trans                                &mmv MOVE_UP                     &trans  &trans          &trans        &trans    &trans     &trans
+&trans  &trans  &kp F   &trans  &trans  &trans                                &mmv MOVE_UP                     &trans  &trans          &trans        &trans    &trans     &kp C_PLAY_PAUSE
 &trans  &kp A   &kp S   &kp W   &kp D   &trans                &mmv MOVE_LEFT  &mkp MB3        &mmv MOVE_RIGHT  &trans  &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN  &kp RIGHT  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &kp K_MUTE                    &mmv MOVE_DOWN                   &trans  &trans          &trans        &trans    &trans     &trans
                         &trans  &trans  &trans                                                                 &trans  &trans          &trans
@@ -239,10 +239,10 @@
         Mouse_Layer {
             display-name = "MOUSE";
             bindings = <
-&kp PAGE_UP    &kp END         &kp PG_UP       &kp PAGE_DOWN  &kp C_AC_HOME    &kp INS                              &mmv MOVE_UP                     &mkp LCLK  &mkp MB3           &mkp RCLK        &trans         &trans         &trans
-&kp PAGE_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP   &mmv MOVE_RIGHT  &kp TAB              &mmv MOVE_LEFT  &trans          &mmv MOVE_RIGHT  &mkp MB4   &kp RIGHT_CONTROL  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &kp RIGHT_WIN  &to 0
-&kp HOME       &kp LS(Z)       &kp LC(X)       &kp LC(C)      &kp LC(V)        &kp LC(Y)  &trans                    &mmv MOVE_DOWN                   &mkp MB5   &trans             &trans           &trans         &trans         &trans
-                                               &kp BACKSPACE  &trans           &kp ENTER                                                             &trans     &trans             &trans
+&kp PAGE_UP    &kp END         &kp PG_UP       &kp PAGE_DOWN  &kp C_AC_HOME    &kp INS                              &mmv MOVE_UP                     &mkp LCLK  &mkp MB3  &mkp RCLK  &trans  &trans  &trans
+&kp PAGE_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP   &mmv MOVE_RIGHT  &kp TAB              &mmv MOVE_LEFT  &trans          &mmv MOVE_RIGHT  &mkp MB4   &trans    &trans     &trans  &trans  &trans
+&kp HOME       &kp LS(Z)       &kp LC(X)       &kp LC(C)      &kp LC(V)        &kp LC(Y)  &trans                    &mmv MOVE_DOWN                   &mkp MB5   &trans    &trans     &trans  &trans  &trans
+                                               &trans         &trans           &trans                                                                &trans     &trans    &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -285,10 +285,10 @@
         RGB {
             display-name = "RGB";
             bindings = <
-&bootloader  &trans        &trans        &trans          &trans            &trans                             &rgb_ug RGB_SAI                   &rgb_ug RGB_TOG    &rgb_ug RGB_SPD   &rgb_ug RGB_SPI  &trans  &trans  &trans
-&to 0        &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &trans            &rgb_ug RGB_HUD  &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &ext_power EP_TOG  &kp K_PREV        &trans           &trans  &trans  &trans
-&trans       &trans        &trans        &trans          &trans            &trans  &trans                     &rgb_ug RGB_SAD                   &trans             &trans            &trans           &trans  &trans  &trans
-                                         &trans          &trans            &trans                                                               &kp K_STOP         &kp K_PLAY_PAUSE  &kp K_MUTE
+&bootloader  &trans        &trans        &trans          &trans            &trans                             &rgb_ug RGB_SAI                   &trans      &trans             &trans           &trans           &trans  &trans
+&to 0        &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &trans            &rgb_ug RGB_HUD  &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &trans      &rgb_ug RGB_TOG    &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &trans  &trans
+&trans       &trans        &trans        &trans          &trans            &trans  &trans                     &rgb_ug RGB_SAD                   &trans      &ext_power EP_TOG  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &trans  &trans
+                                         &trans          &trans            &trans                                                               &kp K_STOP  &kp K_PLAY_PAUSE   &kp K_MUTE
             >;
 
             sensor-bindings = <&rgb_encoder>;
