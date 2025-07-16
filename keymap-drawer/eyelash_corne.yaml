@@ -43,12 +43,12 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - $$mdi:keyboard-esc$$
-  - {t: '$$mdi:keyboard-esc$$', h: SYMBOL}
-  - {t: '$$mdi:keyboard-space$$', h: MOUSE}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: NUMPAD}
-  - {t: '$$mdi:backspace$$', h: MEDIA}
-  - {t: '$$mdi:keyboard-return$$', h: FUN}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: RGB}
+  - {t: '$$mdi:keyboard-esc$$', h: MEDIA}
+  - {t: '$$mdi:keyboard-space$$', h: NUMPAD}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: SYMBOL}
+  - {t: '$$mdi:backspace$$', h: FUN}
+  - {t: '$$mdi:keyboard-return$$', h: MOUSE}
+  - {t: '$$mdi:transfer$$', type: trans}
   MEDIA:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -92,10 +92,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   MOUSE:
@@ -128,7 +128,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - HOME
-  - Sft+Z
+  - Ctl+Z
   - Ctl+X
   - Ctl+C
   - Ctl+V
@@ -141,11 +141,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:mouse-scroll-wheel$$
+  - $$mdi:mouse-left-click-outline$$
+  - $$mdi:mouse-right-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   FUN:
   - PG UP
@@ -193,8 +193,8 @@ layers:
   - APPLICATION
   - $$mdi:keyboard-space$$
   - $$mdi:keyboard-tab$$
-  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   NUMPAD:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -240,11 +240,11 @@ layers:
   - {t: /, s: '?'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '0', s: )}
   - $$mdi:keyboard-space$$
-  - INS
+  - {t: '$$mdi:transfer$$', type: trans}
   SYMBOL:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -288,9 +288,9 @@ layers:
   - _
   - {t: \, s: '|'}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - (
   - )
   - {t: '$$mdi:transfer$$', type: trans}
@@ -340,9 +340,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - STOP
-  - PLAY PAUSE
-  - {t: MUTE, type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [17, 16]
   k: $$mdi:apple-keyboard-option$$
@@ -369,19 +369,19 @@ combos:
   k: $$mdi:apple-keyboard-option$$
   l: [QWERTY, MEDIA, FUN]
 - p: [23, 45]
-  k: {t: FUN, h: toggle}
+  k: {t: MOUSE, h: toggle}
   l: [QWERTY, MEDIA, MOUSE, NUMPAD, SYMBOL, SYMBOL, RGB]
 - p: [42, 17]
-  k: {t: SYMBOL, h: toggle}
-  l: [QWERTY, MEDIA, MOUSE, NUMPAD, SYMBOL, SYMBOL, RGB]
-- p: [23, 46]
   k: {t: MEDIA, h: toggle}
   l: [QWERTY, MEDIA, MOUSE, NUMPAD, SYMBOL, SYMBOL, RGB]
+- p: [23, 46]
+  k: {t: FUN, h: toggle}
+  l: [QWERTY, MEDIA, MOUSE, NUMPAD, SYMBOL, SYMBOL, RGB]
 - p: [17, 44]
-  k: {t: NUMPAD, h: toggle}
+  k: {t: SYMBOL, h: toggle}
   l: [QWERTY, MEDIA, MOUSE, NUMPAD, SYMBOL, SYMBOL, RGB]
 - p: [17, 43]
-  k: {t: MOUSE, h: toggle}
+  k: {t: NUMPAD, h: toggle}
   l: [QWERTY, MEDIA, MOUSE, NUMPAD, SYMBOL, SYMBOL, RGB]
 - p: [47, 23]
   k: {t: RGB, h: toggle}
