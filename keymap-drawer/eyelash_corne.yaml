@@ -48,7 +48,7 @@ layers:
   - {t: '$$mdi:backspace-reverse-outline$$', h: SYMBOL}
   - {t: '$$mdi:backspace$$', h: FUN}
   - {t: '$$mdi:keyboard-return$$', h: MOUSE}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: MEDIA, h: toggle}
   MEDIA:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -97,7 +97,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: MOUSE, h: toggle}
   MOUSE:
   - PgUp
   - END
@@ -146,7 +146,7 @@ layers:
   - $$mdi:mouse-right-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: FUN, h: toggle}
   FUN:
   - PG UP
   - {t: '$$mdi:transfer$$', type: trans}
@@ -195,7 +195,7 @@ layers:
   - $$mdi:keyboard-tab$$
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: NUMPAD, h: toggle}
   NUMPAD:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -243,8 +243,8 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '0', s: )}
-  - $$mdi:keyboard-space$$
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: SYMBOL, h: toggle}
   SYMBOL:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -293,7 +293,7 @@ layers:
   - {type: held}
   - (
   - )
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: RGB, h: toggle}
   RGB:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -342,7 +342,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: QWERTY, h: toggle}
 combos:
 - p: [17, 16]
   k: $$mdi:apple-keyboard-option$$
