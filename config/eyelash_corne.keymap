@@ -180,6 +180,18 @@
             key-positions = <47 23>;
             layers = <0 1 2 4 5 5 6>;
         };
+
+        LDefault {
+            bindings = <&to 0>;
+            key-positions = <13 17>;
+            layers = <4 6 5>;
+        };
+
+        RDefault {
+            bindings = <&to 0>;
+            key-positions = <23 27>;
+            layers = <1 2 3>;
+        };
     };
 
     macros {
@@ -214,12 +226,12 @@
         };
 
         NAVIGATION {
-            display-name = "NAV";
+            display-name = "MEDIA";
             bindings = <
-&trans    &kp LC(Z)  &kp LC(X)  &kp LC(C)      &kp LC(V)        &kp LC(Y)                                 &mmv MOVE_UP                     &trans  &trans             &trans           &trans         &trans         &bootloader
-&trans    &kp LEFT   &kp DOWN   &kp UP_ARROW   &kp RIGHT_ARROW  &trans                    &mmv MOVE_LEFT  &mkp MB3        &mmv MOVE_RIGHT  &trans  &kp RIGHT_CONTROL  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &kp RIGHT_WIN  &to 0
-&kp HOME  &kp END    &kp PG_UP  &kp PAGE_DOWN  &trans           &trans     &kp LA(TAB)                    &mmv MOVE_DOWN                   &trans  &trans             &trans           &trans         &trans         &trans
-                                &mkp RCLK      &mkp MB3         &mkp LCLK                                                                  &trans  &trans             &trans
+&out OUT_TOG  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3     &bt BT_SEL 4                                &mmv MOVE_UP                     &trans  &trans          &trans        &trans    &trans     &bootloader
+&trans        &kp LEFT      &kp DOWN      &kp UP_ARROW   &kp RIGHT_ARROW  &trans                      &mmv MOVE_LEFT  &mkp MB3        &mmv MOVE_RIGHT  &trans  &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN  &kp RIGHT  &to 0
+&kp HOME      &kp END       &kp PG_UP     &kp PAGE_DOWN  &trans           &trans        &kp K_MUTE                    &mmv MOVE_DOWN                   &trans  &trans          &trans        &trans    &trans     &trans
+                                          &mkp RCLK      &mkp MB3         &mkp LCLK                                                                    &trans  &trans          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(RIGHT) LC(LEFT_ARROW)>;
@@ -251,32 +263,32 @@
             display-name = "NUMPAD";
             bindings = <
 &trans  &trans        &trans        &trans          &trans            &trans                                &msc SCRL_UP                     &kp N7  &kp N8     &kp N9   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BSPC
-&to 0   &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &trans                &msc SCRL_LEFT  &mkp LCLK       &msc SCRL_RIGHT  &kp N4  &kp N5     &kp N6   &kp EQUAL         &kp HOME           &kp PG_UP
-&trans  &trans        &trans        &trans          &trans            &trans  &kp K_MUTE                    &msc SCRL_DOWN                   &kp N1  &kp N2     &kp N3   &kp MINUS         &kp BACKSLASH      &kp PG_DN
+&to 0   &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &trans                &msc SCRL_LEFT  &mkp LCLK       &msc SCRL_RIGHT  &kp N4  &kp N5     &kp N6   &kp PLUS          &kp COLON          &kp EQUAL
+&trans  &trans        &trans        &trans          &trans            &trans  &kp K_MUTE                    &msc SCRL_DOWN                   &kp N1  &kp N2     &kp N3   &kp MINUS         &kp SLASH          &trans
                                     &trans          &trans            &trans                                                                 &kp N0  &kp SPACE  &kp INS
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp LS(RIGHT) LS(LEFT)>;
         };
 
         SYMBOL {
             display-name = "SYMBOL";
             bindings = <
-&trans  &trans        &trans        &trans          &trans            &trans                            &mmv MOVE_UP                     &kp RIGHT_BRACE       &kp ASTERISK           &kp AMPERSAND    &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans
-&to 0   &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &trans            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp CARET             &kp PERCENT            &kp DOLLAR       &kp PLUS        &kp COLON        &trans
-&trans  &trans        &trans        &trans          &trans            &trans  &tog 2                    &mmv MOVE_DOWN                   &kp HASH              &kp AT_SIGN            &kp EXCLAMATION  &kp PIPE        &kp TILDE        &trans
-                                    &trans          &trans            &trans                                                             &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDER
+&trans  &trans        &trans        &trans          &trans            &trans                            &mmv MOVE_UP                     &kp RIGHT_BRACE  &kp ASTERISK          &kp AMPERSAND          &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans
+&to 0   &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &trans            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp CARET        &kp PERCENT           &kp DOLLAR             &kp PLUS        &kp COLON        &kp TILDE
+&trans  &trans        &trans        &trans          &trans            &trans  &tog 2                    &mmv MOVE_DOWN                   &kp HASH         &kp AT_SIGN           &kp EXCLAMATION        &kp UNDERSCORE  &kp BACKSLASH    &trans
+                                    &trans          &trans            &trans                                                             &trans           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
             >;
 
             sensor-bindings = <&inc_dec_kp LC(Y) LC(Z)>;
         };
 
-        MEDIA {
-            display-name = "MEDIA";
+        RGB {
+            display-name = "RGB";
             bindings = <
-&bootloader  &trans        &trans        &trans          &trans            &trans                             &rgb_ug RGB_SAI                   &rgb_ug RGB_TOG    &rgb_ug RGB_SPD   &rgb_ug RGB_SPI  &trans        &trans        &bootloader
-&to 0        &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &trans            &rgb_ug RGB_HUD  &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &ext_power EP_TOG  &kp K_PREV        &kp C_VOL_DN     &kp C_VOL_UP  &kp K_NEXT    &trans
-&trans       &trans        &trans        &trans          &trans            &trans  &trans                     &rgb_ug RGB_SAD                   &out OUT_TOG       &bt BT_SEL 0      &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&bootloader  &trans        &trans        &trans          &trans            &trans                             &rgb_ug RGB_SAI                   &rgb_ug RGB_TOG    &rgb_ug RGB_SPD   &rgb_ug RGB_SPI  &trans  &trans  &trans
+&to 0        &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &trans            &rgb_ug RGB_HUD  &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &ext_power EP_TOG  &kp K_PREV        &trans           &trans  &trans  &trans
+&trans       &trans        &trans        &trans          &trans            &trans  &trans                     &rgb_ug RGB_SAD                   &trans             &trans            &trans           &trans  &trans  &trans
                                          &trans          &trans            &trans                                                               &kp K_STOP         &kp K_PLAY_PAUSE  &kp K_MUTE
             >;
 
