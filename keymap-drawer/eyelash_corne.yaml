@@ -44,15 +44,15 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:keyboard-esc$$
   - {t: '$$mdi:keyboard-esc$$', h: SYMBOL}
-  - {t: '$$mdi:keyboard-return$$', h: MOUSE}
+  - {t: '$$mdi:keyboard-space$$', h: MOUSE}
   - {t: '$$mdi:backspace-reverse-outline$$', h: NUMPAD}
   - {t: '$$mdi:backspace$$', h: MEDIA}
-  - {t: '$$mdi:keyboard-space$$', h: FUN}
+  - {t: '$$mdi:keyboard-return$$', h: FUN}
   - {t: '$$mdi:backspace-reverse-outline$$', h: RGB}
   MEDIA:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - F
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
