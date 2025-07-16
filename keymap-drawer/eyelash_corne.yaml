@@ -35,7 +35,7 @@ layers:
   - C
   - V
   - B
-  - {t: MEDIA, h: toggle}
+  - {t: RGB, h: toggle}
   - $$mdi:arrow-down-bold$$
   - N
   - M
@@ -46,16 +46,16 @@ layers:
   - {t: '$$mdi:keyboard-esc$$', h: SYMBOL}
   - {t: '$$mdi:keyboard-space$$', h: MOUSE}
   - {t: '$$mdi:keyboard-tab$$', h: NUMPAD}
-  - {t: '$$mdi:keyboard-return$$', h: NAV}
+  - {t: '$$mdi:keyboard-return$$', h: MEDIA}
   - {t: '$$mdi:backspace$$', h: FUN}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: MEDIA}
-  NAV:
-  - {t: '$$mdi:transfer$$', type: trans}
-  - Ctl+Z
-  - Ctl+X
-  - Ctl+C
-  - Ctl+V
-  - Ctl+Y
+  - {t: '$$mdi:backspace-reverse-outline$$', h: RGB}
+  MEDIA:
+  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
+  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '4', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '5', s: '$$mdi:bluetooth-connect$$'}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -73,10 +73,10 @@ layers:
   - '&mkp MB3'
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-shift$$
-  - $$mdi:apple-keyboard-option$$
-  - RIGHT WIN
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-up-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-right-bold$$
   - {t: QWERTY, h: toggle}
   - HOME
   - END
@@ -84,7 +84,7 @@ layers:
   - PgDn
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - Alt+$$mdi:keyboard-tab$$
+  - MUTE
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -222,9 +222,9 @@ layers:
   - {t: '4', s: $}
   - {t: '5', s: '%'}
   - {t: '6', s: ^}
+  - +
+  - ':'
   - {t: '=', s: +}
-  - HOME
-  - PG UP
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -237,8 +237,8 @@ layers:
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
   - {t: '-', s: _}
-  - {t: \, s: '|'}
-  - PG DN
+  - {t: /, s: '?'}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
@@ -273,7 +273,7 @@ layers:
   - $
   - +
   - ':'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '~'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -285,16 +285,16 @@ layers:
   - '#'
   - '@'
   - '!'
-  - '|'
-  - '~'
+  - _
+  - {t: \, s: '|'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - (
   - )
-  - _
-  MEDIA:
+  RGB:
   - $$mdi:progress-download$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -307,7 +307,7 @@ layers:
   - RGB SPI
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:progress-download$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: QWERTY, h: toggle}
   - LEFT WIN
   - $$mdi:apple-keyboard-option$$
@@ -319,9 +319,9 @@ layers:
   - RGB HUI
   - EP TOG
   - PREV
-  - $$mdi:volume-low$$
-  - $$mdi:volume-high$$
-  - NEXT
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -331,12 +331,12 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - RGB SAD
-  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
-  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '4', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '5', s: '$$mdi:bluetooth-connect$$'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -395,10 +395,10 @@ layers:
 combos:
 - p: [17, 16]
   k: $$mdi:apple-keyboard-option$$
-  l: [QWERTY, NAV, MOUSE, NUMPAD, SYMBOL]
+  l: [QWERTY, MEDIA, MOUSE, NUMPAD, SYMBOL]
 - p: [16, 15]
   k: $$mdi:apple-keyboard-shift$$
-  l: [QWERTY, SYMBOL, NAV, NUMPAD, MOUSE]
+  l: [QWERTY, SYMBOL, MEDIA, NUMPAD, MOUSE]
 - p: [15, 14]
   k: $$mdi:apple-keyboard-control$$
   l: [QWERTY, MOUSE, NUMPAD, SYMBOL]
@@ -407,31 +407,37 @@ combos:
   l: [QWERTY, MOUSE, NUMPAD, SYMBOL]
 - p: [26, 23]
   k: RIGHT WIN
-  l: [QWERTY, NAV, FUN]
+  l: [QWERTY, MEDIA, FUN]
 - p: [25, 26]
   k: $$mdi:apple-keyboard-control$$
-  l: [QWERTY, NAV, FUN]
+  l: [QWERTY, MEDIA, FUN]
 - p: [24, 25]
   k: $$mdi:apple-keyboard-shift$$
-  l: [QWERTY, NAV, FUN]
+  l: [QWERTY, MEDIA, FUN]
 - p: [23, 24]
   k: $$mdi:apple-keyboard-option$$
-  l: [QWERTY, NAV, FUN]
+  l: [QWERTY, MEDIA, FUN]
 - p: [23, 45]
   k: {t: FUN, h: toggle}
-  l: [QWERTY, NAV, MOUSE, NUMPAD, SYMBOL, SYMBOL, MEDIA]
+  l: [QWERTY, MEDIA, MOUSE, NUMPAD, SYMBOL, SYMBOL, RGB]
 - p: [42, 17]
   k: {t: SYMBOL, h: toggle}
-  l: [QWERTY, NAV, MOUSE, NUMPAD, SYMBOL, SYMBOL, MEDIA]
+  l: [QWERTY, MEDIA, MOUSE, NUMPAD, SYMBOL, SYMBOL, RGB]
 - p: [23, 46]
-  k: {t: NAV, h: toggle}
-  l: [QWERTY, NAV, MOUSE, NUMPAD, SYMBOL, SYMBOL, MEDIA]
+  k: {t: MEDIA, h: toggle}
+  l: [QWERTY, MEDIA, MOUSE, NUMPAD, SYMBOL, SYMBOL, RGB]
 - p: [17, 44]
   k: {t: NUMPAD, h: toggle}
-  l: [QWERTY, NAV, MOUSE, NUMPAD, SYMBOL, SYMBOL, MEDIA]
+  l: [QWERTY, MEDIA, MOUSE, NUMPAD, SYMBOL, SYMBOL, RGB]
 - p: [17, 43]
   k: {t: MOUSE, h: toggle}
-  l: [QWERTY, NAV, MOUSE, NUMPAD, SYMBOL, SYMBOL, MEDIA]
+  l: [QWERTY, MEDIA, MOUSE, NUMPAD, SYMBOL, SYMBOL, RGB]
 - p: [47, 23]
-  k: {t: MEDIA, h: toggle}
-  l: [QWERTY, NAV, MOUSE, NUMPAD, SYMBOL, SYMBOL, MEDIA]
+  k: {t: RGB, h: toggle}
+  l: [QWERTY, MEDIA, MOUSE, NUMPAD, SYMBOL, SYMBOL, RGB]
+- p: [13, 17]
+  k: {t: QWERTY, h: toggle}
+  l: [NUMPAD, RGB, SYMBOL]
+- p: [23, 27]
+  k: {t: QWERTY, h: toggle}
+  l: [MEDIA, MOUSE, FUN]
