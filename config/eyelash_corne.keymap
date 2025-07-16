@@ -216,10 +216,10 @@
         NAVIGATION {
             display-name = "NAV";
             bindings = <
-&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)      &kp LC(V)        &kp LC(Y)                                 &mmv MOVE_UP                     &trans  &trans             &trans           &trans         &trans         &bootloader
-&trans  &kp LEFT   &kp DOWN   &kp UP_ARROW   &kp RIGHT_ARROW  &trans                    &mmv MOVE_LEFT  &mkp MB3        &mmv MOVE_RIGHT  &trans  &kp RIGHT_CONTROL  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &kp RIGHT_WIN  &to 0
-&trans  &kp END    &kp PG_UP  &kp PAGE_DOWN  &kp HOME         &trans     &kp LA(TAB)                    &mmv MOVE_DOWN                   &trans  &trans             &trans           &trans         &trans         &trans
-                              &mkp RCLK      &mkp MB3         &mkp LCLK                                                                  &trans  &trans             &trans
+&trans    &kp LC(Z)  &kp LC(X)  &kp LC(C)      &kp LC(V)        &kp LC(Y)                                 &mmv MOVE_UP                     &trans  &trans             &trans           &trans         &trans         &bootloader
+&trans    &kp LEFT   &kp DOWN   &kp UP_ARROW   &kp RIGHT_ARROW  &trans                    &mmv MOVE_LEFT  &mkp MB3        &mmv MOVE_RIGHT  &trans  &kp RIGHT_CONTROL  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &kp RIGHT_WIN  &to 0
+&kp HOME  &kp END    &kp PG_UP  &kp PAGE_DOWN  &trans           &trans     &kp LA(TAB)                    &mmv MOVE_DOWN                   &trans  &trans             &trans           &trans         &trans         &trans
+                                &mkp RCLK      &mkp MB3         &mkp LCLK                                                                  &trans  &trans             &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(RIGHT) LC(LEFT_ARROW)>;
@@ -228,10 +228,10 @@
         Mouse_Layer {
             display-name = "MOUSE";
             bindings = <
-&trans  &kp END         &kp PG_UP       &kp PAGE_DOWN  &kp C_AC_HOME    &kp INS                              &mmv MOVE_UP                     &mkp LCLK  &mkp MB3           &mkp RCLK        &trans         &trans         &trans
-&trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP   &mmv MOVE_RIGHT  &kp TAB              &mmv MOVE_LEFT  &trans          &mmv MOVE_RIGHT  &mkp MB4   &kp RIGHT_CONTROL  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &kp RIGHT_WIN  &to 0
-&trans  &kp LS(Z)       &kp LC(X)       &kp LC(C)      &kp LC(V)        &kp LC(Y)  &trans                    &mmv MOVE_DOWN                   &mkp MB5   &trans             &trans           &trans         &trans         &trans
-                                        &kp BACKSPACE  &trans           &kp ENTER                                                             &trans     &trans             &trans
+&kp PAGE_UP    &kp END         &kp PG_UP       &kp PAGE_DOWN  &kp C_AC_HOME    &kp INS                              &mmv MOVE_UP                     &mkp LCLK  &mkp MB3           &mkp RCLK        &trans         &trans         &trans
+&kp PAGE_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP   &mmv MOVE_RIGHT  &kp TAB              &mmv MOVE_LEFT  &trans          &mmv MOVE_RIGHT  &mkp MB4   &kp RIGHT_CONTROL  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &kp RIGHT_WIN  &to 0
+&kp HOME       &kp LS(Z)       &kp LC(X)       &kp LC(C)      &kp LC(V)        &kp LC(Y)  &trans                    &mmv MOVE_DOWN                   &mkp MB5   &trans             &trans           &trans         &trans         &trans
+                                               &kp BACKSPACE  &trans           &kp ENTER                                                             &trans     &trans             &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -240,13 +240,11 @@
         FUNCTION {
             display-name = "FUN";
             bindings = <
-&trans  &kp F12  &kp F7  &kp F8             &kp F9     &kp PG_UP                            &mmv MOVE_UP                     &trans  &trans     &trans           &trans         &trans         &trans
-&trans  &kp F11  &kp F4  &kp F5             &kp F6     &kp PG_DN            &mmv MOVE_LEFT  &mkp MB3        &mmv MOVE_RIGHT  &trans  &kp RCTRL  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &kp RIGHT_WIN  &to 0
-&trans  &kp F10  &kp F1  &kp F2             &kp F3     &kp HOME   &kp F5                    &mmv MOVE_DOWN                   &trans  &trans     &trans           &trans         &trans         &trans
-                         &kp K_APPLICATION  &kp SPACE  &kp TAB                                                               &trans  &trans     &trans
+&kp PG_UP  &trans  &kp F12  &kp F7             &kp F8     &kp F9                             &mmv MOVE_UP                     &trans  &trans     &trans           &trans         &trans         &trans
+&kp PG_DN  &trans  &kp F11  &kp F4             &kp F5     &kp F6             &mmv MOVE_LEFT  &mkp MB3        &mmv MOVE_RIGHT  &trans  &kp RCTRL  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &kp RIGHT_WIN  &to 0
+&kp HOME   &trans  &kp F10  &kp F1             &kp F2     &kp F2   &kp F5                    &mmv MOVE_DOWN                   &trans  &trans     &trans           &trans         &trans         &trans
+                            &kp K_APPLICATION  &kp SPACE  &kp TAB                                                             &trans  &trans     &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp F8 F7>;
         };
 
         NUMPAD {
@@ -283,6 +281,15 @@
             >;
 
             sensor-bindings = <&rgb_encoder>;
+        };
+
+        layer_7 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans                                    &trans  &trans  &trans
+            >;
         };
     };
 };
