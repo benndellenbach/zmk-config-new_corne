@@ -148,37 +148,37 @@
         Navlock {
             bindings = <&tog 3>;
             key-positions = <23 45>;
-            layers = <0 1 2 4 5 5 6>;
+            layers = <0 1 2 4 6 3 5>;
         };
 
         MouseLock {
             bindings = <&tog 2>;
             key-positions = <17 43>;
-            layers = <0 1 2 4 5 5 6>;
+            layers = <0 1 2 4 6 3 5>;
         };
 
         FunLock {
             bindings = <&tog 1>;
             key-positions = <23 46>;
-            layers = <0 1 2 4 5 5 6>;
+            layers = <0 1 2 4 6 3 5>;
         };
 
         NumLock {
             bindings = <&tog 4>;
             key-positions = <17 44>;
-            layers = <0 1 2 4 5 5 6>;
+            layers = <0 1 2 4 6 3>;
         };
 
         SymLock {
             bindings = <&tog 5>;
             key-positions = <17 42>;
-            layers = <0 1 2 4 5 5 6>;
+            layers = <0 1 2 4 6 3>;
         };
 
         RGBLock {
             bindings = <&tog 6>;
             key-positions = <47 23>;
-            layers = <0 1 2 4 5 5 6>;
+            layers = <0 1 2 4 6 3>;
         };
 
         LDefault {
