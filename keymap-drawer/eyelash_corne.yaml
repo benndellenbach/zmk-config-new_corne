@@ -35,7 +35,7 @@ layers:
   - C
   - V
   - B
-  - {t: SYSTEM, h: toggle}
+  - $$mdi:keyboard-esc$$
   - $$mdi:arrow-down-bold$$
   - N
   - M
@@ -43,11 +43,11 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - $$mdi:keyboard-esc$$
-  - {t: '$$mdi:keyboard-esc$$', h: GAMING}
-  - {t: '$$mdi:keyboard-space$$', h: NUMPAD}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: SYMBOL}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: SYMBOL}
+  - {t: '$$mdi:keyboard-space$$', h: MOUSE}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: NUMPAD}
   - {t: '$$mdi:backspace$$', h: FUN}
-  - {t: '$$mdi:keyboard-return$$', h: MOUSE}
+  - {t: '$$mdi:keyboard-return$$', h: GAMING}
   - {t: GAMING, h: toggle}
   GAMING:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -92,11 +92,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {t: MOUSE, h: toggle}
   MOUSE:
   - PgUp
@@ -142,10 +142,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-scroll-wheel$$
-  - $$mdi:mouse-left-click-outline$$
+  - {t: '$$mdi:mouse-left-click-outline$$', type: held}
   - $$mdi:mouse-right-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: FUN, h: toggle}
   FUN:
   - PG UP
@@ -240,8 +240,8 @@ layers:
   - {t: /, s: '?'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '0', s: )}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: SYMBOL, h: toggle}
@@ -288,9 +288,9 @@ layers:
   - _
   - {t: \, s: '|'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - (
   - )
   - {t: SYSTEM, h: toggle}
@@ -371,17 +371,17 @@ combos:
 - p: [23, 45]
   k: {t: FUN, h: toggle}
   l: [QWERTY, GAMING, MOUSE, NUMPAD, SYMBOL, SYMBOL, SYSTEM]
-- p: [42, 17]
-  k: {t: GAMING, h: toggle}
-  l: [QWERTY, GAMING, MOUSE, NUMPAD, SYMBOL, SYMBOL, SYSTEM]
-- p: [23, 46]
+- p: [17, 43]
   k: {t: MOUSE, h: toggle}
   l: [QWERTY, GAMING, MOUSE, NUMPAD, SYMBOL, SYMBOL, SYSTEM]
-- p: [17, 44]
-  k: {t: SYMBOL, h: toggle}
+- p: [23, 46]
+  k: {t: GAMING, h: toggle}
   l: [QWERTY, GAMING, MOUSE, NUMPAD, SYMBOL, SYMBOL, SYSTEM]
-- p: [17, 43]
+- p: [17, 44]
   k: {t: NUMPAD, h: toggle}
+  l: [QWERTY, GAMING, MOUSE, NUMPAD, SYMBOL, SYMBOL, SYSTEM]
+- p: [17, 42]
+  k: {t: SYMBOL, h: toggle}
   l: [QWERTY, GAMING, MOUSE, NUMPAD, SYMBOL, SYMBOL, SYSTEM]
 - p: [47, 23]
   k: {t: SYSTEM, h: toggle}
