@@ -382,7 +382,7 @@ combos:
   l: [QWERTY, GAMING, MOUSE, NUMPAD, SYSTEM, FUN]
 - p: [17, 42]
   k: {t: SYMBOL, h: toggle}
-  l: [QWERTY, GAMING, MOUSE, NUMPAD, SYSTEM, FUN]
+  l: [QWERTY, GAMING, MOUSE, NUMPAD, SYSTEM, FUN, SYMBOL]
 - p: [47, 23]
   k: {t: SYSTEM, h: toggle}
   l: [QWERTY, GAMING, MOUSE, NUMPAD, SYSTEM, FUN]
