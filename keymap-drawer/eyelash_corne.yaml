@@ -48,7 +48,7 @@ layers:
   - {t: '$$mdi:backspace-reverse-outline$$', h: NUMPAD}
   - {t: '$$mdi:backspace$$', h: FUN}
   - {t: '$$mdi:keyboard-return$$', h: GAMING}
-  - $$mdi:apple-keyboard-shift$$
+  - '&td0'
   GAMING:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
