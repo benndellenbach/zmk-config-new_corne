@@ -472,8 +472,8 @@ rect.held, rect.combo.held {
 <g transform="translate(378, 153)" class="key keypos-34">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<a href="#RGB">
-<text x="0" y="-4" class="key tap layer-activator">RGB</text>
+<a href="#SYSTEM">
+<text x="0" y="-4" class="key tap layer-activator">SYSTEM</text>
 </a><text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(546, 153)" class="key keypos-35">
@@ -518,8 +518,8 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:keyboard-esc"/>
-<a href="#MEDIA">
-<text x="0" y="24" class="key hold layer-activator">MEDIA</text>
+<a href="#GAMING">
+<text x="0" y="24" class="key hold layer-activator">GAMING</text>
 </a></g>
 <g transform="translate(285, 209) rotate(12.0)" class="key keypos-43">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -552,8 +552,8 @@ rect.held, rect.combo.held {
 <g transform="translate(756, 203)" class="key keypos-47">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<a href="#MEDIA">
-<text x="0" y="-4" class="key tap layer-activator">MEDIA</text>
+<a href="#GAMING">
+<text x="0" y="-4" class="key tap layer-activator">GAMING</text>
 </a><text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g class="combo combopos-0">
@@ -600,24 +600,24 @@ rect.held, rect.combo.held {
 <path d="M680,158 l37,-52" class="combo"/>
 <path d="M680,158 l-37,52" class="combo"/>
 <rect rx="6" ry="6" x="666" y="145" width="28" height="26" class="combo"/>
-<a href="#MOUSE">
-<text x="680" y="158" class="combo tap layer-activator">MOUSE</text>
+<a href="#FUN">
+<text x="680" y="158" class="combo tap layer-activator">FUN</text>
 </a><text x="680" y="169" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-9">
 <path d="M238,147 l-9,38" class="combo"/>
 <path d="M238,147 l9,-38" class="combo"/>
 <rect rx="6" ry="6" x="224" y="134" width="28" height="26" class="combo"/>
-<a href="#MEDIA">
-<text x="238" y="147" class="combo tap layer-activator">MEDIA</text>
+<a href="#GAMING">
+<text x="238" y="147" class="combo tap layer-activator">GAMING</text>
 </a><text x="238" y="158" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-10">
 <path d="M711,150 l12,-41" class="combo"/>
 <path d="M711,150 l-12,41" class="combo"/>
 <rect rx="6" ry="6" x="697" y="137" width="28" height="26" class="combo"/>
-<a href="#FUN">
-<text x="711" y="150" class="combo tap layer-activator">FUN</text>
+<a href="#MOUSE">
+<text x="711" y="150" class="combo tap layer-activator">MOUSE</text>
 </a><text x="711" y="161" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-11">
@@ -640,14 +640,14 @@ rect.held, rect.combo.held {
 <path d="M742,147 l9,38" class="combo"/>
 <path d="M742,147 l-9,-38" class="combo"/>
 <rect rx="6" ry="6" x="728" y="134" width="28" height="26" class="combo"/>
-<a href="#RGB">
-<text x="742" y="147" class="combo tap layer-activator">RGB</text>
+<a href="#SYSTEM">
+<text x="742" y="147" class="combo tap layer-activator">SYSTEM</text>
 </a><text x="742" y="158" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
-<g transform="translate(40, 318)" class="layer-MEDIA">
-<text x="0" y="28" class="label" id="MEDIA">MEDIA:</text>
+<g transform="translate(40, 318)" class="layer-GAMING">
+<text x="0" y="28" class="label" id="GAMING">GAMING:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
@@ -930,24 +930,24 @@ rect.held, rect.combo.held {
 <path d="M680,158 l37,-52" class="combo"/>
 <path d="M680,158 l-37,52" class="combo"/>
 <rect rx="6" ry="6" x="666" y="145" width="28" height="26" class="combo"/>
-<a href="#MOUSE">
-<text x="680" y="158" class="combo tap layer-activator">MOUSE</text>
+<a href="#FUN">
+<text x="680" y="158" class="combo tap layer-activator">FUN</text>
 </a><text x="680" y="169" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-7">
 <path d="M238,147 l-9,38" class="combo"/>
 <path d="M238,147 l9,-38" class="combo"/>
 <rect rx="6" ry="6" x="224" y="134" width="28" height="26" class="combo"/>
-<a href="#MEDIA">
-<text x="238" y="147" class="combo tap layer-activator">MEDIA</text>
+<a href="#GAMING">
+<text x="238" y="147" class="combo tap layer-activator">GAMING</text>
 </a><text x="238" y="158" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-8">
 <path d="M711,150 l12,-41" class="combo"/>
 <path d="M711,150 l-12,41" class="combo"/>
 <rect rx="6" ry="6" x="697" y="137" width="28" height="26" class="combo"/>
-<a href="#FUN">
-<text x="711" y="150" class="combo tap layer-activator">FUN</text>
+<a href="#MOUSE">
+<text x="711" y="150" class="combo tap layer-activator">MOUSE</text>
 </a><text x="711" y="161" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-9">
@@ -970,8 +970,8 @@ rect.held, rect.combo.held {
 <path d="M742,147 l9,38" class="combo"/>
 <path d="M742,147 l-9,-38" class="combo"/>
 <rect rx="6" ry="6" x="728" y="134" width="28" height="26" class="combo"/>
-<a href="#RGB">
-<text x="742" y="147" class="combo tap layer-activator">RGB</text>
+<a href="#SYSTEM">
+<text x="742" y="147" class="combo tap layer-activator">SYSTEM</text>
 </a><text x="742" y="158" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-12">
@@ -1270,24 +1270,24 @@ rect.held, rect.combo.held {
 <path d="M680,158 l37,-52" class="combo"/>
 <path d="M680,158 l-37,52" class="combo"/>
 <rect rx="6" ry="6" x="666" y="145" width="28" height="26" class="combo"/>
-<a href="#MOUSE">
-<text x="680" y="158" class="combo tap layer-activator">MOUSE</text>
+<a href="#FUN">
+<text x="680" y="158" class="combo tap layer-activator">FUN</text>
 </a><text x="680" y="169" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-5">
 <path d="M238,147 l-9,38" class="combo"/>
 <path d="M238,147 l9,-38" class="combo"/>
 <rect rx="6" ry="6" x="224" y="134" width="28" height="26" class="combo"/>
-<a href="#MEDIA">
-<text x="238" y="147" class="combo tap layer-activator">MEDIA</text>
+<a href="#GAMING">
+<text x="238" y="147" class="combo tap layer-activator">GAMING</text>
 </a><text x="238" y="158" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-6">
 <path d="M711,150 l12,-41" class="combo"/>
 <path d="M711,150 l-12,41" class="combo"/>
 <rect rx="6" ry="6" x="697" y="137" width="28" height="26" class="combo"/>
-<a href="#FUN">
-<text x="711" y="150" class="combo tap layer-activator">FUN</text>
+<a href="#MOUSE">
+<text x="711" y="150" class="combo tap layer-activator">MOUSE</text>
 </a><text x="711" y="161" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-7">
@@ -1310,8 +1310,8 @@ rect.held, rect.combo.held {
 <path d="M742,147 l9,38" class="combo"/>
 <path d="M742,147 l-9,-38" class="combo"/>
 <rect rx="6" ry="6" x="728" y="134" width="28" height="26" class="combo"/>
-<a href="#RGB">
-<text x="742" y="147" class="combo tap layer-activator">RGB</text>
+<a href="#SYSTEM">
+<text x="742" y="147" class="combo tap layer-activator">SYSTEM</text>
 </a><text x="742" y="158" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-10">
@@ -1891,24 +1891,24 @@ rect.held, rect.combo.held {
 <path d="M680,158 l37,-52" class="combo"/>
 <path d="M680,158 l-37,52" class="combo"/>
 <rect rx="6" ry="6" x="666" y="145" width="28" height="26" class="combo"/>
-<a href="#MOUSE">
-<text x="680" y="158" class="combo tap layer-activator">MOUSE</text>
+<a href="#FUN">
+<text x="680" y="158" class="combo tap layer-activator">FUN</text>
 </a><text x="680" y="169" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-5">
 <path d="M238,147 l-9,38" class="combo"/>
 <path d="M238,147 l9,-38" class="combo"/>
 <rect rx="6" ry="6" x="224" y="134" width="28" height="26" class="combo"/>
-<a href="#MEDIA">
-<text x="238" y="147" class="combo tap layer-activator">MEDIA</text>
+<a href="#GAMING">
+<text x="238" y="147" class="combo tap layer-activator">GAMING</text>
 </a><text x="238" y="158" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-6">
 <path d="M711,150 l12,-41" class="combo"/>
 <path d="M711,150 l-12,41" class="combo"/>
 <rect rx="6" ry="6" x="697" y="137" width="28" height="26" class="combo"/>
-<a href="#FUN">
-<text x="711" y="150" class="combo tap layer-activator">FUN</text>
+<a href="#MOUSE">
+<text x="711" y="150" class="combo tap layer-activator">MOUSE</text>
 </a><text x="711" y="161" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-7">
@@ -1931,8 +1931,8 @@ rect.held, rect.combo.held {
 <path d="M742,147 l9,38" class="combo"/>
 <path d="M742,147 l-9,-38" class="combo"/>
 <rect rx="6" ry="6" x="728" y="134" width="28" height="26" class="combo"/>
-<a href="#RGB">
-<text x="742" y="147" class="combo tap layer-activator">RGB</text>
+<a href="#SYSTEM">
+<text x="742" y="147" class="combo tap layer-activator">SYSTEM</text>
 </a><text x="742" y="158" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-10">
@@ -2192,8 +2192,8 @@ rect.held, rect.combo.held {
 <g transform="translate(756, 203)" class="key keypos-47">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<a href="#RGB">
-<text x="0" y="-4" class="key tap layer-activator">RGB</text>
+<a href="#SYSTEM">
+<text x="0" y="-4" class="key tap layer-activator">SYSTEM</text>
 </a><text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g class="combo combopos-0">
@@ -2220,48 +2220,48 @@ rect.held, rect.combo.held {
 <path d="M680,158 l37,-52" class="combo"/>
 <path d="M680,158 l-37,52" class="combo"/>
 <rect rx="6" ry="6" x="666" y="145" width="28" height="26" class="combo"/>
-<a href="#MOUSE">
-<text x="680" y="158" class="combo tap layer-activator">MOUSE</text>
+<a href="#FUN">
+<text x="680" y="158" class="combo tap layer-activator">FUN</text>
 </a><text x="680" y="169" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-5">
 <path d="M680,158 l37,-52" class="combo"/>
 <path d="M680,158 l-37,52" class="combo"/>
 <rect rx="6" ry="6" x="666" y="145" width="28" height="26" class="combo"/>
-<a href="#MOUSE">
-<text x="680" y="158" class="combo tap layer-activator">MOUSE</text>
+<a href="#FUN">
+<text x="680" y="158" class="combo tap layer-activator">FUN</text>
 </a><text x="680" y="169" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-6">
 <path d="M238,147 l-9,38" class="combo"/>
 <path d="M238,147 l9,-38" class="combo"/>
 <rect rx="6" ry="6" x="224" y="134" width="28" height="26" class="combo"/>
-<a href="#MEDIA">
-<text x="238" y="147" class="combo tap layer-activator">MEDIA</text>
+<a href="#GAMING">
+<text x="238" y="147" class="combo tap layer-activator">GAMING</text>
 </a><text x="238" y="158" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-7">
 <path d="M238,147 l-9,38" class="combo"/>
 <path d="M238,147 l9,-38" class="combo"/>
 <rect rx="6" ry="6" x="224" y="134" width="28" height="26" class="combo"/>
-<a href="#MEDIA">
-<text x="238" y="147" class="combo tap layer-activator">MEDIA</text>
+<a href="#GAMING">
+<text x="238" y="147" class="combo tap layer-activator">GAMING</text>
 </a><text x="238" y="158" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-8">
 <path d="M711,150 l12,-41" class="combo"/>
 <path d="M711,150 l-12,41" class="combo"/>
 <rect rx="6" ry="6" x="697" y="137" width="28" height="26" class="combo"/>
-<a href="#FUN">
-<text x="711" y="150" class="combo tap layer-activator">FUN</text>
+<a href="#MOUSE">
+<text x="711" y="150" class="combo tap layer-activator">MOUSE</text>
 </a><text x="711" y="161" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-9">
 <path d="M711,150 l12,-41" class="combo"/>
 <path d="M711,150 l-12,41" class="combo"/>
 <rect rx="6" ry="6" x="697" y="137" width="28" height="26" class="combo"/>
-<a href="#FUN">
-<text x="711" y="150" class="combo tap layer-activator">FUN</text>
+<a href="#MOUSE">
+<text x="711" y="150" class="combo tap layer-activator">MOUSE</text>
 </a><text x="711" y="161" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-10">
@@ -2300,16 +2300,16 @@ rect.held, rect.combo.held {
 <path d="M742,147 l9,38" class="combo"/>
 <path d="M742,147 l-9,-38" class="combo"/>
 <rect rx="6" ry="6" x="728" y="134" width="28" height="26" class="combo"/>
-<a href="#RGB">
-<text x="742" y="147" class="combo tap layer-activator">RGB</text>
+<a href="#SYSTEM">
+<text x="742" y="147" class="combo tap layer-activator">SYSTEM</text>
 </a><text x="742" y="158" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-15">
 <path d="M742,147 l9,38" class="combo"/>
 <path d="M742,147 l-9,-38" class="combo"/>
 <rect rx="6" ry="6" x="728" y="134" width="28" height="26" class="combo"/>
-<a href="#RGB">
-<text x="742" y="147" class="combo tap layer-activator">RGB</text>
+<a href="#SYSTEM">
+<text x="742" y="147" class="combo tap layer-activator">SYSTEM</text>
 </a><text x="742" y="158" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-16">
@@ -2322,8 +2322,8 @@ rect.held, rect.combo.held {
 </g>
 </g>
 </g>
-<g transform="translate(40, 1911)" class="layer-RGB">
-<text x="0" y="28" class="label" id="RGB">RGB:</text>
+<g transform="translate(40, 1911)" class="layer-SYSTEM">
+<text x="0" y="28" class="label" id="SYSTEM">SYSTEM:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
@@ -2595,24 +2595,24 @@ rect.held, rect.combo.held {
 <path d="M680,158 l37,-52" class="combo"/>
 <path d="M680,158 l-37,52" class="combo"/>
 <rect rx="6" ry="6" x="666" y="145" width="28" height="26" class="combo"/>
-<a href="#MOUSE">
-<text x="680" y="158" class="combo tap layer-activator">MOUSE</text>
+<a href="#FUN">
+<text x="680" y="158" class="combo tap layer-activator">FUN</text>
 </a><text x="680" y="169" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-1">
 <path d="M238,147 l-9,38" class="combo"/>
 <path d="M238,147 l9,-38" class="combo"/>
 <rect rx="6" ry="6" x="224" y="134" width="28" height="26" class="combo"/>
-<a href="#MEDIA">
-<text x="238" y="147" class="combo tap layer-activator">MEDIA</text>
+<a href="#GAMING">
+<text x="238" y="147" class="combo tap layer-activator">GAMING</text>
 </a><text x="238" y="158" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-2">
 <path d="M711,150 l12,-41" class="combo"/>
 <path d="M711,150 l-12,41" class="combo"/>
 <rect rx="6" ry="6" x="697" y="137" width="28" height="26" class="combo"/>
-<a href="#FUN">
-<text x="711" y="150" class="combo tap layer-activator">FUN</text>
+<a href="#MOUSE">
+<text x="711" y="150" class="combo tap layer-activator">MOUSE</text>
 </a><text x="711" y="161" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-3">
@@ -2635,8 +2635,8 @@ rect.held, rect.combo.held {
 <path d="M742,147 l9,38" class="combo"/>
 <path d="M742,147 l-9,-38" class="combo"/>
 <rect rx="6" ry="6" x="728" y="134" width="28" height="26" class="combo"/>
-<a href="#RGB">
-<text x="742" y="147" class="combo tap layer-activator">RGB</text>
+<a href="#SYSTEM">
+<text x="742" y="147" class="combo tap layer-activator">SYSTEM</text>
 </a><text x="742" y="158" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-6">

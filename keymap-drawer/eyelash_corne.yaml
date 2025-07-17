@@ -35,7 +35,7 @@ layers:
   - C
   - V
   - B
-  - {t: RGB, h: toggle}
+  - {t: SYSTEM, h: toggle}
   - $$mdi:arrow-down-bold$$
   - N
   - M
@@ -43,13 +43,13 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - $$mdi:keyboard-esc$$
-  - {t: '$$mdi:keyboard-esc$$', h: MEDIA}
+  - {t: '$$mdi:keyboard-esc$$', h: GAMING}
   - {t: '$$mdi:keyboard-space$$', h: NUMPAD}
   - {t: '$$mdi:backspace-reverse-outline$$', h: SYMBOL}
   - {t: '$$mdi:backspace$$', h: FUN}
   - {t: '$$mdi:keyboard-return$$', h: MOUSE}
-  - {t: MEDIA, h: toggle}
-  MEDIA:
+  - {t: GAMING, h: toggle}
+  GAMING:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - F
@@ -293,8 +293,8 @@ layers:
   - {type: held}
   - (
   - )
-  - {t: RGB, h: toggle}
-  RGB:
+  - {t: SYSTEM, h: toggle}
+  SYSTEM:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -346,10 +346,10 @@ layers:
 combos:
 - p: [17, 16]
   k: $$mdi:apple-keyboard-option$$
-  l: [QWERTY, MEDIA, MOUSE, NUMPAD, SYMBOL]
+  l: [QWERTY, GAMING, MOUSE, NUMPAD, SYMBOL]
 - p: [16, 15]
   k: $$mdi:apple-keyboard-shift$$
-  l: [QWERTY, SYMBOL, MEDIA, NUMPAD, MOUSE]
+  l: [QWERTY, SYMBOL, GAMING, NUMPAD, MOUSE]
 - p: [15, 14]
   k: $$mdi:apple-keyboard-control$$
   l: [QWERTY, MOUSE, NUMPAD, SYMBOL]
@@ -358,37 +358,37 @@ combos:
   l: [QWERTY, MOUSE, NUMPAD, SYMBOL]
 - p: [26, 23]
   k: RIGHT WIN
-  l: [QWERTY, MEDIA, FUN]
+  l: [QWERTY, GAMING, FUN]
 - p: [25, 26]
   k: $$mdi:apple-keyboard-control$$
-  l: [QWERTY, MEDIA, FUN]
+  l: [QWERTY, GAMING, FUN]
 - p: [24, 25]
   k: $$mdi:apple-keyboard-shift$$
-  l: [QWERTY, MEDIA, FUN]
+  l: [QWERTY, GAMING, FUN]
 - p: [23, 24]
   k: $$mdi:apple-keyboard-option$$
-  l: [QWERTY, MEDIA, FUN]
+  l: [QWERTY, GAMING, FUN]
 - p: [23, 45]
-  k: {t: MOUSE, h: toggle}
-  l: [QWERTY, MEDIA, MOUSE, NUMPAD, SYMBOL, SYMBOL, RGB]
-- p: [42, 17]
-  k: {t: MEDIA, h: toggle}
-  l: [QWERTY, MEDIA, MOUSE, NUMPAD, SYMBOL, SYMBOL, RGB]
-- p: [23, 46]
   k: {t: FUN, h: toggle}
-  l: [QWERTY, MEDIA, MOUSE, NUMPAD, SYMBOL, SYMBOL, RGB]
+  l: [QWERTY, GAMING, MOUSE, NUMPAD, SYMBOL, SYMBOL, SYSTEM]
+- p: [42, 17]
+  k: {t: GAMING, h: toggle}
+  l: [QWERTY, GAMING, MOUSE, NUMPAD, SYMBOL, SYMBOL, SYSTEM]
+- p: [23, 46]
+  k: {t: MOUSE, h: toggle}
+  l: [QWERTY, GAMING, MOUSE, NUMPAD, SYMBOL, SYMBOL, SYSTEM]
 - p: [17, 44]
   k: {t: SYMBOL, h: toggle}
-  l: [QWERTY, MEDIA, MOUSE, NUMPAD, SYMBOL, SYMBOL, RGB]
+  l: [QWERTY, GAMING, MOUSE, NUMPAD, SYMBOL, SYMBOL, SYSTEM]
 - p: [17, 43]
   k: {t: NUMPAD, h: toggle}
-  l: [QWERTY, MEDIA, MOUSE, NUMPAD, SYMBOL, SYMBOL, RGB]
+  l: [QWERTY, GAMING, MOUSE, NUMPAD, SYMBOL, SYMBOL, SYSTEM]
 - p: [47, 23]
-  k: {t: RGB, h: toggle}
-  l: [QWERTY, MEDIA, MOUSE, NUMPAD, SYMBOL, SYMBOL, RGB]
+  k: {t: SYSTEM, h: toggle}
+  l: [QWERTY, GAMING, MOUSE, NUMPAD, SYMBOL, SYMBOL, SYSTEM]
 - p: [13, 17]
   k: {t: QWERTY, h: toggle}
-  l: [NUMPAD, RGB, SYMBOL]
+  l: [NUMPAD, SYSTEM, SYMBOL]
 - p: [23, 27]
   k: {t: QWERTY, h: toggle}
-  l: [MEDIA, MOUSE, FUN]
+  l: [GAMING, MOUSE, FUN]
