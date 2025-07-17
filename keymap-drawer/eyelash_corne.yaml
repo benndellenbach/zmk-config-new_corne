@@ -35,7 +35,7 @@ layers:
   - C
   - V
   - B
-  - $$mdi:keyboard-esc$$
+  - {t: GAMING, h: toggle}
   - $$mdi:arrow-down-bold$$
   - N
   - M
@@ -43,12 +43,12 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - $$mdi:keyboard-esc$$
-  - {t: '$$mdi:apple-keyboard-shift$$', h: SYMBOL}
+  - {t: '$$mdi:keyboard-esc$$', h: SYMBOL}
   - {t: '$$mdi:keyboard-space$$', h: MOUSE}
   - {t: '$$mdi:backspace-reverse-outline$$', h: NUMPAD}
   - {t: '$$mdi:backspace$$', h: FUN}
   - {t: '$$mdi:keyboard-return$$', h: GAMING}
-  - {t: GAMING, h: toggle}
+  - $$mdi:apple-keyboard-shift$$
   GAMING:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -84,7 +84,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - MUTE
+  - {t: MOUSE, h: toggle}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -97,7 +97,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {t: MOUSE, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
   MOUSE:
   - PgUp
   - END
@@ -133,7 +133,7 @@ layers:
   - Ctl+C
   - Ctl+V
   - Ctl+Y
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: FUN, h: toggle}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - '&mkp MB5'
   - {t: '$$mdi:transfer$$', type: trans}
@@ -146,7 +146,7 @@ layers:
   - $$mdi:mouse-right-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: FUN, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
   FUN:
   - PG UP
   - {t: '$$mdi:transfer$$', type: trans}
@@ -182,7 +182,7 @@ layers:
   - F1
   - F2
   - F3
-  - F5
+  - {t: NUMPAD, h: toggle}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -195,7 +195,7 @@ layers:
   - $$mdi:keyboard-tab$$
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: NUMPAD, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
   NUMPAD:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -231,7 +231,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - MUTE
+  - {t: SYMBOL, h: toggle}
   - $$mdi:pan-down$$
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -244,7 +244,7 @@ layers:
   - {type: held}
   - {t: '0', s: )}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: SYMBOL, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
   SYMBOL:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -280,7 +280,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: MOUSE, h: toggle}
+  - {t: SYSTEM, h: toggle}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - '#'
   - '@'
@@ -293,7 +293,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - (
   - )
-  - {t: SYSTEM, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
   SYSTEM:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -317,7 +317,7 @@ layers:
   - RGB HUD
   - RGB EFF
   - RGB HUI
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
   - RGB TOG
   - RGB BRI
   - RGB SPI
@@ -329,7 +329,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
+  - {t: QWERTY, h: toggle}
   - RGB SAD
   - {t: '$$mdi:transfer$$', type: trans}
   - EP TOG
@@ -342,7 +342,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: QWERTY, h: toggle}
+  - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [17, 16]
   k: $$mdi:apple-keyboard-option$$
