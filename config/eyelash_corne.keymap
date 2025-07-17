@@ -172,7 +172,7 @@
         SymLock {
             bindings = <&tog 5>;
             key-positions = <17 42>;
-            layers = <0 1 2 4 6 3>;
+            layers = <0 1 2 4 6 3 5>;
         };
 
         RGBLock {
