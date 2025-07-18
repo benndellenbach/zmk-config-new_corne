@@ -272,20 +272,20 @@
         BASE {
             display-name = "QWERTY";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E      &kp R        &kp T                                  &kp UP               &kp Y            &kp U        &kp I      &kp O    &kp P     &kp DELETE
-&td0       &kp A  &kp S  &kp D      &kp F        &kp G                        &kp LEFT  &tog 1    &kp RIGHT  &kp H            &kp J        &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LCTRL  &kp Z  &kp X  &kp C      &kp V        &kp B        &SYSTOG 6 11              &kp DOWN             &kp N            &kp M        &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                         &lt 5 TAB  &lt 2 SPACE  &lt 4 ENTER                                                 &lt 3 BACKSPACE  &lt 1 ENTER  &td0
+&kp TAB    &kp Q  &kp W  &kp E      &kp R        &kp T                                  &kp UP               &kp Y  &kp U        &kp I            &kp O    &kp P     &kp DELETE
+&td0       &kp A  &kp S  &kp D      &kp F        &kp G                        &kp LEFT  &tog 1    &kp RIGHT  &kp H  &kp J        &kp K            &kp L    &kp SEMI  &kp SQT
+&kp LCTRL  &kp Z  &kp X  &kp C      &kp V        &kp B        &SYSTOG 6 11              &kp DOWN             &kp N  &kp M        &kp COMMA        &kp DOT  &kp FSLH  &kp ESC
+                         &lt 5 TAB  &lt 2 SPACE  &lt 4 ENTER                                                 &td0   &lt 3 ENTER  &lt 6 BACKSPACE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOLUME_DOWN>;
         };
 
-        NAVIGATION {
+        Gamepad {
             display-name = "GAMING";
             bindings = <
-&trans  &trans  &kp F   &trans   &trans     &trans                             &mmv MOVE_UP                     &mkp LCLK       &mkp RCLK       &mkp MB3      &trans    &trans     &trans
-&trans  &kp A   &kp S   &kp W    &kp D      &trans             &mmv MOVE_LEFT  &trans          &mmv MOVE_RIGHT  &msc SCRL_UP    &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN  &kp RIGHT  &trans
+&trans  &trans  &kp E   &kp W    &trans     &trans                             &mmv MOVE_UP                     &mkp LCLK       &mkp RCLK       &mkp MB3      &trans    &trans     &trans
+&trans  &kp F   &kp A   &kp S    &kp D      &trans             &mmv MOVE_LEFT  &trans          &mmv MOVE_RIGHT  &msc SCRL_UP    &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN  &kp RIGHT  &trans
 &trans  &trans  &trans  &trans   &trans     &trans   &trans                    &mmv MOVE_DOWN                   &msc SCRL_DOWN  &trans          &trans        &trans    &trans     &trans
                         &kp TAB  &kp SPACE  &kp RET                                                             &trans          &trans          &trans
             >;
@@ -340,7 +340,7 @@
         };
 
         SYSTEM {
-            display-name = "BLUETOOTH";
+            display-name = "BT";
             bindings = <
 &trans  &trans      &trans        &trans           &rgb_ug RGB_EFF   &rgb_ug RGB_TOG                               &rgb_ug RGB_SAI                   &trans        &trans             &trans           &trans           &trans  &to 0
 &trans  &kp C_PREV  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_NEXT        &ext_power EP_TOG            &rgb_ug RGB_HUD  &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &out OUT_TOG  &rgb_ug RGB_TOG    &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &trans  &trans
