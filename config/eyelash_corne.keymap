@@ -237,14 +237,14 @@
             layers = <1 2 3 0 4 5>;
         };
 
-        LEnter {
-            bindings = <&kp RETURN>;
+        LRPT {
+            bindings = <&key_repeat>;
             key-positions = <31 32>;
             layers = <1 3 4 5 2 0>;
         };
 
-        REnter {
-            bindings = <&kp RETURN>;
+        RRPT {
+            bindings = <&key_repeat>;
             key-positions = <37 38>;
             layers = <1 3 4 5 2 0>;
         };
