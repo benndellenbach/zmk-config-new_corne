@@ -35,7 +35,7 @@ layers:
   - C
   - V
   - B
-  - {t: TAB, h: BLUETOOTH}
+  - {t: TAB, h: BT}
   - $$mdi:arrow-down-bold$$
   - N
   - M
@@ -46,14 +46,14 @@ layers:
   - {t: '$$mdi:keyboard-tab$$', h: SYMBOL}
   - {t: '$$mdi:keyboard-space$$', h: MOUSE}
   - {t: '$$mdi:keyboard-return$$', h: NUMPAD}
-  - {t: '$$mdi:backspace$$', h: FUN}
-  - {t: '$$mdi:keyboard-return$$', h: GAMING}
   - '&td0'
+  - {t: '$$mdi:keyboard-return$$', h: FUN}
+  - {t: '$$mdi:backspace$$', h: BT}
   GAMING:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - F
-  - {t: '$$mdi:transfer$$', type: trans}
+  - E
+  - W
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
@@ -64,9 +64,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - F
   - A
   - S
-  - W
   - D
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
@@ -96,7 +96,7 @@ layers:
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   MOUSE:
   - PgUp
@@ -193,8 +193,8 @@ layers:
   - APPLICATION
   - $$mdi:keyboard-space$$
   - $$mdi:keyboard-tab$$
-  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   NUMPAD:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -294,7 +294,7 @@ layers:
   - (
   - )
   - )
-  BLUETOOTH:
+  BT:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -342,7 +342,7 @@ layers:
   - STOP
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   RGB BRI:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -525,7 +525,7 @@ layers:
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
-  - {t: QWERTY, h: BLUETOOTH}
+  - {t: QWERTY, h: BT}
   - RGB SAD
   - {t: '$$mdi:transfer$$', type: trans}
   - EP TOG
@@ -574,7 +574,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: QWERTY, h: BLUETOOTH}
+  - {t: QWERTY, h: BT}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -629,7 +629,7 @@ combos:
   k: {t: SYMBOL, h: toggle}
   l: [MOUSE, NUMPAD, FUN, SYMBOL, QWERTY]
 - p: [23, 47]
-  k: {t: BLUETOOTH, h: toggle}
+  k: {t: BT, h: toggle}
   l: [MOUSE, NUMPAD, FUN, QWERTY, SYMBOL]
 - p: [13, 17]
   k: {t: QWERTY, h: toggle}
