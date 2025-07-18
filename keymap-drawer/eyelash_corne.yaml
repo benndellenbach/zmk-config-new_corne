@@ -13,7 +13,7 @@ layers:
   - I
   - O
   - P
-  - {t: BLUETOOTH, h: toggle}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - '&td0'
   - A
   - S
@@ -35,7 +35,7 @@ layers:
   - C
   - V
   - B
-  - {t: TAB, h: toggle}
+  - {t: TAB, h: BLUETOOTH}
   - $$mdi:arrow-down-bold$$
   - N
   - M
@@ -84,7 +84,7 @@ layers:
   - C
   - V
   - B
-  - {t: QWERTY, h: toggle}
+  - {t: QWERTY, h: BLUETOOTH}
   - $$mdi:arrow-down-bold$$
   - N
   - M
@@ -613,13 +613,13 @@ combos:
 - p: [23, 24]
   k: $$mdi:apple-keyboard-option$$
   l: [TAB, GAMING, FUN, QWERTY, MOUSE, NUMPAD, SYMBOL]
-- p: [23, 47]
+- p: [23, 46]
   k: {t: FUN, h: toggle}
-  l: [TAB, MOUSE, NUMPAD, FUN, SYMBOL]
+  l: [TAB, MOUSE, NUMPAD, FUN, SYMBOL, GAMING]
 - p: [17, 43]
   k: {t: MOUSE, h: toggle}
   l: [TAB, MOUSE, NUMPAD, FUN, SYMBOL]
-- p: [23, 46]
+- p: [23, 47]
   k: {t: GAMING, h: toggle}
   l: [TAB, MOUSE, NUMPAD, FUN, SYMBOL, QWERTY]
 - p: [17, 44]
@@ -627,10 +627,10 @@ combos:
   l: [TAB, GAMING, MOUSE, NUMPAD, FUN]
 - p: [17, 42]
   k: {t: SYMBOL, h: toggle}
-  l: [TAB, GAMING, MOUSE, NUMPAD, FUN, SYMBOL]
+  l: [TAB, MOUSE, NUMPAD, FUN, SYMBOL, QWERTY]
 - p: [23, 45]
   k: {t: QWERTY, h: toggle}
-  l: [TAB, GAMING, MOUSE, NUMPAD, FUN]
+  l: [TAB, MOUSE, NUMPAD, FUN, QWERTY, SYMBOL]
 - p: [13, 17]
   k: {t: QWERTY, h: toggle}
   l: [QWERTY, TAB, GAMING, MOUSE, FUN, NUMPAD, SYMBOL]
