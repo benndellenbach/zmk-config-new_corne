@@ -591,37 +591,37 @@ layers:
 combos:
 - p: [17, 16]
   k: $$mdi:apple-keyboard-option$$
-  l: [TAB, GAMING, MOUSE, NUMPAD, SYMBOL]
+  l: [TAB, GAMING, MOUSE, NUMPAD, SYMBOL, QWERTY, FUN]
 - p: [16, 15]
   k: $$mdi:apple-keyboard-shift$$
-  l: [TAB, SYMBOL, GAMING, NUMPAD, MOUSE]
+  l: [TAB, SYMBOL, GAMING, NUMPAD, MOUSE, QWERTY, FUN]
 - p: [15, 14]
   k: $$mdi:apple-keyboard-control$$
-  l: [TAB, MOUSE, NUMPAD, SYMBOL]
+  l: [TAB, MOUSE, NUMPAD, SYMBOL, QWERTY, GAMING, FUN]
 - p: [14, 17]
   k: LEFT WIN
-  l: [TAB, MOUSE, NUMPAD, SYMBOL]
+  l: [TAB, MOUSE, NUMPAD, SYMBOL, QWERTY, GAMING, FUN]
 - p: [26, 23]
   k: RIGHT WIN
-  l: [TAB, GAMING, FUN]
+  l: [TAB, GAMING, FUN, QWERTY, MOUSE, NUMPAD, SYMBOL]
 - p: [25, 26]
   k: $$mdi:apple-keyboard-control$$
-  l: [TAB, GAMING, FUN]
+  l: [TAB, GAMING, FUN, QWERTY, MOUSE, NUMPAD, SYMBOL]
 - p: [24, 25]
   k: $$mdi:apple-keyboard-shift$$
-  l: [TAB, GAMING, FUN]
+  l: [TAB, GAMING, FUN, QWERTY, MOUSE, NUMPAD, SYMBOL]
 - p: [23, 24]
   k: $$mdi:apple-keyboard-option$$
-  l: [TAB, GAMING, FUN]
+  l: [TAB, GAMING, FUN, QWERTY, MOUSE, NUMPAD, SYMBOL]
 - p: [23, 47]
   k: {t: FUN, h: toggle}
-  l: [TAB, GAMING, MOUSE, NUMPAD, FUN, SYMBOL]
+  l: [TAB, MOUSE, NUMPAD, FUN, SYMBOL]
 - p: [17, 43]
   k: {t: MOUSE, h: toggle}
-  l: [TAB, GAMING, MOUSE, NUMPAD, FUN, SYMBOL]
+  l: [TAB, MOUSE, NUMPAD, FUN, SYMBOL]
 - p: [23, 46]
   k: {t: GAMING, h: toggle}
-  l: [TAB, GAMING, MOUSE, NUMPAD, FUN, SYMBOL]
+  l: [TAB, MOUSE, NUMPAD, FUN, SYMBOL, QWERTY]
 - p: [17, 44]
   k: {t: NUMPAD, h: toggle}
   l: [TAB, GAMING, MOUSE, NUMPAD, FUN]
@@ -633,13 +633,13 @@ combos:
   l: [TAB, GAMING, MOUSE, NUMPAD, FUN]
 - p: [13, 17]
   k: {t: TAB, h: toggle}
-  l: [NUMPAD, SYMBOL]
+  l: [QWERTY, TAB, GAMING, MOUSE, FUN, NUMPAD, SYMBOL]
 - p: [23, 27]
   k: {t: TAB, h: toggle}
-  l: [GAMING, MOUSE, FUN]
+  l: [GAMING, MOUSE, FUN, QWERTY, TAB, NUMPAD, SYMBOL]
 - p: [31, 32]
   k: RETURN
-  l: [TAB, GAMING, FUN, NUMPAD, SYMBOL, MOUSE]
+  l: [TAB, GAMING, FUN, NUMPAD, SYMBOL, MOUSE, QWERTY]
 - p: [37, 38]
   k: RETURN
-  l: [TAB, GAMING, FUN, NUMPAD, SYMBOL, MOUSE]
+  l: [TAB, GAMING, FUN, NUMPAD, SYMBOL, MOUSE, QWERTY]
