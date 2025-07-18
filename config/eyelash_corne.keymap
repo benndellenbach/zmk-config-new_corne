@@ -103,14 +103,24 @@
             label = "RGBSPD";
         };
 
-        SYSHOLD: SYSHOLD {
+        SYSTOG: SYSTOG {
             compatible = "zmk,behavior-hold-tap";
-            label = "SYSHOLD";
+            label = "SYSTOG";
             bindings = <&to>, <&tog>;
 
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <200>;
+            tapping-term-ms = <500>;
+        };
+
+        SYSTO: SYSTO {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SYSTO";
+            bindings = <&to>, <&to>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <500>;
         };
     };
 
@@ -262,10 +272,10 @@
         BASE {
             display-name = "QWERTY";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E      &kp R        &kp T                                   &kp UP               &kp Y            &kp U        &kp I      &kp O    &kp P     &kp DELETE
-&td0       &kp A  &kp S  &kp D      &kp F        &kp G                         &kp LEFT  &tog 1    &kp RIGHT  &kp H            &kp J        &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LCTRL  &kp Z  &kp X  &kp C      &kp V        &kp B        &SYSHOLD 6 11              &kp DOWN             &kp N            &kp M        &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                         &lt 5 TAB  &lt 2 SPACE  &lt 4 ENTER                                                  &lt 3 BACKSPACE  &lt 1 ENTER  &td0
+&kp TAB    &kp Q  &kp W  &kp E      &kp R        &kp T                                  &kp UP               &kp Y            &kp U        &kp I      &kp O    &kp P     &kp DELETE
+&td0       &kp A  &kp S  &kp D      &kp F        &kp G                        &kp LEFT  &tog 1    &kp RIGHT  &kp H            &kp J        &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LCTRL  &kp Z  &kp X  &kp C      &kp V        &kp B        &SYSTOG 6 11              &kp DOWN             &kp N            &kp M        &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+                         &lt 5 TAB  &lt 2 SPACE  &lt 4 ENTER                                                 &lt 3 BACKSPACE  &lt 1 ENTER  &td0
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOLUME_DOWN>;
@@ -380,10 +390,10 @@
         RGB4 {
             display-name = "RGB SPD";
             bindings = <
-&trans  &trans      &trans        &trans           &rgb_ug RGB_EFF   &rgb_ug RGB_TOG                               &rgb_ug RGB_SAI                   &trans        &trans             &trans           &trans           &trans  &trans
-&trans  &kp C_PREV  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_NEXT        &ext_power EP_TOG            &rgb_ug RGB_HUD  &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &out OUT_TOG  &rgb_ug RGB_TOG    &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &trans  &trans
-&trans  &trans      &bt BT_SEL 2  &bt BT_SEL 1     &bt BT_SEL 0      &out OUT_TOG       &tog 7                     &rgb_ug RGB_SAD                   &trans        &ext_power EP_TOG  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &trans  &trans
-                                  &kp K_MUTE       &kp C_PLAY_PAUSE  &kp K_STOP                                                                      &trans        &trans             &trans
+&trans  &trans      &trans        &trans           &rgb_ug RGB_EFF   &rgb_ug RGB_TOG                                   &rgb_ug RGB_SAI                   &trans        &trans             &trans           &trans           &trans  &trans
+&trans  &kp C_PREV  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_NEXT        &ext_power EP_TOG                &rgb_ug RGB_HUD  &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &out OUT_TOG  &rgb_ug RGB_TOG    &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &trans  &trans
+&trans  &trans      &bt BT_SEL 2  &bt BT_SEL 1     &bt BT_SEL 0      &out OUT_TOG       &SYSTO 6 0                     &rgb_ug RGB_SAD                   &trans        &ext_power EP_TOG  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &trans  &trans
+                                  &kp K_MUTE       &kp C_PLAY_PAUSE  &kp K_STOP                                                                          &trans        &trans             &trans
             >;
 
             sensor-bindings = <&RGBSPD>;
@@ -391,10 +401,10 @@
 
         QTAB {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                                    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                        &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &SYSTO 6 0            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans                                        &trans  &trans  &trans
             >;
 
             label = "TAB";
