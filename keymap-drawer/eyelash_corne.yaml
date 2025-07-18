@@ -629,7 +629,7 @@ combos:
   k: {t: SYMBOL, h: toggle}
   l: [TAB, MOUSE, NUMPAD, FUN, SYMBOL, QWERTY]
 - p: [23, 45]
-  k: {t: QWERTY, h: toggle}
+  k: {t: BLUETOOTH, h: toggle}
   l: [TAB, MOUSE, NUMPAD, FUN, QWERTY, SYMBOL]
 - p: [13, 17]
   k: {t: QWERTY, h: toggle}

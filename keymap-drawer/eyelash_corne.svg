@@ -630,8 +630,8 @@ rect.held, rect.combo.held {
 <path d="M680,158 l37,-52" class="combo"/>
 <path d="M680,158 l-37,52" class="combo"/>
 <rect rx="6" ry="6" x="666" y="145" width="28" height="26" class="combo"/>
-<a href="#QWERTY">
-<text x="680" y="158" class="combo tap layer-activator">QWERTY</text>
+<a href="#BLUETOOTH">
+<text x="680" y="158" class="combo tap layer-activator"><tspan style="font-size: 67%">BLUETOOTH</tspan></text>
 </a><text x="680" y="169" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-11">
@@ -999,8 +999,8 @@ rect.held, rect.combo.held {
 <path d="M680,158 l37,-52" class="combo"/>
 <path d="M680,158 l-37,52" class="combo"/>
 <rect rx="6" ry="6" x="666" y="145" width="28" height="26" class="combo"/>
-<a href="#QWERTY">
-<text x="680" y="158" class="combo tap layer-activator">QWERTY</text>
+<a href="#BLUETOOTH">
+<text x="680" y="158" class="combo tap layer-activator"><tspan style="font-size: 67%">BLUETOOTH</tspan></text>
 </a><text x="680" y="169" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-14">
@@ -1708,8 +1708,8 @@ rect.held, rect.combo.held {
 <path d="M680,158 l37,-52" class="combo"/>
 <path d="M680,158 l-37,52" class="combo"/>
 <rect rx="6" ry="6" x="666" y="145" width="28" height="26" class="combo"/>
-<a href="#QWERTY">
-<text x="680" y="158" class="combo tap layer-activator">QWERTY</text>
+<a href="#BLUETOOTH">
+<text x="680" y="158" class="combo tap layer-activator"><tspan style="font-size: 67%">BLUETOOTH</tspan></text>
 </a><text x="680" y="169" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-14">
@@ -2076,8 +2076,8 @@ rect.held, rect.combo.held {
 <path d="M680,158 l37,-52" class="combo"/>
 <path d="M680,158 l-37,52" class="combo"/>
 <rect rx="6" ry="6" x="666" y="145" width="28" height="26" class="combo"/>
-<a href="#QWERTY">
-<text x="680" y="158" class="combo tap layer-activator">QWERTY</text>
+<a href="#BLUETOOTH">
+<text x="680" y="158" class="combo tap layer-activator"><tspan style="font-size: 67%">BLUETOOTH</tspan></text>
 </a><text x="680" y="169" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-14">
@@ -2449,8 +2449,8 @@ rect.held, rect.combo.held {
 <path d="M680,158 l37,-52" class="combo"/>
 <path d="M680,158 l-37,52" class="combo"/>
 <rect rx="6" ry="6" x="666" y="145" width="28" height="26" class="combo"/>
-<a href="#QWERTY">
-<text x="680" y="158" class="combo tap layer-activator">QWERTY</text>
+<a href="#BLUETOOTH">
+<text x="680" y="158" class="combo tap layer-activator"><tspan style="font-size: 67%">BLUETOOTH</tspan></text>
 </a><text x="680" y="169" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-14">
@@ -2804,8 +2804,8 @@ rect.held, rect.combo.held {
 <path d="M680,158 l37,-52" class="combo"/>
 <path d="M680,158 l-37,52" class="combo"/>
 <rect rx="6" ry="6" x="666" y="145" width="28" height="26" class="combo"/>
-<a href="#QWERTY">
-<text x="680" y="158" class="combo tap layer-activator">QWERTY</text>
+<a href="#BLUETOOTH">
+<text x="680" y="158" class="combo tap layer-activator"><tspan style="font-size: 67%">BLUETOOTH</tspan></text>
 </a><text x="680" y="169" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-13">
