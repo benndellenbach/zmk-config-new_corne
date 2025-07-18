@@ -370,10 +370,10 @@ rect.held, rect.combo.held {
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">P</text>
 </g>
-<g transform="translate(952, 49)" class="key backspace keypos-12">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key backspace side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key backspace"/>
-<use href="#mdi:backspace" xlink:href="#mdi:backspace" x="-9" y="-13" height="18" width="18.0" class="key backspace tap glyph mdi:backspace"/>
+<g transform="translate(952, 49)" class="key keypos-12">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
+<use href="#mdi:backspace-reverse-outline" xlink:href="#mdi:backspace-reverse-outline" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:backspace-reverse-outline"/>
 </g>
 <g transform="translate(28, 105)" class="key keypos-13">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -533,7 +533,7 @@ rect.held, rect.combo.held {
 <g transform="translate(224, 203)" class="key keypos-42">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<use href="#mdi:backspace-reverse-outline" xlink:href="#mdi:backspace-reverse-outline" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:backspace-reverse-outline"/>
+<use href="#mdi:keyboard-tab" xlink:href="#mdi:keyboard-tab" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:keyboard-tab"/>
 <a href="#SYMBOL">
 <text x="0" y="24" class="key hold layer-activator">SYMBOL</text>
 </a></g>
@@ -554,8 +554,10 @@ rect.held, rect.combo.held {
 <g transform="translate(632, 224) rotate(-24.0)" class="key keypos-45">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">&amp;td0</text>
-</g>
+<use href="#mdi:backspace" xlink:href="#mdi:backspace" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:backspace"/>
+<a href="#FUN">
+<text x="0" y="24" class="key hold layer-activator">FUN</text>
+</a></g>
 <g transform="translate(695, 209) rotate(-12.0)" class="key keypos-46">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
@@ -566,10 +568,8 @@ rect.held, rect.combo.held {
 <g transform="translate(756, 203)" class="key keypos-47">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<use href="#mdi:backspace" xlink:href="#mdi:backspace" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:backspace"/>
-<a href="#FUN">
-<text x="0" y="24" class="key hold layer-activator">FUN</text>
-</a></g>
+<text x="0" y="-4" class="key tap">&amp;td0</text>
+</g>
 <g class="combo combopos-0">
 <rect rx="6" ry="6" x="210" y="74" width="28" height="26" class="combo"/>
 <use href="#mdi:apple-keyboard-option" xlink:href="#mdi:apple-keyboard-option" x="215" y="78" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-option"/>
@@ -611,12 +611,12 @@ rect.held, rect.combo.held {
 <use href="#mdi:apple-keyboard-option" xlink:href="#mdi:apple-keyboard-option" x="747" y="78" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-option"/>
 </g>
 <g class="combo combopos-8">
-<path d="M742,147 l-9,-38" class="combo"/>
-<path d="M742,147 l9,38" class="combo"/>
-<rect rx="6" ry="6" x="728" y="134" width="28" height="26" class="combo"/>
+<path d="M680,158 l37,-52" class="combo"/>
+<path d="M680,158 l-37,52" class="combo"/>
+<rect rx="6" ry="6" x="666" y="145" width="28" height="26" class="combo"/>
 <a href="#GAMING">
-<text x="742" y="147" class="combo tap layer-activator">GAMING</text>
-</a><text x="742" y="158" class="combo hold">toggle</text>
+<text x="680" y="158" class="combo tap layer-activator">GAMING</text>
+</a><text x="680" y="169" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-9">
 <path d="M238,147 l9,-38" class="combo"/>
@@ -627,12 +627,12 @@ rect.held, rect.combo.held {
 </a><text x="238" y="158" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-10">
-<path d="M680,158 l37,-52" class="combo"/>
-<path d="M680,158 l-37,52" class="combo"/>
-<rect rx="6" ry="6" x="666" y="145" width="28" height="26" class="combo"/>
+<path d="M742,147 l-9,-38" class="combo"/>
+<path d="M742,147 l9,38" class="combo"/>
+<rect rx="6" ry="6" x="728" y="134" width="28" height="26" class="combo"/>
 <a href="#BLUETOOTH">
-<text x="680" y="158" class="combo tap layer-activator"><tspan style="font-size: 67%">BLUETOOTH</tspan></text>
-</a><text x="680" y="169" class="combo hold">toggle</text>
+<text x="742" y="147" class="combo tap layer-activator"><tspan style="font-size: 67%">BLUETOOTH</tspan></text>
+</a><text x="742" y="158" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-11">
 <path d="M140,98 l-93,6" class="combo"/>
@@ -972,12 +972,12 @@ rect.held, rect.combo.held {
 </a><text x="269" y="161" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-10">
-<path d="M742,147 l-9,-38" class="combo"/>
-<path d="M742,147 l9,38" class="combo"/>
-<rect rx="6" ry="6" x="728" y="134" width="28" height="26" class="combo"/>
+<path d="M680,158 l37,-52" class="combo"/>
+<path d="M680,158 l-37,52" class="combo"/>
+<rect rx="6" ry="6" x="666" y="145" width="28" height="26" class="combo"/>
 <a href="#GAMING">
-<text x="742" y="147" class="combo tap layer-activator">GAMING</text>
-</a><text x="742" y="158" class="combo hold">toggle</text>
+<text x="680" y="158" class="combo tap layer-activator">GAMING</text>
+</a><text x="680" y="169" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-11">
 <path d="M300,158 l-37,-52" class="combo"/>
@@ -996,12 +996,12 @@ rect.held, rect.combo.held {
 </a><text x="238" y="158" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-13">
-<path d="M680,158 l37,-52" class="combo"/>
-<path d="M680,158 l-37,52" class="combo"/>
-<rect rx="6" ry="6" x="666" y="145" width="28" height="26" class="combo"/>
+<path d="M742,147 l-9,-38" class="combo"/>
+<path d="M742,147 l9,38" class="combo"/>
+<rect rx="6" ry="6" x="728" y="134" width="28" height="26" class="combo"/>
 <a href="#BLUETOOTH">
-<text x="680" y="158" class="combo tap layer-activator"><tspan style="font-size: 67%">BLUETOOTH</tspan></text>
-</a><text x="680" y="169" class="combo hold">toggle</text>
+<text x="742" y="147" class="combo tap layer-activator"><tspan style="font-size: 67%">BLUETOOTH</tspan></text>
+</a><text x="742" y="158" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-14">
 <path d="M140,98 l-93,6" class="combo"/>
@@ -1681,12 +1681,12 @@ rect.held, rect.combo.held {
 </a><text x="269" y="161" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-10">
-<path d="M742,147 l-9,-38" class="combo"/>
-<path d="M742,147 l9,38" class="combo"/>
-<rect rx="6" ry="6" x="728" y="134" width="28" height="26" class="combo"/>
+<path d="M680,158 l37,-52" class="combo"/>
+<path d="M680,158 l-37,52" class="combo"/>
+<rect rx="6" ry="6" x="666" y="145" width="28" height="26" class="combo"/>
 <a href="#GAMING">
-<text x="742" y="147" class="combo tap layer-activator">GAMING</text>
-</a><text x="742" y="158" class="combo hold">toggle</text>
+<text x="680" y="158" class="combo tap layer-activator">GAMING</text>
+</a><text x="680" y="169" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-11">
 <path d="M300,158 l-37,-52" class="combo"/>
@@ -1705,12 +1705,12 @@ rect.held, rect.combo.held {
 </a><text x="238" y="158" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-13">
-<path d="M680,158 l37,-52" class="combo"/>
-<path d="M680,158 l-37,52" class="combo"/>
-<rect rx="6" ry="6" x="666" y="145" width="28" height="26" class="combo"/>
+<path d="M742,147 l-9,-38" class="combo"/>
+<path d="M742,147 l9,38" class="combo"/>
+<rect rx="6" ry="6" x="728" y="134" width="28" height="26" class="combo"/>
 <a href="#BLUETOOTH">
-<text x="680" y="158" class="combo tap layer-activator"><tspan style="font-size: 67%">BLUETOOTH</tspan></text>
-</a><text x="680" y="169" class="combo hold">toggle</text>
+<text x="742" y="147" class="combo tap layer-activator"><tspan style="font-size: 67%">BLUETOOTH</tspan></text>
+</a><text x="742" y="158" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-14">
 <path d="M140,98 l-93,6" class="combo"/>
@@ -1978,19 +1978,19 @@ rect.held, rect.combo.held {
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <use href="#mdi:keyboard-tab" xlink:href="#mdi:keyboard-tab" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:keyboard-tab"/>
 </g>
-<g transform="translate(632, 224) rotate(-24.0)" class="key trans keypos-45">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key trans"/>
-<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
+<g transform="translate(632, 224) rotate(-24.0)" class="key held keypos-45">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key held"/>
 </g>
 <g transform="translate(695, 209) rotate(-12.0)" class="key trans keypos-46">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key trans"/>
 <use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
 </g>
-<g transform="translate(756, 203)" class="key held keypos-47">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key held"/>
+<g transform="translate(756, 203)" class="key trans keypos-47">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key trans"/>
+<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
 </g>
 <g class="combo combopos-0">
 <rect rx="6" ry="6" x="210" y="74" width="28" height="26" class="combo"/>
@@ -2049,12 +2049,12 @@ rect.held, rect.combo.held {
 </a><text x="269" y="161" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-10">
-<path d="M742,147 l-9,-38" class="combo"/>
-<path d="M742,147 l9,38" class="combo"/>
-<rect rx="6" ry="6" x="728" y="134" width="28" height="26" class="combo"/>
+<path d="M680,158 l37,-52" class="combo"/>
+<path d="M680,158 l-37,52" class="combo"/>
+<rect rx="6" ry="6" x="666" y="145" width="28" height="26" class="combo"/>
 <a href="#GAMING">
-<text x="742" y="147" class="combo tap layer-activator">GAMING</text>
-</a><text x="742" y="158" class="combo hold">toggle</text>
+<text x="680" y="158" class="combo tap layer-activator">GAMING</text>
+</a><text x="680" y="169" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-11">
 <path d="M300,158 l-37,-52" class="combo"/>
@@ -2073,12 +2073,12 @@ rect.held, rect.combo.held {
 </a><text x="238" y="158" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-13">
-<path d="M680,158 l37,-52" class="combo"/>
-<path d="M680,158 l-37,52" class="combo"/>
-<rect rx="6" ry="6" x="666" y="145" width="28" height="26" class="combo"/>
+<path d="M742,147 l-9,-38" class="combo"/>
+<path d="M742,147 l9,38" class="combo"/>
+<rect rx="6" ry="6" x="728" y="134" width="28" height="26" class="combo"/>
 <a href="#BLUETOOTH">
-<text x="680" y="158" class="combo tap layer-activator"><tspan style="font-size: 67%">BLUETOOTH</tspan></text>
-</a><text x="680" y="169" class="combo hold">toggle</text>
+<text x="742" y="147" class="combo tap layer-activator"><tspan style="font-size: 67%">BLUETOOTH</tspan></text>
+</a><text x="742" y="158" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-14">
 <path d="M140,98 l-93,6" class="combo"/>
@@ -2422,12 +2422,12 @@ rect.held, rect.combo.held {
 </a><text x="269" y="161" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-10">
-<path d="M742,147 l-9,-38" class="combo"/>
-<path d="M742,147 l9,38" class="combo"/>
-<rect rx="6" ry="6" x="728" y="134" width="28" height="26" class="combo"/>
+<path d="M680,158 l37,-52" class="combo"/>
+<path d="M680,158 l-37,52" class="combo"/>
+<rect rx="6" ry="6" x="666" y="145" width="28" height="26" class="combo"/>
 <a href="#GAMING">
-<text x="742" y="147" class="combo tap layer-activator">GAMING</text>
-</a><text x="742" y="158" class="combo hold">toggle</text>
+<text x="680" y="158" class="combo tap layer-activator">GAMING</text>
+</a><text x="680" y="169" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-11">
 <path d="M300,158 l-37,-52" class="combo"/>
@@ -2446,12 +2446,12 @@ rect.held, rect.combo.held {
 </a><text x="238" y="158" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-13">
-<path d="M680,158 l37,-52" class="combo"/>
-<path d="M680,158 l-37,52" class="combo"/>
-<rect rx="6" ry="6" x="666" y="145" width="28" height="26" class="combo"/>
+<path d="M742,147 l-9,-38" class="combo"/>
+<path d="M742,147 l9,38" class="combo"/>
+<rect rx="6" ry="6" x="728" y="134" width="28" height="26" class="combo"/>
 <a href="#BLUETOOTH">
-<text x="680" y="158" class="combo tap layer-activator"><tspan style="font-size: 67%">BLUETOOTH</tspan></text>
-</a><text x="680" y="169" class="combo hold">toggle</text>
+<text x="742" y="147" class="combo tap layer-activator"><tspan style="font-size: 67%">BLUETOOTH</tspan></text>
+</a><text x="742" y="158" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-14">
 <path d="M140,98 l-93,6" class="combo"/>
@@ -2785,12 +2785,12 @@ rect.held, rect.combo.held {
 </a><text x="269" y="161" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-10">
-<path d="M742,147 l-9,-38" class="combo"/>
-<path d="M742,147 l9,38" class="combo"/>
-<rect rx="6" ry="6" x="728" y="134" width="28" height="26" class="combo"/>
+<path d="M680,158 l37,-52" class="combo"/>
+<path d="M680,158 l-37,52" class="combo"/>
+<rect rx="6" ry="6" x="666" y="145" width="28" height="26" class="combo"/>
 <a href="#GAMING">
-<text x="742" y="147" class="combo tap layer-activator">GAMING</text>
-</a><text x="742" y="158" class="combo hold">toggle</text>
+<text x="680" y="158" class="combo tap layer-activator">GAMING</text>
+</a><text x="680" y="169" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-11">
 <path d="M238,147 l9,-38" class="combo"/>
@@ -2801,12 +2801,12 @@ rect.held, rect.combo.held {
 </a><text x="238" y="158" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-12">
-<path d="M680,158 l37,-52" class="combo"/>
-<path d="M680,158 l-37,52" class="combo"/>
-<rect rx="6" ry="6" x="666" y="145" width="28" height="26" class="combo"/>
+<path d="M742,147 l-9,-38" class="combo"/>
+<path d="M742,147 l9,38" class="combo"/>
+<rect rx="6" ry="6" x="728" y="134" width="28" height="26" class="combo"/>
 <a href="#BLUETOOTH">
-<text x="680" y="158" class="combo tap layer-activator"><tspan style="font-size: 67%">BLUETOOTH</tspan></text>
-</a><text x="680" y="169" class="combo hold">toggle</text>
+<text x="742" y="147" class="combo tap layer-activator"><tspan style="font-size: 67%">BLUETOOTH</tspan></text>
+</a><text x="742" y="158" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-13">
 <path d="M140,98 l-93,6" class="combo"/>

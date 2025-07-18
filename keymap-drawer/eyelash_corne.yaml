@@ -13,7 +13,7 @@ layers:
   - I
   - O
   - P
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:backspace-reverse-outline$$
   - '&td0'
   - A
   - S
@@ -43,12 +43,12 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - $$mdi:keyboard-esc$$
-  - {t: '$$mdi:backspace-reverse-outline$$', h: SYMBOL}
+  - {t: '$$mdi:keyboard-tab$$', h: SYMBOL}
   - {t: '$$mdi:keyboard-space$$', h: MOUSE}
   - {t: '$$mdi:keyboard-return$$', h: NUMPAD}
-  - '&td0'
-  - {t: '$$mdi:keyboard-space$$', h: GAMING}
   - {t: '$$mdi:backspace$$', h: FUN}
+  - {t: '$$mdi:keyboard-space$$', h: GAMING}
+  - '&td0'
   TAB:
   - $$mdi:keyboard-tab$$
   - Q
@@ -242,9 +242,9 @@ layers:
   - APPLICATION
   - $$mdi:keyboard-space$$
   - $$mdi:keyboard-tab$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   NUMPAD:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -619,7 +619,7 @@ combos:
 - p: [17, 43]
   k: {t: MOUSE, h: toggle}
   l: [TAB, MOUSE, NUMPAD, FUN, SYMBOL]
-- p: [23, 47]
+- p: [23, 45]
   k: {t: GAMING, h: toggle}
   l: [TAB, MOUSE, NUMPAD, FUN, SYMBOL, QWERTY]
 - p: [17, 44]
@@ -628,7 +628,7 @@ combos:
 - p: [17, 42]
   k: {t: SYMBOL, h: toggle}
   l: [TAB, MOUSE, NUMPAD, FUN, SYMBOL, QWERTY]
-- p: [23, 45]
+- p: [23, 47]
   k: {t: BLUETOOTH, h: toggle}
   l: [TAB, MOUSE, NUMPAD, FUN, QWERTY, SYMBOL]
 - p: [13, 17]
