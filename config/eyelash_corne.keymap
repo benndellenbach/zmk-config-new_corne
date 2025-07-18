@@ -124,67 +124,67 @@
         LeftAlt {
             bindings = <&kp LEFT_ALT>;
             key-positions = <17 16>;
-            layers = <1 2 3 5 6>;
+            layers = <1 2 3 5 6 0 4>;
         };
 
         LeftShift {
             bindings = <&kp LEFT_SHIFT>;
             key-positions = <16 15>;
-            layers = <1 6 2 5 3>;
+            layers = <1 6 2 5 3 0 4>;
         };
 
         LeftCtrl {
             bindings = <&kp LEFT_CONTROL>;
             key-positions = <15 14>;
-            layers = <1 3 5 6>;
+            layers = <1 3 5 6 0 2 4>;
         };
 
         LeftSuper {
             bindings = <&kp LEFT_WIN>;
             key-positions = <14 17>;
-            layers = <1 3 5 6>;
+            layers = <1 3 5 6 0 2 4>;
         };
 
         RSuper {
             bindings = <&kp RIGHT_WIN>;
             key-positions = <26 23>;
-            layers = <1 2 4>;
+            layers = <1 2 4 0 3 5 6>;
         };
 
         RCtrl {
             bindings = <&kp RIGHT_CONTROL>;
             key-positions = <25 26>;
-            layers = <1 2 4>;
+            layers = <1 2 4 0 3 5 6>;
         };
 
         RShift {
             bindings = <&kp RIGHT_SHIFT>;
             key-positions = <24 25>;
-            layers = <1 2 4>;
+            layers = <1 2 4 0 3 5 6>;
         };
 
         RAlt {
             bindings = <&kp RIGHT_ALT>;
             key-positions = <23 24>;
-            layers = <1 2 4>;
+            layers = <1 2 4 0 3 5 6>;
         };
 
         Navlock {
             bindings = <&tog 4>;
             key-positions = <23 47>;
-            layers = <1 2 3 5 4 6>;
+            layers = <1 3 5 4 6>;
         };
 
         MouseLock {
             bindings = <&tog 3>;
             key-positions = <17 43>;
-            layers = <1 2 3 5 4 6>;
+            layers = <1 3 5 4 6>;
         };
 
         FunLock {
             bindings = <&tog 2>;
             key-positions = <23 46>;
-            layers = <1 2 3 5 4 6>;
+            layers = <1 3 5 4 6 0>;
         };
 
         NumLock {
@@ -208,25 +208,25 @@
         LDefault {
             bindings = <&to 1>;
             key-positions = <13 17>;
-            layers = <5 6>;
+            layers = <0 1 2 3 4 5 6>;
         };
 
         RDefault {
             bindings = <&to 1>;
             key-positions = <23 27>;
-            layers = <2 3 4>;
+            layers = <2 3 4 0 1 5 6>;
         };
 
         LEnter {
             bindings = <&kp RETURN>;
             key-positions = <31 32>;
-            layers = <1 2 4 5 6 3>;
+            layers = <1 2 4 5 6 3 0>;
         };
 
         REnter {
             bindings = <&kp RETURN>;
             key-positions = <37 38>;
-            layers = <1 2 4 5 6 3>;
+            layers = <1 2 4 5 6 3 0>;
         };
     };
 
