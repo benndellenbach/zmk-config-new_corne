@@ -638,8 +638,8 @@ combos:
   k: {t: QWERTY, h: toggle}
   l: [GAMING, MOUSE, FUN, QWERTY, NUMPAD, SYMBOL]
 - p: [31, 32]
-  k: RETURN
+  k: '&key_repeat'
   l: [GAMING, FUN, NUMPAD, SYMBOL, MOUSE, QWERTY]
 - p: [37, 38]
-  k: RETURN
+  k: '&key_repeat'
   l: [GAMING, FUN, NUMPAD, SYMBOL, MOUSE, QWERTY]
