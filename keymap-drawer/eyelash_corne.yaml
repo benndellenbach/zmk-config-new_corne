@@ -13,7 +13,7 @@ layers:
   - I
   - O
   - P
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: BLUETOOTH, h: toggle}
   - '&td0'
   - A
   - S
@@ -35,7 +35,56 @@ layers:
   - C
   - V
   - B
+  - {t: TAB, h: toggle}
+  - $$mdi:arrow-down-bold$$
+  - N
+  - M
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - {t: /, s: '?'}
+  - $$mdi:keyboard-esc$$
+  - {t: '$$mdi:backspace-reverse-outline$$', h: SYMBOL}
+  - {t: '$$mdi:keyboard-space$$', h: MOUSE}
+  - {t: '$$mdi:keyboard-return$$', h: NUMPAD}
+  - '&td0'
+  - {t: '$$mdi:keyboard-space$$', h: GAMING}
+  - {t: '$$mdi:backspace$$', h: FUN}
+  TAB:
+  - $$mdi:keyboard-tab$$
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - $$mdi:arrow-up-bold$$
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {t: QWERTY, h: toggle}
+  - '&td0'
+  - A
+  - S
+  - D
+  - F
+  - G
+  - $$mdi:arrow-left-bold$$
   - {t: GAMING, h: toggle}
+  - $$mdi:arrow-right-bold$$
+  - H
+  - J
+  - K
+  - L
+  - {t: ;, s: ':'}
+  - {t: '''', s: '"'}
+  - $$mdi:apple-keyboard-control$$
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - {t: QWERTY, h: toggle}
   - $$mdi:arrow-down-bold$$
   - N
   - M
@@ -280,7 +329,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: SYSTEM, h: toggle}
+  - {t: QWERTY, h: toggle}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - '#'
   - '@'
@@ -294,26 +343,26 @@ layers:
   - (
   - )
   - {t: '$$mdi:transfer$$', type: trans}
-  SYSTEM:
+  BLUETOOTH:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - RGB EFF
+  - RGB TOG
   - RGB SAI
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: QWERTY, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:skip-previous$$
+  - $$mdi:volume-low$$
+  - $$mdi:volume-high$$
+  - $$mdi:skip-next$$
+  - EP TOG
   - RGB HUD
   - RGB EFF
   - RGB HUI
@@ -325,11 +374,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: QWERTY, h: toggle}
+  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
+  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
+  - {t: RGB BRI, h: toggle}
   - RGB SAD
   - {t: '$$mdi:transfer$$', type: trans}
   - EP TOG
@@ -337,64 +386,260 @@ layers:
   - RGB SPD
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - MUTE
+  - PLAY PAUSE
+  - STOP
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  RGB BRI:
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - RGB EFF
+  - RGB TOG
+  - RGB SAI
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:skip-previous$$
+  - $$mdi:volume-low$$
+  - $$mdi:volume-high$$
+  - $$mdi:skip-next$$
+  - EP TOG
+  - RGB HUD
+  - RGB EFF
+  - RGB HUI
+  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
+  - RGB TOG
+  - RGB BRI
+  - RGB SPI
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
+  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
+  - {t: RGB HUE, h: toggle}
+  - RGB SAD
+  - {t: '$$mdi:transfer$$', type: trans}
+  - EP TOG
+  - RGB BRD
+  - RGB SPD
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - MUTE
+  - PLAY PAUSE
+  - STOP
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  RGB HUE:
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - RGB EFF
+  - RGB TOG
+  - RGB SAI
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:skip-previous$$
+  - $$mdi:volume-low$$
+  - $$mdi:volume-high$$
+  - $$mdi:skip-next$$
+  - EP TOG
+  - RGB HUD
+  - RGB EFF
+  - RGB HUI
+  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
+  - RGB TOG
+  - RGB BRI
+  - RGB SPI
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
+  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
+  - {t: RGB SAT, h: toggle}
+  - RGB SAD
+  - {t: '$$mdi:transfer$$', type: trans}
+  - EP TOG
+  - RGB BRD
+  - RGB SPD
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - MUTE
+  - PLAY PAUSE
+  - STOP
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  RGB SAT:
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - RGB EFF
+  - RGB TOG
+  - RGB SAI
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:skip-previous$$
+  - $$mdi:volume-low$$
+  - $$mdi:volume-high$$
+  - $$mdi:skip-next$$
+  - EP TOG
+  - RGB HUD
+  - RGB EFF
+  - RGB HUI
+  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
+  - RGB TOG
+  - RGB BRI
+  - RGB SPI
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
+  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
+  - {t: RGB SPD, h: toggle}
+  - RGB SAD
+  - {t: '$$mdi:transfer$$', type: trans}
+  - EP TOG
+  - RGB BRD
+  - RGB SPD
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - MUTE
+  - PLAY PAUSE
+  - STOP
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  RGB SPD:
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - RGB EFF
+  - RGB TOG
+  - RGB SAI
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:skip-previous$$
+  - $$mdi:volume-low$$
+  - $$mdi:volume-high$$
+  - $$mdi:skip-next$$
+  - EP TOG
+  - RGB HUD
+  - RGB EFF
+  - RGB HUI
+  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
+  - RGB TOG
+  - RGB BRI
+  - RGB SPI
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
+  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
+  - {t: RGB BRI, h: toggle}
+  - RGB SAD
+  - {t: '$$mdi:transfer$$', type: trans}
+  - EP TOG
+  - RGB BRD
+  - RGB SPD
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - MUTE
+  - PLAY PAUSE
+  - STOP
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [17, 16]
   k: $$mdi:apple-keyboard-option$$
-  l: [QWERTY, GAMING, MOUSE, NUMPAD, SYMBOL]
+  l: [TAB, GAMING, MOUSE, NUMPAD, SYMBOL]
 - p: [16, 15]
   k: $$mdi:apple-keyboard-shift$$
-  l: [QWERTY, SYMBOL, GAMING, NUMPAD, MOUSE]
+  l: [TAB, SYMBOL, GAMING, NUMPAD, MOUSE]
 - p: [15, 14]
   k: $$mdi:apple-keyboard-control$$
-  l: [QWERTY, MOUSE, NUMPAD, SYMBOL]
+  l: [TAB, MOUSE, NUMPAD, SYMBOL]
 - p: [14, 17]
   k: LEFT WIN
-  l: [QWERTY, MOUSE, NUMPAD, SYMBOL]
+  l: [TAB, MOUSE, NUMPAD, SYMBOL]
 - p: [26, 23]
   k: RIGHT WIN
-  l: [QWERTY, GAMING, FUN]
+  l: [TAB, GAMING, FUN]
 - p: [25, 26]
   k: $$mdi:apple-keyboard-control$$
-  l: [QWERTY, GAMING, FUN]
+  l: [TAB, GAMING, FUN]
 - p: [24, 25]
   k: $$mdi:apple-keyboard-shift$$
-  l: [QWERTY, GAMING, FUN]
+  l: [TAB, GAMING, FUN]
 - p: [23, 24]
   k: $$mdi:apple-keyboard-option$$
-  l: [QWERTY, GAMING, FUN]
+  l: [TAB, GAMING, FUN]
 - p: [23, 47]
   k: {t: FUN, h: toggle}
-  l: [QWERTY, GAMING, MOUSE, NUMPAD, SYSTEM, FUN, SYMBOL]
+  l: [TAB, GAMING, MOUSE, NUMPAD, FUN, SYMBOL]
 - p: [17, 43]
   k: {t: MOUSE, h: toggle}
-  l: [QWERTY, GAMING, MOUSE, NUMPAD, SYSTEM, FUN, SYMBOL]
+  l: [TAB, GAMING, MOUSE, NUMPAD, FUN, SYMBOL]
 - p: [23, 46]
   k: {t: GAMING, h: toggle}
-  l: [QWERTY, GAMING, MOUSE, NUMPAD, SYSTEM, FUN, SYMBOL]
+  l: [TAB, GAMING, MOUSE, NUMPAD, FUN, SYMBOL]
 - p: [17, 44]
   k: {t: NUMPAD, h: toggle}
-  l: [QWERTY, GAMING, MOUSE, NUMPAD, SYSTEM, FUN]
+  l: [TAB, GAMING, MOUSE, NUMPAD, FUN]
 - p: [17, 42]
   k: {t: SYMBOL, h: toggle}
-  l: [QWERTY, GAMING, MOUSE, NUMPAD, SYSTEM, FUN, SYMBOL]
+  l: [TAB, GAMING, MOUSE, NUMPAD, FUN, SYMBOL]
 - p: [23, 45]
-  k: {t: SYSTEM, h: toggle}
-  l: [QWERTY, GAMING, MOUSE, NUMPAD, SYSTEM, FUN]
+  k: {t: QWERTY, h: toggle}
+  l: [TAB, GAMING, MOUSE, NUMPAD, FUN]
 - p: [13, 17]
-  k: {t: QWERTY, h: toggle}
-  l: [NUMPAD, SYSTEM, SYMBOL]
+  k: {t: TAB, h: toggle}
+  l: [NUMPAD, SYMBOL]
 - p: [23, 27]
-  k: {t: QWERTY, h: toggle}
+  k: {t: TAB, h: toggle}
   l: [GAMING, MOUSE, FUN]
 - p: [31, 32]
   k: RETURN
-  l: [QWERTY, GAMING, FUN, NUMPAD, SYMBOL, MOUSE, SYSTEM]
+  l: [TAB, GAMING, FUN, NUMPAD, SYMBOL, MOUSE]
 - p: [37, 38]
   k: RETURN
-  l: [QWERTY, GAMING, FUN, NUMPAD, SYMBOL, MOUSE, SYSTEM]
+  l: [TAB, GAMING, FUN, NUMPAD, SYMBOL, MOUSE]
