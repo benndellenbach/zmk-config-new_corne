@@ -249,7 +249,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        layer_9 {
+        BASE {
             display-name = "QWERTY";
             bindings = <
 &kp TAB    &kp Q  &kp W  &kp E         &kp R        &kp T                           &kp UP               &kp Y  &kp U        &kp I            &kp O    &kp P     &to 7
@@ -261,7 +261,7 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP LS(C_VOLUME_UP)>;
         };
 
-        default_layer {
+        BASE_TAB {
             display-name = "TAB";
             bindings = <
 &kp TAB    &kp Q  &kp W  &kp E         &kp R        &kp T                           &kp UP               &kp Y  &kp U        &kp I            &kp O    &kp P     &tog 0
@@ -343,7 +343,7 @@
             sensor-bindings = <&rotary_bt>;
         };
 
-        layer_8 {
+        RGB1 {
             display-name = "RGB BRI";
             bindings = <
 &trans  &trans      &trans        &trans           &rgb_ug RGB_EFF   &rgb_ug RGB_TOG                               &rgb_ug RGB_SAI                   &trans        &trans             &trans           &trans           &trans  &trans
@@ -355,7 +355,7 @@
             sensor-bindings = <&rgb_encoder>;
         };
 
-        layer_9 {
+        RGB2 {
             display-name = "RGB HUE";
             bindings = <
 &trans  &trans      &trans        &trans           &rgb_ug RGB_EFF   &rgb_ug RGB_TOG                                &rgb_ug RGB_SAI                   &trans        &trans             &trans           &trans           &trans  &trans
@@ -367,7 +367,7 @@
             sensor-bindings = <&RGBHUE>;
         };
 
-        layer_10 {
+        RGB3 {
             display-name = "RGB SAT";
             bindings = <
 &trans  &trans      &trans        &trans           &rgb_ug RGB_EFF   &rgb_ug RGB_TOG                                &rgb_ug RGB_SAI                   &trans        &trans             &trans           &trans           &trans  &trans
@@ -379,7 +379,7 @@
             sensor-bindings = <&RGBSAT>;
         };
 
-        layer_11 {
+        RGB4 {
             display-name = "RGB SPD";
             bindings = <
 &trans  &trans      &trans        &trans           &rgb_ug RGB_EFF   &rgb_ug RGB_TOG                               &rgb_ug RGB_SAI                   &trans        &trans             &trans           &trans           &trans  &trans
