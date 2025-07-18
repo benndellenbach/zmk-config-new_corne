@@ -92,12 +92,12 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - $$mdi:keyboard-esc$$
-  - {t: '$$mdi:backspace-reverse-outline$$', h: SYMBOL}
-  - {t: '$$mdi:keyboard-space$$', h: MOUSE}
-  - {t: '$$mdi:keyboard-return$$', h: NUMPAD}
-  - '&td0'
-  - {t: '$$mdi:keyboard-space$$', h: GAMING}
-  - {t: '$$mdi:backspace$$', h: FUN}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   GAMING:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -632,10 +632,10 @@ combos:
   k: {t: QWERTY, h: toggle}
   l: [TAB, GAMING, MOUSE, NUMPAD, FUN]
 - p: [13, 17]
-  k: {t: TAB, h: toggle}
+  k: {t: QWERTY, h: toggle}
   l: [QWERTY, TAB, GAMING, MOUSE, FUN, NUMPAD, SYMBOL]
 - p: [23, 27]
-  k: {t: TAB, h: toggle}
+  k: {t: QWERTY, h: toggle}
   l: [GAMING, MOUSE, FUN, QWERTY, TAB, NUMPAD, SYMBOL]
 - p: [31, 32]
   k: RETURN
