@@ -47,7 +47,7 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: MOUSE}
   - {t: '$$mdi:backspace-reverse-outline$$', h: NUMPAD}
   - {t: '$$mdi:backspace$$', h: FUN}
-  - {t: '$$mdi:keyboard-return$$', h: GAMING}
+  - {t: '$$mdi:keyboard-space$$', h: GAMING}
   - '&td0'
   GAMING:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -392,3 +392,9 @@ combos:
 - p: [23, 27]
   k: {t: QWERTY, h: toggle}
   l: [GAMING, MOUSE, FUN]
+- p: [31, 32]
+  k: RETURN
+  l: [QWERTY, GAMING, FUN, NUMPAD, SYMBOL, MOUSE, SYSTEM]
+- p: [37, 38]
+  k: RETURN
+  l: [QWERTY, GAMING, FUN, NUMPAD, SYMBOL, MOUSE, SYSTEM]
