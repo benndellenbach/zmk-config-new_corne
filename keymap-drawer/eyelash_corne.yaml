@@ -137,7 +137,7 @@ layers:
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - $$mdi:pan-left$$
   - $$mdi:pan-down$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&mkp MB3'
   - $$mdi:pan-up$$
   - $$mdi:pan-right$$
   - {t: '$$mdi:transfer$$', type: trans}
@@ -186,7 +186,7 @@ layers:
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - $$mdi:pan-left$$
   - $$mdi:pan-down$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&mkp MB3'
   - $$mdi:pan-up$$
   - $$mdi:pan-right$$
   - {t: '$$mdi:transfer$$', type: trans}
