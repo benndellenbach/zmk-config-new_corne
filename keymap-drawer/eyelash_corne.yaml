@@ -44,7 +44,7 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:keyboard-esc$$
   - {t: '$$mdi:keyboard-tab$$', h: SYMBOL}
-  - {t: '$$mdi:keyboard-space$$', h: GAMING}
+  - {t: '$$mdi:keyboard-space$$', h: MOUSE}
   - {t: '$$mdi:keyboard-return$$', h: NUMPAD}
   - {t: RETURN, h: FUN}
   - {t: '$$mdi:keyboard-space$$', h: MOUSE}
@@ -142,7 +142,7 @@ layers:
   - $$mdi:pan-right$$
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-tab$$
-  - {t: '$$mdi:keyboard-space$$', type: held}
+  - $$mdi:keyboard-space$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-shift$$
@@ -190,12 +190,12 @@ layers:
   - $$mdi:pan-up$$
   - $$mdi:pan-right$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:mouse-scroll-wheel$$
-  - $$mdi:mouse-left-click-outline$$
-  - $$mdi:mouse-right-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
+  - '&mkp MB2'
+  - {t: '$$mdi:mouse-left-click-outline$$', type: held alternate}
+  - '&mkp MB3'
   FUN:
   - PG UP
   - F12
@@ -378,7 +378,7 @@ layers:
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
-  - {t: RGB BRI, h: toggle}
+  - {t: RGB BRI, h: QWERTY}
   - RGB SAD
   - {t: '$$mdi:transfer$$', type: trans}
   - EP TOG
@@ -614,7 +614,7 @@ combos:
   k: $$mdi:apple-keyboard-option$$
   l: [GAMING, FUN, QWERTY, MOUSE, NUMPAD, SYMBOL, TAB]
 - p: [43, 17]
-  k: {t: FUN, h: toggle}
+  k: {t: MOUSE, h: toggle}
   l: [MOUSE, NUMPAD, FUN, SYMBOL, GAMING, QWERTY, TAB]
 - p: [46, 23]
   k: {t: MOUSE, h: toggle}
@@ -630,7 +630,7 @@ combos:
   l: [MOUSE, NUMPAD, FUN, SYMBOL, QWERTY, TAB]
 - p: [23, 47]
   k: {t: BT, h: toggle}
-  l: [MOUSE, NUMPAD, FUN, QWERTY, SYMBOL, TAB]
+  l: [MOUSE, NUMPAD, FUN, QWERTY, SYMBOL, TAB, BT, RGB BRI, RGB HUE, RGB SAT, RGB SPD]
 - p: [13, 17]
   k: {t: QWERTY, h: toggle}
   l: [QWERTY, MOUSE, FUN, NUMPAD, SYMBOL, GAMING, TAB]
