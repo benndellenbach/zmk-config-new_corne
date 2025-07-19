@@ -144,109 +144,109 @@
         LeftAlt {
             bindings = <&kp LEFT_ALT>;
             key-positions = <17 16>;
-            layers = <2 3 5 6 0 4>;
+            layers = <2 3 5 6 0 4 1>;
         };
 
         LeftShift {
             bindings = <&td0>;
             key-positions = <16 15>;
-            layers = <6 2 5 3 0 4>;
+            layers = <6 2 5 3 0 4 1>;
         };
 
         LeftCtrl {
             bindings = <&kp LEFT_CONTROL>;
             key-positions = <15 14>;
-            layers = <3 5 6 0 2 4>;
+            layers = <3 5 6 0 2 4 1>;
         };
 
         LeftSuper {
             bindings = <&kp LEFT_WIN>;
             key-positions = <14 17>;
-            layers = <3 5 6 0 2 4>;
+            layers = <3 5 6 0 2 4 1>;
         };
 
         RSuper {
             bindings = <&kp RIGHT_WIN>;
             key-positions = <26 23>;
-            layers = <2 4 0 3 5 6>;
+            layers = <2 4 0 3 5 6 1>;
         };
 
         RCtrl {
             bindings = <&kp RIGHT_CONTROL>;
             key-positions = <25 26>;
-            layers = <2 4 0 3 5 6>;
+            layers = <2 4 0 3 5 6 1>;
         };
 
         RShift {
             bindings = <&td0>;
             key-positions = <24 25>;
-            layers = <2 4 0 3 5 6>;
+            layers = <2 4 0 3 5 6 1>;
         };
 
         RAlt {
             bindings = <&kp RIGHT_ALT>;
             key-positions = <23 24>;
-            layers = <2 4 0 3 5 6>;
+            layers = <2 4 0 3 5 6 1>;
         };
 
         Gamelock {
             bindings = <&tog 4>;
-            key-positions = <23 46>;
-            layers = <3 5 4 6 2>;
+            key-positions = <43 17>;
+            layers = <3 5 4 6 2 0 1>;
         };
 
         MouseLock {
             bindings = <&tog 3>;
-            key-positions = <17 43>;
-            layers = <3 5 4 6>;
+            key-positions = <46 23>;
+            layers = <3 5 4 6 0 1>;
         };
 
         FunLock {
-            bindings = <&tog 2>;
+            bindings = <&tog 4>;
             key-positions = <23 45>;
-            layers = <3 5 4 6 0>;
+            layers = <3 5 4 6 0 1>;
         };
 
         NumLock {
             bindings = <&tog 5>;
             key-positions = <17 44>;
-            layers = <2 3 5 4>;
+            layers = <3 5 4 0 1 6>;
         };
 
         SymLock {
             bindings = <&tog 6>;
             key-positions = <17 42>;
-            layers = <3 5 4 6 0>;
+            layers = <3 5 4 6 0 1>;
         };
 
         RGBLock {
             bindings = <&tog 7>;
             key-positions = <23 47>;
-            layers = <3 5 4 0 6>;
+            layers = <3 5 4 0 6 1>;
         };
 
         LDefault {
             bindings = <&to 0>;
             key-positions = <13 17>;
-            layers = <0 2 3 4 5 6>;
+            layers = <0 3 4 5 6 2 1>;
         };
 
         RDefault {
             bindings = <&to 0>;
             key-positions = <23 27>;
-            layers = <2 3 4 0 5 6>;
+            layers = <2 3 4 0 5 6 1>;
         };
 
         LRPT {
             bindings = <&key_repeat>;
             key-positions = <31 32>;
-            layers = <2 4 5 6 3 0>;
+            layers = <2 4 5 6 3 0 1>;
         };
 
         RRPT {
             bindings = <&key_repeat>;
             key-positions = <37 38>;
-            layers = <2 4 5 6 3 0>;
+            layers = <2 4 5 6 3 0 1>;
         };
     };
 
@@ -272,10 +272,10 @@
         BASE {
             display-name = "QWERTY";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E      &kp R        &kp T                                 &kp UP               &kp Y         &kp U              &kp I            &kp O    &kp P     &kp DELETE
-&td0       &kp A  &kp S  &kp D      &kp F        &kp G                       &kp LEFT  &tog 2    &kp RIGHT  &kp H         &kp J              &kp K            &kp L    &kp SEMI  &kp SQT
-&kp LCTRL  &kp Z  &kp X  &kp C      &kp V        &kp B        &SYSTOG 7 1              &kp DOWN             &kp N         &kp M              &kp COMMA        &kp DOT  &kp FSLH  &kp ESC
-                         &lt 6 TAB  &lt 2 SPACE  &lt 5 ENTER                                                &lt 4 RETURN  &lt 3 RIGHT_SHIFT  &lt 7 BACKSPACE
+&kp TAB    &kp Q  &kp W  &kp E      &kp R        &kp T                                 &kp UP               &kp Y         &kp U        &kp I            &kp O    &kp P     &kp DELETE
+&td0       &kp A  &kp S  &kp D      &kp F        &kp G                       &kp LEFT  &tog 2    &kp RIGHT  &kp H         &kp J        &kp K            &kp L    &kp SEMI  &kp SQT
+&kp LCTRL  &kp Z  &kp X  &kp C      &kp V        &kp B        &SYSTOG 7 1              &kp DOWN             &kp N         &kp M        &kp COMMA        &kp DOT  &kp FSLH  &kp ESC
+                         &lt 6 TAB  &lt 2 SPACE  &lt 5 ENTER                                                &lt 4 RETURN  &lt 3 SPACE  &lt 7 BACKSPACE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOLUME_DOWN>;
@@ -342,10 +342,10 @@
         SYMBOL {
             display-name = "SYMBOL";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                            &mmv MOVE_UP                     &kp LEFT_BRACE        &kp AMPS               &kp STAR               &kp LEFT_PARENTHESIS  &kp RIGHT_BRACE  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp PLUS              &kp DOLLAR             &kp PERCENT            &kp CARET             &kp COLON        &kp TILDE
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                    &mmv MOVE_DOWN                   &kp UNDER             &kp EXCL               &kp AT                 &kp HASH              &kp BACKSLASH    &trans
-                        &trans  &trans  &trans                                                             &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&trans  &trans  &trans  &trans  &trans  &trans                            &mmv MOVE_UP                     &kp LEFT_BRACE        &kp AMPS    &kp STAR               &kp LEFT_PARENTHESIS  &kp RIGHT_BRACE  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp PLUS              &kp DOLLAR  &kp PERCENT            &kp CARET             &kp COLON        &kp TILDE
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                    &mmv MOVE_DOWN                   &kp UNDER             &kp EXCL    &kp AT                 &kp HASH              &kp BACKSLASH    &trans
+                        &trans  &trans  &trans                                                             &kp LEFT_PARENTHESIS  &trans      &kp RIGHT_PARENTHESIS
             >;
 
             sensor-bindings = <&inc_dec_kp LC(Y) LC(Z)>;
