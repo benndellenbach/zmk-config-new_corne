@@ -298,7 +298,7 @@
             bindings = <
 &trans  &trans  &kp E   &kp W    &trans     &trans                            &mmv MOVE_UP                     &trans          &mkp LCLK        &kp UP_ARROW   &mkp RCLK     &trans           &trans
 &trans  &kp F   &kp A   &kp S    &kp D      &trans            &mmv MOVE_LEFT  &trans          &mmv MOVE_RIGHT  &trans          &kp LEFT_ARROW   &kp UP_ARROW   &kp DOWN      &trans           &trans
-&trans  &trans  &trans  &trans   &trans     &trans  &trans                    &mmv MOVE_DOWN                   &msc SCRL_LEFT  &msc SCRL_DOWN   &trans         &msc SCRL_UP  &msc SCRL_RIGHT  &trans
+&trans  &trans  &trans  &trans   &trans     &trans  &trans                    &mmv MOVE_DOWN                   &msc SCRL_LEFT  &msc SCRL_DOWN   &mkp MB3       &msc SCRL_UP  &msc SCRL_RIGHT  &trans
                         &kp TAB  &kp SPACE  &trans                                                             &trans          &kp RIGHT_SHIFT  &kp BACKSPACE
             >;
 
@@ -310,7 +310,7 @@
             bindings = <
 &kp PAGE_UP    &kp END         &kp PG_UP       &kp PAGE_DOWN  &kp C_AC_HOME    &kp INS                              &mmv MOVE_UP                     &trans          &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &trans           &trans
 &kp PAGE_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP   &mmv MOVE_RIGHT  &kp TAB              &mmv MOVE_LEFT  &trans          &mmv MOVE_RIGHT  &trans          &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans           &trans
-&kp HOME       &kp LC(Z)       &kp LC(X)       &kp LC(C)      &kp LC(V)        &kp LC(Y)  &trans                    &mmv MOVE_DOWN                   &msc SCRL_LEFT  &msc SCRL_DOWN  &trans          &msc SCRL_UP     &msc SCRL_RIGHT  &trans
+&kp HOME       &kp LC(Z)       &kp LC(X)       &kp LC(C)      &kp LC(V)        &kp LC(Y)  &trans                    &mmv MOVE_DOWN                   &msc SCRL_LEFT  &msc SCRL_DOWN  &mkp MB3        &msc SCRL_UP     &msc SCRL_RIGHT  &trans
                                                &mkp MCLK      &mkp LCLK        &mkp RCLK                                                             &trans          &trans          &trans
             >;
 
