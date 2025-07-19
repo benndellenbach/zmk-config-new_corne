@@ -47,7 +47,7 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: GAMING}
   - {t: '$$mdi:keyboard-return$$', h: NUMPAD}
   - {t: RETURN, h: FUN}
-  - {t: '$$mdi:apple-keyboard-shift$$', h: MOUSE}
+  - {t: '$$mdi:keyboard-space$$', h: MOUSE}
   - {t: '$$mdi:backspace$$', h: BT}
   TAB:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -341,7 +341,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - (
-  - )
+  - {t: '$$mdi:transfer$$', type: trans}
   - )
   BT:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -591,55 +591,55 @@ layers:
 combos:
 - p: [17, 16]
   k: $$mdi:apple-keyboard-option$$
-  l: [GAMING, MOUSE, NUMPAD, SYMBOL, QWERTY, FUN]
+  l: [GAMING, MOUSE, NUMPAD, SYMBOL, QWERTY, FUN, TAB]
 - p: [16, 15]
   k: '&td0'
-  l: [SYMBOL, GAMING, NUMPAD, MOUSE, QWERTY, FUN]
+  l: [SYMBOL, GAMING, NUMPAD, MOUSE, QWERTY, FUN, TAB]
 - p: [15, 14]
   k: $$mdi:apple-keyboard-control$$
-  l: [MOUSE, NUMPAD, SYMBOL, QWERTY, GAMING, FUN]
+  l: [MOUSE, NUMPAD, SYMBOL, QWERTY, GAMING, FUN, TAB]
 - p: [14, 17]
   k: LEFT WIN
-  l: [MOUSE, NUMPAD, SYMBOL, QWERTY, GAMING, FUN]
+  l: [MOUSE, NUMPAD, SYMBOL, QWERTY, GAMING, FUN, TAB]
 - p: [26, 23]
   k: RIGHT WIN
-  l: [GAMING, FUN, QWERTY, MOUSE, NUMPAD, SYMBOL]
+  l: [GAMING, FUN, QWERTY, MOUSE, NUMPAD, SYMBOL, TAB]
 - p: [25, 26]
   k: $$mdi:apple-keyboard-control$$
-  l: [GAMING, FUN, QWERTY, MOUSE, NUMPAD, SYMBOL]
+  l: [GAMING, FUN, QWERTY, MOUSE, NUMPAD, SYMBOL, TAB]
 - p: [24, 25]
   k: '&td0'
-  l: [GAMING, FUN, QWERTY, MOUSE, NUMPAD, SYMBOL]
+  l: [GAMING, FUN, QWERTY, MOUSE, NUMPAD, SYMBOL, TAB]
 - p: [23, 24]
   k: $$mdi:apple-keyboard-option$$
-  l: [GAMING, FUN, QWERTY, MOUSE, NUMPAD, SYMBOL]
-- p: [23, 46]
+  l: [GAMING, FUN, QWERTY, MOUSE, NUMPAD, SYMBOL, TAB]
+- p: [43, 17]
   k: {t: FUN, h: toggle}
-  l: [MOUSE, NUMPAD, FUN, SYMBOL, GAMING]
-- p: [17, 43]
+  l: [MOUSE, NUMPAD, FUN, SYMBOL, GAMING, QWERTY, TAB]
+- p: [46, 23]
   k: {t: MOUSE, h: toggle}
-  l: [MOUSE, NUMPAD, FUN, SYMBOL]
+  l: [MOUSE, NUMPAD, FUN, SYMBOL, QWERTY, TAB]
 - p: [23, 45]
-  k: {t: GAMING, h: toggle}
-  l: [MOUSE, NUMPAD, FUN, SYMBOL, QWERTY]
+  k: {t: FUN, h: toggle}
+  l: [MOUSE, NUMPAD, FUN, SYMBOL, QWERTY, TAB]
 - p: [17, 44]
   k: {t: NUMPAD, h: toggle}
-  l: [GAMING, MOUSE, NUMPAD, FUN]
+  l: [MOUSE, NUMPAD, FUN, QWERTY, TAB, SYMBOL]
 - p: [17, 42]
   k: {t: SYMBOL, h: toggle}
-  l: [MOUSE, NUMPAD, FUN, SYMBOL, QWERTY]
+  l: [MOUSE, NUMPAD, FUN, SYMBOL, QWERTY, TAB]
 - p: [23, 47]
   k: {t: BT, h: toggle}
-  l: [MOUSE, NUMPAD, FUN, QWERTY, SYMBOL]
+  l: [MOUSE, NUMPAD, FUN, QWERTY, SYMBOL, TAB]
 - p: [13, 17]
   k: {t: QWERTY, h: toggle}
-  l: [QWERTY, GAMING, MOUSE, FUN, NUMPAD, SYMBOL]
+  l: [QWERTY, MOUSE, FUN, NUMPAD, SYMBOL, GAMING, TAB]
 - p: [23, 27]
   k: {t: QWERTY, h: toggle}
-  l: [GAMING, MOUSE, FUN, QWERTY, NUMPAD, SYMBOL]
+  l: [GAMING, MOUSE, FUN, QWERTY, NUMPAD, SYMBOL, TAB]
 - p: [31, 32]
   k: '&key_repeat'
-  l: [GAMING, FUN, NUMPAD, SYMBOL, MOUSE, QWERTY]
+  l: [GAMING, FUN, NUMPAD, SYMBOL, MOUSE, QWERTY, TAB]
 - p: [37, 38]
   k: '&key_repeat'
-  l: [GAMING, FUN, NUMPAD, SYMBOL, MOUSE, QWERTY]
+  l: [GAMING, FUN, NUMPAD, SYMBOL, MOUSE, QWERTY, TAB]
