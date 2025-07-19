@@ -144,109 +144,109 @@
         LeftAlt {
             bindings = <&kp LEFT_ALT>;
             key-positions = <17 16>;
-            layers = <1 2 4 5 0 3>;
+            layers = <2 3 5 6 0 4>;
         };
 
         LeftShift {
-            bindings = <&kp LEFT_SHIFT>;
+            bindings = <&td0>;
             key-positions = <16 15>;
-            layers = <5 1 4 2 0 3>;
+            layers = <6 2 5 3 0 4>;
         };
 
         LeftCtrl {
             bindings = <&kp LEFT_CONTROL>;
             key-positions = <15 14>;
-            layers = <2 4 5 0 1 3>;
+            layers = <3 5 6 0 2 4>;
         };
 
         LeftSuper {
             bindings = <&kp LEFT_WIN>;
             key-positions = <14 17>;
-            layers = <2 4 5 0 1 3>;
+            layers = <3 5 6 0 2 4>;
         };
 
         RSuper {
             bindings = <&kp RIGHT_WIN>;
             key-positions = <26 23>;
-            layers = <1 3 0 2 4 5>;
+            layers = <2 4 0 3 5 6>;
         };
 
         RCtrl {
             bindings = <&kp RIGHT_CONTROL>;
             key-positions = <25 26>;
-            layers = <1 3 0 2 4 5>;
+            layers = <2 4 0 3 5 6>;
         };
 
         RShift {
-            bindings = <&kp RIGHT_SHIFT>;
+            bindings = <&td0>;
             key-positions = <24 25>;
-            layers = <1 3 0 2 4 5>;
+            layers = <2 4 0 3 5 6>;
         };
 
         RAlt {
             bindings = <&kp RIGHT_ALT>;
             key-positions = <23 24>;
-            layers = <1 3 0 2 4 5>;
+            layers = <2 4 0 3 5 6>;
         };
 
         Gamelock {
-            bindings = <&tog 3>;
+            bindings = <&tog 4>;
             key-positions = <23 46>;
-            layers = <2 4 3 5 1>;
+            layers = <3 5 4 6 2>;
         };
 
         MouseLock {
-            bindings = <&tog 2>;
+            bindings = <&tog 3>;
             key-positions = <17 43>;
-            layers = <2 4 3 5>;
+            layers = <3 5 4 6>;
         };
 
         FunLock {
-            bindings = <&tog 1>;
+            bindings = <&tog 2>;
             key-positions = <23 45>;
-            layers = <2 4 3 5 0>;
+            layers = <3 5 4 6 0>;
         };
 
         NumLock {
-            bindings = <&tog 4>;
+            bindings = <&tog 5>;
             key-positions = <17 44>;
-            layers = <1 2 4 3>;
+            layers = <2 3 5 4>;
         };
 
         SymLock {
-            bindings = <&tog 5>;
+            bindings = <&tog 6>;
             key-positions = <17 42>;
-            layers = <2 4 3 5 0>;
+            layers = <3 5 4 6 0>;
         };
 
         RGBLock {
-            bindings = <&tog 6>;
+            bindings = <&tog 7>;
             key-positions = <23 47>;
-            layers = <2 4 3 0 5>;
+            layers = <3 5 4 0 6>;
         };
 
         LDefault {
             bindings = <&to 0>;
             key-positions = <13 17>;
-            layers = <0 1 2 3 4 5>;
+            layers = <0 2 3 4 5 6>;
         };
 
         RDefault {
             bindings = <&to 0>;
             key-positions = <23 27>;
-            layers = <1 2 3 0 4 5>;
+            layers = <2 3 4 0 5 6>;
         };
 
         LRPT {
             bindings = <&key_repeat>;
             key-positions = <31 32>;
-            layers = <1 3 4 5 2 0>;
+            layers = <2 4 5 6 3 0>;
         };
 
         RRPT {
             bindings = <&key_repeat>;
             key-positions = <37 38>;
-            layers = <1 3 4 5 2 0>;
+            layers = <2 4 5 6 3 0>;
         };
     };
 
@@ -272,22 +272,34 @@
         BASE {
             display-name = "QWERTY";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E      &kp R        &kp T                                  &kp UP               &kp Y              &kp U        &kp I            &kp O    &kp P     &kp DELETE
-&td0       &kp A  &kp S  &kp D      &kp F        &kp G                        &kp LEFT  &tog 1    &kp RIGHT  &kp H              &kp J        &kp K            &kp L    &kp SEMI  &kp SQT
-&kp LCTRL  &kp Z  &kp X  &kp C      &kp V        &kp B        &SYSTOG 6 11              &kp DOWN             &kp N              &kp M        &kp COMMA        &kp DOT  &kp FSLH  &kp ESC
-                         &lt 5 TAB  &lt 1 SPACE  &lt 4 ENTER                                                 &lt 3 RIGHT_SHIFT  &lt 2 ENTER  &lt 6 BACKSPACE
+&kp TAB    &kp Q  &kp W  &kp E      &kp R        &kp T                                 &kp UP               &kp Y         &kp U              &kp I            &kp O    &kp P     &kp DELETE
+&td0       &kp A  &kp S  &kp D      &kp F        &kp G                       &kp LEFT  &tog 2    &kp RIGHT  &kp H         &kp J              &kp K            &kp L    &kp SEMI  &kp SQT
+&kp LCTRL  &kp Z  &kp X  &kp C      &kp V        &kp B        &SYSTOG 7 1              &kp DOWN             &kp N         &kp M              &kp COMMA        &kp DOT  &kp FSLH  &kp ESC
+                         &lt 6 TAB  &lt 2 SPACE  &lt 5 ENTER                                                &lt 4 RETURN  &lt 3 RIGHT_SHIFT  &lt 7 BACKSPACE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOLUME_DOWN>;
         };
 
+        QTAB {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                        &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &SYSTO 7 0            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans                                        &trans  &trans  &trans
+            >;
+
+            label = "TAB";
+            sensor-bindings = <&inc_dec_kp TAB LS(TAB)>;
+        };
+
         Gamepad {
             display-name = "GAMING";
             bindings = <
-&trans  &trans  &kp E   &kp W    &trans     &trans                             &mmv MOVE_UP                     &trans           &mkp LCLK       &kp UP_ARROW   &mkp RCLK     &trans           &trans
-&trans  &kp F   &kp A   &kp S    &kp D      &trans             &mmv MOVE_LEFT  &trans          &mmv MOVE_RIGHT  &trans           &kp LEFT_ARROW  &kp UP_ARROW   &kp DOWN      &trans           &trans
-&trans  &trans  &trans  &trans   &trans     &trans   &trans                    &mmv MOVE_DOWN                   &msc SCRL_LEFT   &msc SCRL_DOWN  &trans         &msc SCRL_UP  &msc SCRL_RIGHT  &trans
-                        &kp TAB  &kp SPACE  &kp RET                                                             &kp RIGHT_SHIFT  &kp ENTER       &kp BACKSPACE
+&trans  &trans  &kp E   &kp W    &trans     &trans                            &mmv MOVE_UP                     &trans          &mkp LCLK        &kp UP_ARROW   &mkp RCLK     &trans           &trans
+&trans  &kp F   &kp A   &kp S    &kp D      &trans            &mmv MOVE_LEFT  &trans          &mmv MOVE_RIGHT  &trans          &kp LEFT_ARROW   &kp UP_ARROW   &kp DOWN      &trans           &trans
+&trans  &trans  &trans  &trans   &trans     &trans  &trans                    &mmv MOVE_DOWN                   &msc SCRL_LEFT  &msc SCRL_DOWN   &trans         &msc SCRL_UP  &msc SCRL_RIGHT  &trans
+                        &kp TAB  &kp SPACE  &trans                                                             &trans          &kp RIGHT_SHIFT  &kp BACKSPACE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -318,10 +330,10 @@
         NUMPAD {
             display-name = "NUMPAD";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                            &msc SCRL_UP                     &kp LEFT_BRACKET  &kp N7  &kp N8  &kp N9  &kp RIGHT_BRACKET  &kp BSPC
-&trans  &trans  &trans  &trans  &trans  &trans            &msc SCRL_LEFT  &mkp LCLK       &msc SCRL_RIGHT  &kp PLUS          &kp N4  &kp N5  &kp N6  &kp COLON          &kp EQUAL
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                    &msc SCRL_DOWN                   &kp MINUS         &kp N1  &kp N2  &kp N3  &kp SLASH          &trans
-                        &trans  &trans  &trans                                                             &trans            &kp N0  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                            &msc SCRL_UP                     &kp LEFT_BRACKET  &kp N7  &kp N8                 &kp N9  &kp RIGHT_BRACKET  &kp BSPC
+&trans  &trans  &trans  &trans  &trans  &trans            &msc SCRL_LEFT  &mkp LCLK       &msc SCRL_RIGHT  &kp PLUS          &kp N4  &kp N5                 &kp N6  &kp COLON          &kp EQUAL
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                    &msc SCRL_DOWN                   &kp MINUS         &kp N1  &kp N2                 &kp N3  &kp SLASH          &trans
+                        &trans  &trans  &trans                                                             &kp LPAR          &kp N0  &kp RIGHT_PARENTHESIS
             >;
 
             sensor-bindings = <&inc_dec_kp LS(RIGHT) LS(LEFT)>;
@@ -344,7 +356,7 @@
             bindings = <
 &trans  &trans      &trans        &trans           &rgb_ug RGB_EFF   &rgb_ug RGB_TOG                               &rgb_ug RGB_SAI                   &trans        &trans             &trans           &trans           &trans  &to 0
 &trans  &kp C_PREV  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_NEXT        &ext_power EP_TOG            &rgb_ug RGB_HUD  &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &out OUT_TOG  &rgb_ug RGB_TOG    &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &trans  &trans
-&trans  &trans      &bt BT_SEL 2  &bt BT_SEL 1     &bt BT_SEL 0      &out OUT_TOG       &tog 7                     &rgb_ug RGB_SAD                   &trans        &ext_power EP_TOG  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &trans  &trans
+&trans  &trans      &bt BT_SEL 2  &bt BT_SEL 1     &bt BT_SEL 0      &out OUT_TOG       &tog 8                     &rgb_ug RGB_SAD                   &trans        &ext_power EP_TOG  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &trans  &trans
                                   &kp K_MUTE       &kp C_PLAY_PAUSE  &kp K_STOP                                                                      &trans        &trans             &trans
             >;
 
@@ -356,7 +368,7 @@
             bindings = <
 &trans  &trans      &trans        &trans           &rgb_ug RGB_EFF   &rgb_ug RGB_TOG                               &rgb_ug RGB_SAI                   &trans        &trans             &trans           &trans           &trans  &trans
 &trans  &kp C_PREV  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_NEXT        &ext_power EP_TOG            &rgb_ug RGB_HUD  &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &out OUT_TOG  &rgb_ug RGB_TOG    &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &trans  &trans
-&trans  &trans      &bt BT_SEL 2  &bt BT_SEL 1     &bt BT_SEL 0      &out OUT_TOG       &tog 8                     &rgb_ug RGB_SAD                   &trans        &ext_power EP_TOG  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &trans  &trans
+&trans  &trans      &bt BT_SEL 2  &bt BT_SEL 1     &bt BT_SEL 0      &out OUT_TOG       &tog 9                     &rgb_ug RGB_SAD                   &trans        &ext_power EP_TOG  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &trans  &trans
                                   &kp K_MUTE       &kp C_PLAY_PAUSE  &kp K_STOP                                                                      &trans        &trans             &trans
             >;
 
@@ -366,10 +378,10 @@
         RGB2 {
             display-name = "RGB HUE";
             bindings = <
-&trans  &trans      &trans        &trans           &rgb_ug RGB_EFF   &rgb_ug RGB_TOG                               &rgb_ug RGB_SAI                   &trans        &trans             &trans           &trans           &trans  &trans
-&trans  &kp C_PREV  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_NEXT        &ext_power EP_TOG            &rgb_ug RGB_HUD  &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &out OUT_TOG  &rgb_ug RGB_TOG    &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &trans  &trans
-&trans  &trans      &bt BT_SEL 2  &bt BT_SEL 1     &bt BT_SEL 0      &out OUT_TOG       &tog 9                     &rgb_ug RGB_SAD                   &trans        &ext_power EP_TOG  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &trans  &trans
-                                  &kp K_MUTE       &kp C_PLAY_PAUSE  &kp K_STOP                                                                      &trans        &trans             &trans
+&trans  &trans      &trans        &trans           &rgb_ug RGB_EFF   &rgb_ug RGB_TOG                                &rgb_ug RGB_SAI                   &trans        &trans             &trans           &trans           &trans  &trans
+&trans  &kp C_PREV  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_NEXT        &ext_power EP_TOG             &rgb_ug RGB_HUD  &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &out OUT_TOG  &rgb_ug RGB_TOG    &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &trans  &trans
+&trans  &trans      &bt BT_SEL 2  &bt BT_SEL 1     &bt BT_SEL 0      &out OUT_TOG       &tog 10                     &rgb_ug RGB_SAD                   &trans        &ext_power EP_TOG  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &trans  &trans
+                                  &kp K_MUTE       &kp C_PLAY_PAUSE  &kp K_STOP                                                                       &trans        &trans             &trans
             >;
 
             sensor-bindings = <&RGBHUE>;
@@ -380,7 +392,7 @@
             bindings = <
 &trans  &trans      &trans        &trans           &rgb_ug RGB_EFF   &rgb_ug RGB_TOG                                &rgb_ug RGB_SAI                   &trans        &trans             &trans           &trans           &trans  &trans
 &trans  &kp C_PREV  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_NEXT        &ext_power EP_TOG             &rgb_ug RGB_HUD  &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &out OUT_TOG  &rgb_ug RGB_TOG    &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &trans  &trans
-&trans  &trans      &bt BT_SEL 2  &bt BT_SEL 1     &bt BT_SEL 0      &out OUT_TOG       &tog 10                     &rgb_ug RGB_SAD                   &trans        &ext_power EP_TOG  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &trans  &trans
+&trans  &trans      &bt BT_SEL 2  &bt BT_SEL 1     &bt BT_SEL 0      &out OUT_TOG       &tog 11                     &rgb_ug RGB_SAD                   &trans        &ext_power EP_TOG  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &trans  &trans
                                   &kp K_MUTE       &kp C_PLAY_PAUSE  &kp K_STOP                                                                       &trans        &trans             &trans
             >;
 
@@ -392,23 +404,11 @@
             bindings = <
 &trans  &trans      &trans        &trans           &rgb_ug RGB_EFF   &rgb_ug RGB_TOG                                   &rgb_ug RGB_SAI                   &trans        &trans             &trans           &trans           &trans  &trans
 &trans  &kp C_PREV  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_NEXT        &ext_power EP_TOG                &rgb_ug RGB_HUD  &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &out OUT_TOG  &rgb_ug RGB_TOG    &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &trans  &trans
-&trans  &trans      &bt BT_SEL 2  &bt BT_SEL 1     &bt BT_SEL 0      &out OUT_TOG       &SYSTO 6 0                     &rgb_ug RGB_SAD                   &trans        &ext_power EP_TOG  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &trans  &trans
+&trans  &trans      &bt BT_SEL 2  &bt BT_SEL 1     &bt BT_SEL 0      &out OUT_TOG       &SYSTO 7 0                     &rgb_ug RGB_SAD                   &trans        &ext_power EP_TOG  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &trans  &trans
                                   &kp K_MUTE       &kp C_PLAY_PAUSE  &kp K_STOP                                                                          &trans        &trans             &trans
             >;
 
             sensor-bindings = <&RGBSPD>;
-        };
-
-        QTAB {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                        &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &SYSTO 6 0            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                                        &trans  &trans  &trans
-            >;
-
-            label = "TAB";
-            sensor-bindings = <&inc_dec_kp TAB LS(TAB)>;
         };
     };
 };
