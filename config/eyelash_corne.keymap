@@ -14,16 +14,15 @@
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
 
 fast-mmv {
-    layers = <1>;
+    layers = <4>;
     input-processors = <&zip_xy_scaler 4 1>;
 };
 
 &msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
 
 fast-scroller {
-    layers = <1>;
-    input-processors = <
-&zip_scroll_scaler 4 1>>;
+    layers = <4>;
+    input-processors = <&zip_scroll_scaler 4 1>>;
 };
 
 &msc {
