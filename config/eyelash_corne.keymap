@@ -144,103 +144,103 @@
         LeftAlt {
             bindings = <&kp LEFT_ALT>;
             key-positions = <17 16>;
-            layers = <2 3 5 6 0 4 1>;
+            layers = <2 3 5 6 0 4 1 13>;
         };
 
         LeftShift {
             bindings = <&td0>;
             key-positions = <16 15>;
-            layers = <6 2 5 3 0 4 1>;
+            layers = <6 2 5 3 0 4 1 13>;
         };
 
         LeftCtrl {
             bindings = <&kp LEFT_CONTROL>;
             key-positions = <15 14>;
-            layers = <3 5 6 0 2 4 1>;
+            layers = <3 5 6 0 2 4 1 13>;
         };
 
         LeftSuper {
             bindings = <&kp LEFT_WIN>;
             key-positions = <14 17>;
-            layers = <3 5 6 0 2 4 1>;
+            layers = <3 5 6 0 2 4 1 13>;
         };
 
         RSuper {
             bindings = <&kp RIGHT_WIN>;
             key-positions = <26 23>;
-            layers = <2 4 0 3 5 6 1>;
+            layers = <2 4 0 3 5 6 1 13>;
         };
 
         RCtrl {
             bindings = <&kp RIGHT_CONTROL>;
             key-positions = <25 26>;
-            layers = <2 4 0 3 5 6 1>;
+            layers = <2 4 0 3 5 6 1 13>;
         };
 
         RShift {
             bindings = <&td0>;
             key-positions = <24 25>;
-            layers = <2 4 0 3 5 6 1>;
+            layers = <2 4 0 3 5 6 1 13>;
         };
 
         RAlt {
             bindings = <&kp RIGHT_ALT>;
             key-positions = <23 24>;
-            layers = <2 4 0 3 5 6 1>;
+            layers = <2 4 0 3 5 6 1 13>;
         };
 
         Gamelock {
             bindings = <&tog 3>;
             key-positions = <43 17>;
-            layers = <3 5 4 6 2 0 1>;
+            layers = <3 5 4 6 2 0 1 13>;
         };
 
         MouseLock {
             bindings = <&tog 3>;
             key-positions = <46 23>;
-            layers = <3 5 4 6 0 1>;
+            layers = <3 5 4 6 0 1 13>;
         };
 
         FunLock {
             bindings = <&tog 4>;
             key-positions = <23 45>;
-            layers = <3 5 4 6 0 1>;
+            layers = <3 5 4 6 0 1 13>;
         };
 
         NumLock {
             bindings = <&tog 5>;
             key-positions = <17 44>;
-            layers = <3 5 4 0 1 6>;
+            layers = <3 5 4 0 1 6 13>;
         };
 
         SymLock {
             bindings = <&tog 6>;
             key-positions = <17 42>;
-            layers = <3 5 4 6 0 1>;
+            layers = <3 5 4 6 0 1 13>;
         };
 
         RGBLock {
             bindings = <&tog 7>;
             key-positions = <23 47>;
-            layers = <3 5 4 6 1 7 9 10 11 12 8>;
+            layers = <3 5 4 6 1 7 9 10 11 12 8 0 13>;
         };
 
         LDefault {
             bindings = <&to 0>;
             key-positions = <13 17>;
-            layers = <0 3 4 5 6 2 1>;
+            layers = <0 3 4 5 6 2 1 7 8 9 10 11 12 13>;
         };
 
         RDefault {
             bindings = <&to 0>;
             key-positions = <23 27>;
-            layers = <2 3 4 0 5 6 1>;
+            layers = <2 3 4 0 5 6 1 7 8 9 10 11 12 13>;
         };
 
         LRPT {
             bindings = <&key_repeat>;
             key-positions = <31 32>;
-            layers = <2 4 5 6 3 0 1>;
+            layers = <2 4 5 6 3 0 1 13>;
         };
 
         RRPT {
