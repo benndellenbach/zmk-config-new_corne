@@ -11,14 +11,14 @@
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
-&mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
+&mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>;
 
 fast-mmv {
     layers = <4>;
     input-processors = <&zip_xy_scaler 4 1>;
 };
 
-&msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
+&msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>;
 
 fast-scroller {
     layers = <4>;
