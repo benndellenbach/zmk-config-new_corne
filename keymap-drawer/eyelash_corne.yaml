@@ -738,28 +738,28 @@ layers:
 combos:
 - p: [17, 16]
   k: $$mdi:apple-keyboard-option$$
-  l: [GAMING, MOUSE, NUMPAD, SYMBOL, QWERTY, FUN, TAB, ZOOM]
+  l: [MOUSE, NUMPAD, SYMBOL, QWERTY, FUN, TAB, ZOOM]
 - p: [16, 15]
   k: '&td0'
-  l: [SYMBOL, GAMING, NUMPAD, MOUSE, QWERTY, FUN, TAB, ZOOM]
+  l: [SYMBOL, NUMPAD, MOUSE, QWERTY, FUN, TAB, ZOOM]
 - p: [15, 14]
   k: $$mdi:apple-keyboard-control$$
-  l: [MOUSE, NUMPAD, SYMBOL, QWERTY, GAMING, FUN, TAB, ZOOM]
+  l: [MOUSE, NUMPAD, SYMBOL, QWERTY, FUN, TAB, ZOOM]
 - p: [14, 17]
   k: LEFT WIN
-  l: [MOUSE, NUMPAD, SYMBOL, QWERTY, GAMING, FUN, TAB, ZOOM]
+  l: [MOUSE, NUMPAD, SYMBOL, QWERTY, FUN, TAB, ZOOM]
 - p: [26, 23]
   k: RIGHT WIN
-  l: [GAMING, FUN, QWERTY, MOUSE, NUMPAD, SYMBOL, TAB, ZOOM]
+  l: [FUN, QWERTY, NUMPAD, SYMBOL, TAB, ZOOM]
 - p: [25, 26]
   k: $$mdi:apple-keyboard-control$$
-  l: [GAMING, FUN, QWERTY, MOUSE, NUMPAD, SYMBOL, TAB, ZOOM]
+  l: [FUN, QWERTY, NUMPAD, SYMBOL, TAB, ZOOM]
 - p: [24, 25]
   k: '&td0'
-  l: [GAMING, FUN, QWERTY, MOUSE, NUMPAD, SYMBOL, TAB, ZOOM]
+  l: [FUN, QWERTY, NUMPAD, SYMBOL, TAB, ZOOM]
 - p: [23, 24]
   k: $$mdi:apple-keyboard-option$$
-  l: [GAMING, FUN, QWERTY, MOUSE, NUMPAD, SYMBOL, TAB, ZOOM]
+  l: [FUN, QWERTY, NUMPAD, SYMBOL, TAB, ZOOM]
 - p: [43, 17]
   k: {t: MOUSE, h: toggle}
   l: [MOUSE, NUMPAD, FUN, SYMBOL, GAMING, QWERTY, TAB, ZOOM]
