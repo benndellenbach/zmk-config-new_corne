@@ -11,14 +11,13 @@
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
-&mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>;
-};
+&mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
 
-&msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; 
-};
+&msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
 
 &msc {
     acceleration-exponent = <
+
     >;
 
     // 1
@@ -150,49 +149,49 @@
         LeftAlt {
             bindings = <&kp LEFT_ALT>;
             key-positions = <17 16>;
-            layers = <2 3 6 7 0 5 1 14>;
+            layers = <3 6 7 0 5 1 14>;
         };
 
         LeftShift {
             bindings = <&td0>;
             key-positions = <16 15>;
-            layers = <7 2 6 3 0 5 1 14>;
+            layers = <7 6 3 0 5 1 14>;
         };
 
         LeftCtrl {
             bindings = <&kp LEFT_CONTROL>;
             key-positions = <15 14>;
-            layers = <3 6 7 0 2 5 1 14>;
+            layers = <3 6 7 0 5 1 14>;
         };
 
         LeftSuper {
             bindings = <&kp LEFT_WIN>;
             key-positions = <14 17>;
-            layers = <3 6 7 0 2 5 1 14>;
+            layers = <3 6 7 0 5 1 14>;
         };
 
         RSuper {
             bindings = <&kp RIGHT_WIN>;
             key-positions = <26 23>;
-            layers = <2 5 0 3 6 7 1 14>;
+            layers = <5 0 6 7 1 14>;
         };
 
         RCtrl {
             bindings = <&kp RIGHT_CONTROL>;
             key-positions = <25 26>;
-            layers = <2 5 0 3 6 7 1 14>;
+            layers = <5 0 6 7 1 14>;
         };
 
         RShift {
             bindings = <&td0>;
             key-positions = <24 25>;
-            layers = <2 5 0 3 6 7 1 14>;
+            layers = <5 0 6 7 1 14>;
         };
 
         RAlt {
             bindings = <&kp RIGHT_ALT>;
             key-positions = <23 24>;
-            layers = <2 5 0 3 6 7 1 14>;
+            layers = <5 0 6 7 1 14>;
         };
 
         Gamelock {
