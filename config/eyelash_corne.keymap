@@ -15,7 +15,7 @@
     input-processors = <&zip_xy_scaler 2 1>;
 
     fast-input {
-        layers = <4>;
+        layers = <5>;
         input-processors = <&zip_xy_scaler 4 1>;
     };
 };
