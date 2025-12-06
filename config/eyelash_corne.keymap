@@ -25,7 +25,7 @@
     
     fast-input {
         layers = <4>;
-        input-processors = <&zip_xy_scaler 4 1>;
+        input-processors = <&zip_scroll_scaler 4 1>;
     };
 
 };
