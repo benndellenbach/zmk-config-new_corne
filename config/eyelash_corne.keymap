@@ -20,14 +20,13 @@
     };
 };
 
-&msc_input_listener { 
-    input-processors = <&zip_scroll_scaler 2 1>; 
-    
+&msc_input_listener {
+    input-processors = <&zip_scroll_scaler 2 1>;
+
     fast-input {
         layers = <4>;
         input-processors = <&zip_scroll_scaler 4 1>;
     };
-
 };
 
 &msc {
@@ -237,19 +236,19 @@
         RGBLock {
             bindings = <&tog 9>;
             key-positions = <23 47>;
-            layers = <4 7 6 8 1 9 10 11 12 13 0 2>;
+            layers = <4 7 6 8 1 9 0 2>;
         };
 
         LDefault {
             bindings = <&to 0>;
             key-positions = <13 17>;
-            layers = <0 4 6 7 8 3 1 9 10 11 12 13 2>;
+            layers = <0 4 6 7 8 3 1 9 2>;
         };
 
         RDefault {
             bindings = <&to 0>;
             key-positions = <23 27>;
-            layers = <3 4 6 0 7 8 1 9 10 11 12 13 2>;
+            layers = <3 4 6 0 7 8 1 9 2>;
         };
 
         LRPT {
@@ -393,61 +392,13 @@
         MediaControls {
             display-name = "MEDIA";
             bindings = <
-&trans  &trans  &trans        &trans           &trans      &trans                                             &rgb_ug RGB_SAI                   &trans        &trans             &trans           &trans           &trans  &to 0
-&trans  &trans  &kp C_VOL_DN  &kp C_VOLUME_UP  &trans      &ext_power EP_TOG                 &rgb_ug RGB_HUD  &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &out OUT_TOG  &rgb_ug RGB_TOG    &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &trans  &trans
-&trans  &trans  &bt BT_CLR    &bt BT_SEL 1     &bt BT_CLR  &out OUT_TOG       &SYSTO 0 10                     &rgb_ug RGB_SAD                   &trans        &ext_power EP_TOG  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &trans  &trans
-                              &trans           &trans      &trans                                                                               &trans        &trans             &trans
+&trans  &trans  &trans        &trans           &bt BT_CLR_ALL  &ext_power EP_TOG                                 &rgb_ug RGB_BRI                   &trans  &trans           &trans           &trans           &trans  &to 0
+&trans  &trans  &kp C_VOL_DN  &kp C_VOLUME_UP  &bt BT_NXT      &out OUT_TOG                     &rgb_ug RGB_HUD  &rgb_ug RGB_TOG  &rgb_ug RGB_HUI  &trans  &rgb_ug RGB_EFF  &rgb_ug RGB_SAI  &rgb_ug RGB_SPI  &trans  &trans
+&trans  &trans  &trans        &trans           &bt BT_CLR      &trans             &SYSTO 0 3                     &rgb_ug RGB_BRD                   &trans  &trans           &rgb_ug RGB_SAD  &rgb_ug RGB_SPD  &trans  &trans
+                              &trans           &trans          &trans                                                                              &trans  &trans           &trans
             >;
 
             sensor-bindings = <&rotary_bt>;
-        };
-
-        RGBBrightness {
-            display-name = "RGB BRI";
-            bindings = <
-&trans  &trans      &trans        &trans           &rgb_ug RGB_EFF   &rgb_ug RGB_TOG                                    &rgb_ug RGB_SAI                   &trans        &trans             &trans           &trans           &trans  &trans
-&trans  &kp C_PREV  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_NEXT        &ext_power EP_TOG                 &rgb_ug RGB_HUD  &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &out OUT_TOG  &rgb_ug RGB_TOG    &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &trans  &trans
-&trans  &trans      &bt BT_SEL 2  &bt BT_SEL 1     &bt BT_SEL 0      &out OUT_TOG       &SYSTO 0 11                     &rgb_ug RGB_SAD                   &trans        &ext_power EP_TOG  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &trans  &trans
-                                  &kp K_MUTE       &kp C_PLAY_PAUSE  &kp K_STOP                                                                           &trans        &trans             &trans
-            >;
-
-            sensor-bindings = <&rgb_encoder>;
-        };
-
-        RGBHue {
-            display-name = "RGB HUE";
-            bindings = <
-&trans  &trans      &trans        &trans           &rgb_ug RGB_EFF   &rgb_ug RGB_TOG                                    &rgb_ug RGB_SAI                   &trans        &trans             &trans           &trans           &trans  &trans
-&trans  &kp C_PREV  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_NEXT        &ext_power EP_TOG                 &rgb_ug RGB_HUD  &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &out OUT_TOG  &rgb_ug RGB_TOG    &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &trans  &trans
-&trans  &trans      &bt BT_SEL 2  &bt BT_SEL 1     &bt BT_SEL 0      &out OUT_TOG       &SYSTO 0 12                     &rgb_ug RGB_SAD                   &trans        &ext_power EP_TOG  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &trans  &trans
-                                  &kp K_MUTE       &kp C_PLAY_PAUSE  &kp K_STOP                                                                           &trans        &trans             &trans
-            >;
-
-            sensor-bindings = <&RGBHUE>;
-        };
-
-        RGBSaturation {
-            display-name = "RGB SAT";
-            bindings = <
-&trans  &trans      &trans        &trans           &rgb_ug RGB_EFF   &rgb_ug RGB_TOG                                    &rgb_ug RGB_SAI                   &trans        &trans             &trans           &trans           &trans  &trans
-&trans  &kp C_PREV  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_NEXT        &ext_power EP_TOG                 &rgb_ug RGB_HUD  &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &out OUT_TOG  &rgb_ug RGB_TOG    &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &trans  &trans
-&trans  &trans      &bt BT_SEL 2  &bt BT_SEL 1     &bt BT_SEL 0      &out OUT_TOG       &SYSTO 0 13                     &rgb_ug RGB_SAD                   &trans        &ext_power EP_TOG  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &trans  &trans
-                                  &kp K_MUTE       &kp C_PLAY_PAUSE  &kp K_STOP                                                                           &trans        &trans             &trans
-            >;
-
-            sensor-bindings = <&RGBSAT>;
-        };
-
-        RGBSpeed {
-            display-name = "RGB SPD";
-            bindings = <
-&trans  &trans      &trans        &trans           &rgb_ug RGB_EFF   &rgb_ug RGB_TOG                                   &rgb_ug RGB_SAI                   &trans        &trans             &trans           &trans           &trans  &trans
-&trans  &kp C_PREV  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_NEXT        &ext_power EP_TOG                &rgb_ug RGB_HUD  &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &out OUT_TOG  &rgb_ug RGB_TOG    &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &trans  &trans
-&trans  &trans      &bt BT_SEL 2  &bt BT_SEL 1     &bt BT_SEL 0      &out OUT_TOG       &SYSTO 9 0                     &rgb_ug RGB_SAD                   &trans        &ext_power EP_TOG  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &trans  &trans
-                                  &kp K_MUTE       &kp C_PLAY_PAUSE  &kp K_STOP                                                                          &trans        &trans             &trans
-            >;
-
-            sensor-bindings = <&RGBSPD>;
         };
     };
 };
