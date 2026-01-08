@@ -47,7 +47,7 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: MOUSE}
   - {t: '$$mdi:keyboard-return$$', h: NUMPAD}
   - {t: RETURN, h: FUN}
-  - {t: '$$mdi:keyboard-space$$', h: MOUSE}
+  - {t: '$$mdi:keyboard-space$$', h: TAB}
   - {t: '$$mdi:backspace$$', h: MEDIA}
   TAB:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -96,7 +96,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   ZOOM:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -243,7 +243,7 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-right-click-outline$$
-  - {t: '$$mdi:mouse-left-click-outline$$', type: held alternate}
+  - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   FMOUSE:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -292,7 +292,7 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - '&mkp MB2'
-  - {t: '$$mdi:mouse-left-click-outline$$', type: held}
+  - $$mdi:mouse-left-click-outline$$
   - '&mkp MB3'
   FUN:
   - PG UP
@@ -518,9 +518,6 @@ combos:
 - p: [43, 17]
   k: {t: MOUSE, h: toggle}
   l: [MOUSE, NUMPAD, FUN, SYMBOL, GAMING, QWERTY, TAB, ZOOM]
-- p: [46, 23]
-  k: {t: MOUSE, h: toggle}
-  l: [MOUSE, NUMPAD, FUN, SYMBOL, QWERTY, TAB, ZOOM]
 - p: [23, 45]
   k: {t: FUN, h: toggle}
   l: [MOUSE, NUMPAD, FUN, SYMBOL, QWERTY, TAB, ZOOM]
