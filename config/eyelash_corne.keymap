@@ -299,7 +299,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                        &trans          &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &SYSTO 9 0            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &SYSTO 9 2            &trans          &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans                                        &trans  &trans  &trans
             >;
 
@@ -309,10 +309,10 @@
 
         Zoom {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                                    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                   &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans           &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &to 0            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans                                   &trans  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PLUS) LC(MINUS)>;
@@ -322,10 +322,10 @@
         Gamepad {
             display-name = "GAMING";
             bindings = <
-&trans  &trans  &kp E   &kp W    &trans     &trans                               &mmv MOVE_UP                     &trans          &mkp MB4        &mmv MOVE_UP     &mkp MB5         &trans           &trans
-&trans  &kp F   &kp A   &kp S    &kp D      &trans               &mmv MOVE_LEFT  &trans          &mmv MOVE_RIGHT  &trans          &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &trans           &trans
-&trans  &trans  &trans  &trans   &trans     &trans     &trans                    &mmv MOVE_DOWN                   &msc SCRL_LEFT  &msc SCRL_DOWN  &mkp MB3         &msc SCRL_UP     &msc SCRL_RIGHT  &trans
-                        &kp TAB  &kp SPACE  &kp ENTER                                                             &mkp RCLK       &mkp LCLK       &kp RIGHT_SHIFT
+&trans  &trans  &kp E   &kp W    &trans     &trans                                   &kp UP_ARROW             &trans          &mkp MB4        &mmv MOVE_UP     &mkp MB5         &trans           &trans
+&trans  &kp F   &kp A   &kp S    &kp D      &trans                   &kp LEFT_ARROW  &trans        &kp RIGHT  &trans          &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &trans           &trans
+&trans  &trans  &trans  &trans   &trans     &trans     &kp K_MUTE                    &kp DOWN                 &msc SCRL_LEFT  &msc SCRL_DOWN  &mkp MB3         &msc SCRL_UP     &msc SCRL_RIGHT  &trans
+                        &kp TAB  &kp SPACE  &kp ENTER                                                         &mkp RCLK       &mkp LCLK       &kp RIGHT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -368,10 +368,10 @@
         NUMPAD {
             display-name = "NUMPAD";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                            &msc SCRL_UP                     &kp LEFT_BRACKET  &kp N7  &kp N8                 &kp N9  &kp RIGHT_BRACKET  &kp BSPC
-&trans  &trans  &trans  &trans  &trans  &trans            &msc SCRL_LEFT  &mkp LCLK       &msc SCRL_RIGHT  &kp PLUS          &kp N4  &kp N5                 &kp N6  &kp COLON          &kp EQUAL
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                    &msc SCRL_DOWN                   &kp MINUS         &kp N1  &kp N2                 &kp N3  &kp SLASH          &trans
-                        &trans  &trans  &trans                                                             &kp LPAR          &kp N0  &kp RIGHT_PARENTHESIS
+&trans  &trans  &trans  &trans  &trans  &trans                            &msc SCRL_UP                     &kp LEFT_BRACKET  &kp N7  &kp N8  &kp N9  &kp RIGHT_BRACKET  &kp BSPC
+&trans  &trans  &trans  &trans  &trans  &trans            &msc SCRL_LEFT  &mkp LCLK       &msc SCRL_RIGHT  &kp PLUS          &kp N4  &kp N5  &kp N6  &kp COLON          &kp EQUAL
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                    &msc SCRL_DOWN                   &kp MINUS         &kp N1  &kp N2  &kp N3  &kp SLASH          &trans
+                        &trans  &trans  &trans                                                             &trans            &kp N0  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LS(RIGHT) LS(LEFT)>;
