@@ -233,11 +233,11 @@ layers:
   - Ctl+Y
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+$$mdi:arrow-down-bold$$
-  - $$mdi:pan-left$$
-  - '&msc MOVE_X(5)'
-  - '&mkp MB3'
   - '&msc MOVE_X(-5)'
-  - $$mdi:pan-right$$
+  - '&msc MOVE_Y(-10)'
+  - '&mkp MB3'
+  - '&msc MOVE_Y(10)'
+  - '&msc MOVE_X(5)'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
