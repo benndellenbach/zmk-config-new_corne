@@ -328,10 +328,10 @@
         Mouse_Layer {
             display-name = "MOUSE";
             bindings = <
-&trans  &trans     &trans     &trans     &mo 5      &trans                             &kp LC(UP_ARROW)                   &kp RS(RC(V))    &mkp LCLK         &mmv MOVE_UP    &mkp RCLK        &trans          &trans
-&trans  &trans     &trans     &trans     &trans     &trans               &kp LC(LEFT)  &trans              &kp LC(RIGHT)  &kp LC(C)        &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans          &trans
-&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(Y)  &trans                  &kp LC(DOWN_ARROW)                 &msc MOVE_X(-5)  &msc MOVE_Y(-20)  &mkp MB3        &msc MOVE_Y(20)  &msc MOVE_X(5)  &trans
-                              &trans     &trans     &trans                                                                &mkp RCLK        &mkp LCLK         &trans
+&trans  &trans     &trans     &trans     &mo 5      &trans                             &kp LC(UP_ARROW)                   &kp RS(RC(V))     &mkp LCLK         &mmv MOVE_UP    &mkp RCLK        &trans           &trans
+&trans  &trans     &trans     &trans     &trans     &trans               &kp LC(LEFT)  &trans              &kp LC(RIGHT)  &kp LC(C)         &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans           &trans
+&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(Y)  &trans                  &kp LC(DOWN_ARROW)                 &msc MOVE_X(-20)  &msc MOVE_Y(-20)  &mkp MB3        &msc MOVE_Y(20)  &msc MOVE_X(20)  &trans
+                              &trans     &trans     &trans                                                                &mkp RCLK         &mkp LCLK         &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
