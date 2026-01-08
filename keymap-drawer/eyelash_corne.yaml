@@ -234,9 +234,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+$$mdi:arrow-down-bold$$
   - $$mdi:pan-left$$
-  - $$mdi:pan-down$$
+  - '&msc MOVE_X(5)'
   - '&mkp MB3'
-  - $$mdi:pan-up$$
+  - '&msc MOVE_X(-5)'
   - $$mdi:pan-right$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
