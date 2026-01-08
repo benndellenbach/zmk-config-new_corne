@@ -84,13 +84,13 @@
             bindings = <&FApp>, <&RAlt>;
         };
 
-        new_behavior: new_behavior {
+        slow_scroll: slow_scroll {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+            bindings = <&msc MOVE_Y(-5)>, <&msc MOVE_Y(5)>;
 
-            tap-ms = <200>;
-            label = "NEW_BEHAVIOR";
+            tap-ms = <10>;
+            label = "SLOW_SCROLL";
         };
 
         RGBHUE: RGBHUE {
@@ -334,7 +334,7 @@
                               &trans     &trans     &trans                                                                &mkp RCLK         &mkp LCLK         &trans
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&slow_scroll>;
         };
 
         Fast_Mouse {
