@@ -334,7 +334,7 @@
                               &trans     &trans     &trans                                                                &mkp RCLK         &mkp LCLK         &trans
             >;
 
-            sensor-bindings = <&slow_scroll>;
+            sensor-bindings = <&scroll_encoder>;
         };
 
         Fast_Mouse {
