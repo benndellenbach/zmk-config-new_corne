@@ -140,8 +140,7 @@
         #sensor-binding-cells = <0>;
         bindings = <&msc MOVE_Y(-20)>, <&msc MOVE_Y(20)>;
 
-        tap-ms = <100>; 
-
+        tap-ms = <100>;
     };
 
     combos {
@@ -150,103 +149,103 @@
         LeftAlt {
             bindings = <&kp LEFT_ALT>;
             key-positions = <17 16>;
-            layers = <4 7 8 0 6 1 2>;
+            layers = <3 6 7 0 5 1>;
         };
 
         LeftShift {
             bindings = <&td0>;
             key-positions = <16 15>;
-            layers = <8 7 4 0 6 1 2>;
+            layers = <7 6 3 0 5 1>;
         };
 
         LeftCtrl {
             bindings = <&kp LEFT_CONTROL>;
             key-positions = <15 14>;
-            layers = <4 7 8 0 6 1 2>;
+            layers = <3 6 7 0 5 1>;
         };
 
         LeftSuper {
             bindings = <&kp LEFT_WIN>;
             key-positions = <14 17>;
-            layers = <4 7 8 0 6 1 2>;
+            layers = <3 6 7 0 5 1>;
         };
 
         RSuper {
             bindings = <&kp RIGHT_WIN>;
             key-positions = <26 23>;
-            layers = <6 0 7 8 1 2>;
+            layers = <5 0 6 7 1>;
         };
 
         RCtrl {
             bindings = <&kp RIGHT_CONTROL>;
             key-positions = <25 26>;
-            layers = <6 0 7 8 1 2>;
+            layers = <5 0 6 7 1>;
         };
 
         RShift {
             bindings = <&td0>;
             key-positions = <24 25>;
-            layers = <6 0 7 8 1 2>;
+            layers = <5 0 6 7 1>;
         };
 
         RAlt {
             bindings = <&kp RIGHT_ALT>;
             key-positions = <23 24>;
-            layers = <6 0 7 8 1 2>;
+            layers = <5 0 6 7 1>;
         };
 
         Mouselock {
-            bindings = <&tog 4>;
+            bindings = <&tog 3>;
             key-positions = <43 17>;
-            layers = <4 7 6 8 3 0 1 2>;
+            layers = <3 6 5 7 2 0 1>;
         };
 
         FunLock {
-            bindings = <&tog 6>;
+            bindings = <&tog 5>;
             key-positions = <23 45>;
-            layers = <4 7 6 8 0 1 2>;
+            layers = <3 6 5 7 0 1>;
         };
 
         NumLock {
-            bindings = <&tog 7>;
+            bindings = <&tog 6>;
             key-positions = <17 44>;
-            layers = <4 7 6 0 1 8 2>;
+            layers = <3 6 5 0 1 7>;
         };
 
         SymLock {
-            bindings = <&tog 8>;
+            bindings = <&tog 7>;
             key-positions = <17 42>;
-            layers = <4 7 6 8 0 1 2>;
+            layers = <3 6 5 7 0 1>;
         };
 
         RGBLock {
-            bindings = <&tog 9>;
+            bindings = <&tog 8>;
             key-positions = <23 47>;
-            layers = <4 7 6 8 1 9 0 2>;
+            layers = <3 6 5 7 1 8 0>;
         };
 
         LDefault {
             bindings = <&to 0>;
             key-positions = <13 17>;
-            layers = <0 4 6 7 8 3 1 9 2>;
+            layers = <0 3 5 6 7 2 1 8>;
         };
 
         RDefault {
             bindings = <&to 0>;
             key-positions = <23 27>;
-            layers = <3 4 6 0 7 8 1 9 2>;
+            layers = <2 3 5 0 6 7 1 8>;
         };
 
         LRPT {
             bindings = <&key_repeat>;
             key-positions = <31 32>;
-            layers = <3 6 7 8 4 0 1 2>;
+            layers = <2 5 6 7 3 0 1>;
         };
 
         RRPT {
             bindings = <&key_repeat>;
             key-positions = <37 38>;
-            layers = <3 6 7 8 4 0 1>;
+            layers = <2 5 6 7 3 0 1>;
         };
     };
 
@@ -273,9 +272,9 @@
             display-name = "QWERTY";
             bindings = <
 &kp TAB    &kp Q  &kp W  &kp E      &kp R        &kp T                                 &kp UP               &kp Y         &kp U        &kp I            &kp O    &kp P     &kp DELETE
-&td0       &kp A  &kp S  &kp D      &kp F        &kp G                       &kp LEFT  &tog 3    &kp RIGHT  &kp H         &kp J        &kp K            &kp L    &kp SEMI  &kp SQT
-&kp LCTRL  &kp Z  &kp X  &kp C      &kp V        &kp B        &SYSTOG 9 1              &kp DOWN             &kp N         &kp M        &kp COMMA        &kp DOT  &kp FSLH  &kp ESC
-                         &lt 8 TAB  &lt 4 SPACE  &lt 7 ENTER                                                &lt 6 RETURN  &lt 1 SPACE  &lt 9 BACKSPACE
+&td0       &kp A  &kp S  &kp D      &kp F        &kp G                       &kp LEFT  &tog 2    &kp RIGHT  &kp H         &kp J        &kp K            &kp L    &kp SEMI  &kp SQT
+&kp LCTRL  &kp Z  &kp X  &kp C      &kp V        &kp B        &SYSTOG 8 1              &kp DOWN             &kp N         &kp M        &kp COMMA        &kp DOT  &kp FSLH  &kp ESC
+                         &lt 7 TAB  &lt 3 SPACE  &lt 6 ENTER                                                &lt 5 RETURN  &lt 1 SPACE  &lt 8 BACKSPACE
             >;
 
             sensor-bindings = <&inc_dec_kp TAB LS(TAB)>;
@@ -285,24 +284,12 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                        &trans          &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &SYSTO 9 2            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &SYSTO 8 0            &trans          &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans                                        &trans  &trans  &trans
             >;
 
             label = "TAB";
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
-        };
-
-        Zoom {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                   &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans           &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &to 0            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                                   &trans  &trans  &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp LC(PLUS) LC(MINUS)>;
-            label = "ZOOM";
         };
 
         Gamepad {
@@ -320,7 +307,7 @@
         Mouse_Layer {
             display-name = "MOUSE";
             bindings = <
-&trans  &trans     &trans     &trans     &mo 5      &trans                             &kp LC(UP_ARROW)                   &kp RS(RC(V))     &mkp LCLK         &mmv MOVE_UP    &mkp RCLK        &trans           &trans
+&trans  &trans     &trans     &trans     &mo 4      &trans                             &kp LC(UP_ARROW)                   &kp RS(RC(V))     &mkp LCLK         &mmv MOVE_UP    &mkp RCLK        &trans           &trans
 &trans  &trans     &trans     &trans     &trans     &trans               &kp LC(LEFT)  &trans              &kp LC(RIGHT)  &kp LC(C)         &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans           &trans
 &trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(Y)  &trans                  &kp LC(DOWN_ARROW)                 &msc MOVE_X(-20)  &msc MOVE_Y(-20)  &mkp MB3        &msc MOVE_Y(20)  &msc MOVE_X(20)  &trans
                               &trans     &trans     &trans                                                                &mkp RCLK         &mkp LCLK         &trans
@@ -350,7 +337,7 @@
                             &trans  &trans  &trans                                    &trans  &trans  &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp LC(PLUS) LC(MINUS)>;
         };
 
         NUMPAD {
@@ -382,7 +369,7 @@
             bindings = <
 &trans  &trans  &trans        &trans           &bt BT_CLR_ALL  &ext_power EP_TOG                                 &rgb_ug RGB_BRI                   &trans  &trans           &trans           &trans           &trans  &to 0
 &trans  &trans  &kp C_VOL_DN  &kp C_VOLUME_UP  &bt BT_NXT      &out OUT_TOG                     &rgb_ug RGB_HUD  &rgb_ug RGB_TOG  &rgb_ug RGB_HUI  &trans  &rgb_ug RGB_EFF  &rgb_ug RGB_SAI  &rgb_ug RGB_SPI  &trans  &trans
-&trans  &trans  &trans        &trans           &bt BT_CLR      &trans             &SYSTO 0 3                     &rgb_ug RGB_BRD                   &trans  &trans           &rgb_ug RGB_SAD  &rgb_ug RGB_SPD  &trans  &trans
+&trans  &trans  &trans        &trans           &bt BT_CLR      &trans             &SYSTO 0 2                     &rgb_ug RGB_BRD                   &trans  &trans           &rgb_ug RGB_SAD  &rgb_ug RGB_SPD  &trans  &trans
                               &trans           &trans          &trans                                                                              &trans  &trans           &trans
             >;
 
