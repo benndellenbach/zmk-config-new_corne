@@ -24,7 +24,6 @@
     acceleration-exponent = <1>;        // 1
     time-to-max-speed-ms = <100>;       // 100
     delay-ms = <0>;                   // 0
-    trigger-period-ms = <0>;
 };
 
 &mmv {
@@ -129,20 +128,10 @@
             tapping-term-ms = <500>;
         };
 
-        RGBTO: RGBTO {
+        TAPTO: TAPTO {
             compatible = "zmk,behavior-hold-tap";
-            label = "RGBTO";
-            bindings = <&to>, <&rgb_ug>;
-
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <500>;
-        };
-
-        BT_TO: BT_TO {
-            compatible = "zmk,behavior-hold-tap";
-            label = "BT_TO";
-            bindings = <&to>, <&bt>;
+            label = "TAPTO";
+            bindings = <&to>, <&gresc>;
 
             #binding-cells = <2>;
             flavor = "tap-preferred";
@@ -293,8 +282,8 @@
             display-name = "QWERTY";
             bindings = <
 &kp TAB    &kp Q  &kp W  &kp E      &kp R        &kp T                                 &kp UP               &kp Y         &kp U        &kp I            &kp O    &kp P     &kp DELETE
-&td0       &kp A  &kp S  &kp D      &kp F        &kp G                       &kp LEFT  &tog 1    &kp RIGHT  &kp H         &kp J        &kp K            &kp L    &kp SEMI  &kp SQT
-&kp LCTRL  &kp Z  &kp X  &kp C      &kp V        &kp B        &SYSTOG 9 2              &kp DOWN             &kp N         &kp M        &kp COMMA        &kp DOT  &kp FSLH  &kp ESC
+&td0       &kp A  &kp S  &kp D      &kp F        &kp G                       &kp LEFT  &tog 2    &kp RIGHT  &kp H         &kp J        &kp K            &kp L    &kp SEMI  &kp SQT
+&kp LCTRL  &kp Z  &kp X  &kp C      &kp V        &kp B        &SYSTOG 8 9              &kp DOWN             &kp N         &kp M        &kp COMMA        &kp DOT  &kp FSLH  &kp ESC
                          &lt 7 TAB  &lt 3 SPACE  &lt 6 ENTER                                                &lt 5 RETURN  &lt 1 SPACE  &lt 8 BACKSPACE
             >;
 
@@ -328,10 +317,10 @@
         Mouse_Layer {
             display-name = "MOUSE";
             bindings = <
-&trans  &trans     &trans     &trans     &mo 4          &kp END                                &kp LC(UP_ARROW)                   &kp RS(RC(V))     &mkp LCLK         &mmv MOVE_UP    &mkp RCLK        &kp PAGE_UP      &trans
-&trans  &trans     &trans     &kp END    &kp C_AC_HOME  &kp C_AC_HOME            &kp LC(LEFT)  &trans              &kp LC(RIGHT)  &kp LC(C)         &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp PAGE_DOWN    &trans
-&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)      &kp INSERT     &trans                  &kp LC(DOWN_ARROW)                 &msc MOVE_X(-20)  &msc MOVE_Y(-20)  &mkp MB3        &msc MOVE_Y(20)  &msc MOVE_X(20)  &trans
-                              &trans     &trans         &trans                                                                    &mkp RCLK         &mkp LCLK         &trans
+&trans  &trans     &trans     &trans     &mo 4      &trans                             &kp LC(UP_ARROW)                   &kp RS(RC(V))     &mkp LCLK         &mmv MOVE_UP    &mkp RCLK        &trans           &trans
+&trans  &trans     &trans     &trans     &trans     &trans               &kp LC(LEFT)  &trans              &kp LC(RIGHT)  &kp LC(C)         &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans           &trans
+&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(Y)  &trans                  &kp LC(DOWN_ARROW)                 &msc MOVE_X(-20)  &msc MOVE_Y(-20)  &mkp MB3        &msc MOVE_Y(20)  &msc MOVE_X(20)  &trans
+                              &trans     &trans     &trans                                                                &mkp RCLK         &mkp LCLK         &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -388,10 +377,10 @@
         MediaControls {
             display-name = "MEDIA";
             bindings = <
-&trans  &trans  &trans        &trans           &bt BT_CLR_ALL  &ext_power EP_TOG                                      &rgb_ug RGB_BRI                   &trans  &trans           &trans           &trans           &trans  &to 0
-&trans  &trans  &kp C_VOL_DN  &kp C_VOLUME_UP  &bt BT_NXT      &out OUT_TOG                          &rgb_ug RGB_HUD  &rgb_ug RGB_TOG  &rgb_ug RGB_HUI  &trans  &rgb_ug RGB_EFF  &rgb_ug RGB_SAI  &rgb_ug RGB_SPI  &trans  &trans
-&trans  &trans  &trans        &trans           &bt BT_CLR      &trans             &BT_TO 0 BT_CLR                     &rgb_ug RGB_BRD                   &trans  &trans           &rgb_ug RGB_SAD  &rgb_ug RGB_SPD  &trans  &trans
-                              &trans           &trans          &trans                                                                                   &trans  &trans           &trans
+&trans  &trans  &trans        &trans           &bt BT_CLR_ALL  &ext_power EP_TOG                                 &rgb_ug RGB_BRI                   &trans  &trans           &trans           &trans           &trans  &to 0
+&trans  &trans  &kp C_VOL_DN  &kp C_VOLUME_UP  &bt BT_NXT      &out OUT_TOG                     &rgb_ug RGB_HUD  &rgb_ug RGB_TOG  &rgb_ug RGB_HUI  &trans  &rgb_ug RGB_EFF  &rgb_ug RGB_SAI  &rgb_ug RGB_SPI  &trans  &trans
+&trans  &trans  &trans        &trans           &bt BT_CLR      &trans             &SYSTO 0 2                     &rgb_ug RGB_BRD                   &trans  &trans           &rgb_ug RGB_SAD  &rgb_ug RGB_SPD  &trans  &trans
+                              &trans           &trans          &trans                                                                              &trans  &trans           &trans
             >;
 
             sensor-bindings = <&rotary_bt>;
@@ -400,13 +389,13 @@
         RGB {
             display-name = "RGB";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                                       &rgb_ug RGB_BRI                   &trans  &trans  &trans           &trans           &trans  &to 0
-&trans  &trans  &trans  &trans  &trans  &trans                      &rgb_ug RGB_HUD  &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &trans  &trans  &rgb_ug RGB_SAI  &rgb_ug RGB_SPI  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &RGBTO 0 RGB_TOG                     &rgb_ug RGB_BRD                   &trans  &trans  &rgb_ug RGB_SAD  &rgb_ug RGB_SPD  &trans  &trans
-                        &trans  &trans  &trans                                                                         &trans  &trans  &trans
+&trans  &trans  &trans        &kp C_VOLUME_UP    &bt BT_CLR_ALL  &ext_power EP_TOG                                 &rgb_ug RGB_BRI                   &trans  &trans           &trans           &trans           &trans  &to 0
+&trans  &trans  &kp C_VOL_DN  &kp K_MUTE         &bt BT_NXT      &out OUT_TOG                     &rgb_ug RGB_HUD  &rgb_ug RGB_TOG  &rgb_ug RGB_HUI  &trans  &rgb_ug RGB_EFF  &rgb_ug RGB_SAI  &rgb_ug RGB_SPI  &trans  &trans
+&trans  &trans  &trans        &kp C_VOLUME_DOWN  &bt BT_CLR      &trans             &SYSTO 2 0                     &rgb_ug RGB_BRD                   &trans  &trans           &rgb_ug RGB_SAD  &rgb_ug RGB_SPD  &trans  &trans
+                              &trans             &trans          &trans                                                                              &trans  &trans           &trans
             >;
 
-            sensor-bindings = <&rgb_encoder>;
+            sensor-bindings = <&rotary_bt>;
         };
     };
 };
