@@ -237,13 +237,13 @@
         LDefault {
             bindings = <&to 0>;
             key-positions = <13 17>;
-            layers = <0 1 3 4 5 9 6>;
+            layers = <0 1 3 4 5 9 6 2>;
         };
 
         RDefault {
             bindings = <&to 0>;
             key-positions = <23 27>;
-            layers = <9 1 3 0 4 5 6>;
+            layers = <9 1 3 0 4 5 6 2>;
         };
 
         LRPT {
@@ -261,7 +261,7 @@
         GameLock {
             bindings = <&tog 8>;
             key-positions = <23 46>;
-            layers = <1 4 3 5 6 0>;
+            layers = <1 4 3 5 6 0 8>;
         };
     };
 
@@ -384,7 +384,7 @@
             display-name = "GAMING";
             bindings = <
 &trans  &trans  &kp E   &kp W    &trans     &trans                                   &mmv MOVE_UP                     &mkp MB1   &mkp MB2   &kp UP_ARROW   &trans     &trans  &trans
-&trans  &kp F   &kp A   &kp S    &kp D      &trans                   &mmv MOVE_LEFT  &tog 9          &mmv MOVE_RIGHT  &trans     &kp LEFT   &kp DOWN       &kp RIGHT  &trans  &trans
+&trans  &kp F   &kp A   &kp S    &kp D      &trans                   &mmv MOVE_LEFT  &tog 8          &mmv MOVE_RIGHT  &trans     &kp LEFT   &kp DOWN       &kp RIGHT  &trans  &trans
 &trans  &trans  &trans  &trans   &trans     &trans     &kp K_MUTE                    &mmv MOVE_DOWN                   &trans     &trans     &trans         &trans     &trans  &trans
                         &kp TAB  &kp SPACE  &kp ENTER                                                                 &kp ENTER  &kp SPACE  &kp BACKSPACE
             >;
