@@ -383,10 +383,10 @@
         Gamepad {
             display-name = "GAMING";
             bindings = <
-&trans  &trans  &kp E   &kp W    &trans     &trans                                     &kp UP_ARROW             &trans     &trans     &kp UP_ARROW   &trans     &trans  &trans
-&trans  &kp F   &kp A   &kp S    &kp D      &trans                     &kp LEFT_ARROW  &trans        &kp RIGHT  &trans     &kp LEFT   &kp DOWN       &kp RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans   &trans     &trans     &lt 1 K_MUTE                    &kp DOWN                 &trans     &trans     &trans         &trans     &trans  &trans
-                        &kp TAB  &kp SPACE  &kp ENTER                                                           &kp ENTER  &kp SPACE  &kp BACKSPACE
+&trans  &trans  &kp E   &kp W    &trans     &trans                                   &mmv MOVE_UP                     &mkp MB1   &mkp MB2   &kp UP_ARROW   &trans     &trans  &trans
+&trans  &kp F   &kp A   &kp S    &kp D      &trans                   &mmv MOVE_LEFT  &tog 9          &mmv MOVE_RIGHT  &trans     &kp LEFT   &kp DOWN       &kp RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans   &trans     &trans     &kp K_MUTE                    &mmv MOVE_DOWN                   &trans     &trans     &trans         &trans     &trans  &trans
+                        &kp TAB  &kp SPACE  &kp ENTER                                                                 &kp ENTER  &kp SPACE  &kp BACKSPACE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
