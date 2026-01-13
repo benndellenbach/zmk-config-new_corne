@@ -520,22 +520,22 @@ combos:
   l: [MOUSE, NUMPAD, FUN, SYMBOL, FPS, QWERTY, GAMING]
 - p: [23, 45]
   k: {t: FUN, h: toggle}
-  l: [MOUSE, NUMPAD, FUN, SYMBOL, QWERTY]
+  l: [SYMBOL, QWERTY]
 - p: [17, 44]
   k: {t: NUMPAD, h: toggle}
-  l: [MOUSE, NUMPAD, FUN, QWERTY, SYMBOL]
+  l: [NUMPAD, QWERTY]
 - p: [17, 42]
   k: {t: SYMBOL, h: toggle}
-  l: [MOUSE, NUMPAD, FUN, SYMBOL, QWERTY]
+  l: [SYMBOL, QWERTY]
 - p: [23, 47]
   k: {t: MEDIA, h: toggle}
-  l: [MOUSE, NUMPAD, FUN, SYMBOL, MEDIA, QWERTY]
+  l: [MEDIA, QWERTY]
 - p: [13, 17]
   k: {t: QWERTY, h: toggle}
-  l: [QWERTY, MOUSE, FUN, NUMPAD, SYMBOL, FPS, MEDIA, FMOUSE]
+  l: [QWERTY, MOUSE, FUN, NUMPAD, SYMBOL, FPS, MEDIA, FMOUSE, RGB, GAMING]
 - p: [23, 27]
   k: {t: QWERTY, h: toggle}
-  l: [FPS, MOUSE, FUN, QWERTY, NUMPAD, SYMBOL, MEDIA, FMOUSE]
+  l: [FPS, MOUSE, FUN, QWERTY, NUMPAD, SYMBOL, MEDIA, FMOUSE, RGB, GAMING]
 - p: [31, 32]
   k: '&key_repeat'
   l: [FPS, FUN, NUMPAD, SYMBOL, MOUSE, QWERTY]
