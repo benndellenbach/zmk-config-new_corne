@@ -21,7 +21,7 @@ layers:
   - F
   - G
   - $$mdi:arrow-left-bold$$
-  - {t: GAMING, h: toggle}
+  - {t: FPS, h: toggle}
   - $$mdi:arrow-right-bold$$
   - H
   - J
@@ -47,57 +47,8 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: MOUSE}
   - {t: '$$mdi:keyboard-return$$', h: NUMPAD}
   - {t: RETURN, h: FUN}
-  - {t: '$$mdi:keyboard-space$$', h: GAMING}
+  - {t: '$$mdi:keyboard-space$$', h: FPS}
   - {t: '$$mdi:backspace$$', h: MEDIA}
-  GAMING:
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - E
-  - W
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:arrow-up-bold$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:arrow-up-bold$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - F
-  - A
-  - S
-  - D
-  - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:arrow-left-bold$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:arrow-right-bold$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-down-bold$$
-  - $$mdi:arrow-right-bold$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: FPS, h: toggle}
-  - $$mdi:arrow-down-bold$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:keyboard-tab$$
-  - $$mdi:keyboard-space$$
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:keyboard-space$$', type: held}
-  - {t: '$$mdi:backspace$$', type: backspace}
   MOUSE:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -378,7 +329,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:bluetooth-off$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: GAMING, h: QWERTY}
+  - {t: FPS, h: QWERTY}
   - RGB BRD
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -427,7 +378,7 @@ layers:
   - $$mdi:volume-low$$
   - $$mdi:bluetooth-off$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: QWERTY, h: GAMING}
+  - {t: QWERTY, h: FPS}
   - RGB BRD
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -441,6 +392,55 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  GAMING:
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - E
+  - W
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:arrow-up-bold$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:arrow-up-bold$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - F
+  - A
+  - S
+  - D
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:arrow-left-bold$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:arrow-right-bold$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-right-bold$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: MUTE, h: MOUSE}
+  - $$mdi:arrow-down-bold$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:keyboard-tab$$
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:backspace$$', type: backspace}
   FPS:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -485,10 +485,10 @@ layers:
   - $$mdi:pan-right$$
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-tab$$
-  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-space$$', type: held alternate}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:mouse-right-click-outline$$
-  - $$mdi:mouse-left-click-outline$$
+  - {t: '$$mdi:mouse-left-click-outline$$', type: held}
   - $$mdi:apple-keyboard-shift$$
 combos:
 - p: [17, 16]
@@ -517,7 +517,7 @@ combos:
   l: [FUN, QWERTY, NUMPAD, SYMBOL]
 - p: [43, 17]
   k: {t: MOUSE, h: toggle}
-  l: [MOUSE, NUMPAD, FUN, SYMBOL, GAMING, QWERTY]
+  l: [MOUSE, NUMPAD, FUN, SYMBOL, FPS, QWERTY, GAMING]
 - p: [23, 45]
   k: {t: FUN, h: toggle}
   l: [MOUSE, NUMPAD, FUN, SYMBOL, QWERTY]
@@ -532,13 +532,16 @@ combos:
   l: [MOUSE, NUMPAD, FUN, SYMBOL, MEDIA, QWERTY]
 - p: [13, 17]
   k: {t: QWERTY, h: toggle}
-  l: [QWERTY, MOUSE, FUN, NUMPAD, SYMBOL, GAMING, MEDIA]
+  l: [QWERTY, MOUSE, FUN, NUMPAD, SYMBOL, FPS, MEDIA]
 - p: [23, 27]
   k: {t: QWERTY, h: toggle}
-  l: [GAMING, MOUSE, FUN, QWERTY, NUMPAD, SYMBOL, MEDIA]
+  l: [FPS, MOUSE, FUN, QWERTY, NUMPAD, SYMBOL, MEDIA]
 - p: [31, 32]
   k: '&key_repeat'
-  l: [GAMING, FUN, NUMPAD, SYMBOL, MOUSE, QWERTY]
+  l: [FPS, FUN, NUMPAD, SYMBOL, MOUSE, QWERTY]
 - p: [37, 38]
   k: '&key_repeat'
-  l: [GAMING, FUN, NUMPAD, SYMBOL, MOUSE, QWERTY]
+  l: [FPS, FUN, NUMPAD, SYMBOL, MOUSE, QWERTY]
+- p: [23, 46]
+  k: {t: GAMING, h: toggle}
+  l: [MOUSE, NUMPAD, FUN, SYMBOL, MEDIA, QWERTY]
