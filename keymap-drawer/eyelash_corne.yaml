@@ -21,7 +21,7 @@ layers:
   - F
   - G
   - $$mdi:arrow-left-bold$$
-  - {t: FPS, h: toggle}
+  - {t: GAMING, h: toggle}
   - $$mdi:arrow-right-bold$$
   - H
   - J
