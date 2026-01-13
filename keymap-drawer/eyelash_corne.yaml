@@ -35,7 +35,7 @@ layers:
   - C
   - V
   - B
-  - {t: RGB, h: MEDIA}
+  - {t: GAMING, h: RGB}
   - $$mdi:arrow-down-bold$$
   - N
   - M
@@ -47,7 +47,7 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: MOUSE}
   - {t: '$$mdi:keyboard-return$$', h: NUMPAD}
   - {t: RETURN, h: FUN}
-  - {t: '$$mdi:keyboard-space$$', h: FPS}
+  - {t: '$$mdi:keyboard-space$$', h: GAMING}
   - {t: '$$mdi:backspace$$', h: MEDIA}
   MOUSE:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -439,7 +439,7 @@ layers:
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-space$$', type: held}
   - {t: '$$mdi:backspace$$', type: backspace}
   FPS:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -485,7 +485,7 @@ layers:
   - $$mdi:pan-right$$
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-tab$$
-  - {t: '$$mdi:keyboard-space$$', type: held alternate}
+  - {t: '$$mdi:keyboard-space$$', type: held}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:mouse-right-click-outline$$
   - {t: '$$mdi:mouse-left-click-outline$$', type: held}
