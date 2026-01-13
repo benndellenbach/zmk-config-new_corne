@@ -159,103 +159,109 @@
         LeftAlt {
             bindings = <&kp LEFT_ALT>;
             key-positions = <17 16>;
-            layers = <2 5 6 0 4>;
+            layers = <1 4 5 0 3>;
         };
 
         LeftShift {
             bindings = <&td0>;
             key-positions = <16 15>;
-            layers = <6 5 2 0 4>;
+            layers = <5 4 1 0 3>;
         };
 
         LeftCtrl {
             bindings = <&kp LEFT_CONTROL>;
             key-positions = <15 14>;
-            layers = <2 5 6 0 4>;
+            layers = <1 4 5 0 3>;
         };
 
         LeftSuper {
             bindings = <&kp LEFT_WIN>;
             key-positions = <14 17>;
-            layers = <2 5 6 0 4>;
+            layers = <1 4 5 0 3>;
         };
 
         RSuper {
             bindings = <&kp RIGHT_WIN>;
             key-positions = <26 23>;
-            layers = <4 0 5 6>;
+            layers = <3 0 4 5>;
         };
 
         RCtrl {
             bindings = <&kp RIGHT_CONTROL>;
             key-positions = <25 26>;
-            layers = <4 0 5 6>;
+            layers = <3 0 4 5>;
         };
 
         RShift {
             bindings = <&td0>;
             key-positions = <24 25>;
-            layers = <4 0 5 6>;
+            layers = <3 0 4 5>;
         };
 
         RAlt {
             bindings = <&kp RIGHT_ALT>;
             key-positions = <23 24>;
-            layers = <4 0 5 6>;
+            layers = <3 0 4 5>;
         };
 
         Mouselock {
-            bindings = <&tog 2>;
+            bindings = <&tog 1>;
             key-positions = <43 17>;
-            layers = <2 5 4 6 1 0>;
+            layers = <1 4 3 5 9 0 8>;
         };
 
         FunLock {
-            bindings = <&tog 4>;
+            bindings = <&tog 3>;
             key-positions = <23 45>;
-            layers = <2 5 4 6 0>;
+            layers = <1 4 3 5 0>;
         };
 
         NumLock {
-            bindings = <&tog 5>;
+            bindings = <&tog 4>;
             key-positions = <17 44>;
-            layers = <2 5 4 0 6>;
+            layers = <1 4 3 0 5>;
         };
 
         SymLock {
-            bindings = <&tog 6>;
+            bindings = <&tog 5>;
             key-positions = <17 42>;
-            layers = <2 5 4 6 0>;
+            layers = <1 4 3 5 0>;
         };
 
-        RGBLock {
-            bindings = <&tog 7>;
+        MediaLock {
+            bindings = <&tog 6>;
             key-positions = <23 47>;
-            layers = <2 5 4 6 7 0>;
+            layers = <1 4 3 5 6 0>;
         };
 
         LDefault {
             bindings = <&to 0>;
             key-positions = <13 17>;
-            layers = <0 2 4 5 6 1 7>;
+            layers = <0 1 3 4 5 9 6>;
         };
 
         RDefault {
             bindings = <&to 0>;
             key-positions = <23 27>;
-            layers = <1 2 4 0 5 6 7>;
+            layers = <9 1 3 0 4 5 6>;
         };
 
         LRPT {
             bindings = <&key_repeat>;
             key-positions = <31 32>;
-            layers = <1 4 5 6 2 0>;
+            layers = <9 3 4 5 1 0>;
         };
 
         RRPT {
             bindings = <&key_repeat>;
             key-positions = <37 38>;
-            layers = <1 4 5 6 2 0>;
+            layers = <9 3 4 5 1 0>;
+        };
+
+        GameLock {
+            bindings = <&tog 8>;
+            key-positions = <23 46>;
+            layers = <1 4 3 5 6 0>;
         };
     };
 
@@ -282,30 +288,18 @@
             display-name = "QWERTY";
             bindings = <
 &kp TAB    &kp Q  &kp W  &kp E      &kp R        &kp T                                 &kp UP               &kp Y         &kp U        &kp I            &kp O    &kp P     &kp DELETE
-&td0       &kp A  &kp S  &kp D      &kp F        &kp G                       &kp LEFT  &tog 1    &kp RIGHT  &kp H         &kp J        &kp K            &kp L    &kp SEMI  &kp SQT
-&kp LCTRL  &kp Z  &kp X  &kp C      &kp V        &kp B        &SYSTOG 7 8              &kp DOWN             &kp N         &kp M        &kp COMMA        &kp DOT  &kp FSLH  &kp ESC
-                         &lt 6 TAB  &lt 2 SPACE  &lt 5 ENTER                                                &lt 4 RETURN  &lt 1 SPACE  &lt 7 BACKSPACE
+&td0       &kp A  &kp S  &kp D      &kp F        &kp G                       &kp LEFT  &tog 9    &kp RIGHT  &kp H         &kp J        &kp K            &kp L    &kp SEMI  &kp SQT
+&kp LCTRL  &kp Z  &kp X  &kp C      &kp V        &kp B        &SYSTOG 6 7              &kp DOWN             &kp N         &kp M        &kp COMMA        &kp DOT  &kp FSLH  &kp ESC
+                         &lt 5 TAB  &lt 1 SPACE  &lt 4 ENTER                                                &lt 3 RETURN  &lt 9 SPACE  &lt 6 BACKSPACE
             >;
 
             sensor-bindings = <&inc_dec_kp TAB LS(TAB)>;
         };
 
-        Gamepad {
-            display-name = "GAMING";
-            bindings = <
-&trans  &trans  &kp E   &kp W    &trans     &trans                               &kp UP_ARROW             &trans     &trans     &kp UP_ARROW   &trans     &trans  &trans
-&trans  &kp F   &kp A   &kp S    &kp D      &trans               &kp LEFT_ARROW  &trans        &kp RIGHT  &trans     &kp LEFT   &kp DOWN       &kp RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans   &trans     &trans     &tog 9                    &kp DOWN                 &trans     &trans     &trans         &trans     &trans  &trans
-                        &kp TAB  &kp SPACE  &kp ENTER                                                     &kp ENTER  &kp SPACE  &kp BACKSPACE
-            >;
-
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
-        };
-
         Mouse_Layer {
             display-name = "MOUSE";
             bindings = <
-&trans  &trans     &trans     &trans     &mo 3          &kp END                                &kp LC(UP_ARROW)                   &kp RS(RC(V))     &mkp LCLK         &mmv MOVE_UP    &mkp RCLK        &kp PAGE_UP      &trans
+&trans  &trans     &trans     &trans     &mo 2          &kp END                                &kp LC(UP_ARROW)                   &kp RS(RC(V))     &mkp LCLK         &mmv MOVE_UP    &mkp RCLK        &kp PAGE_UP      &trans
 &trans  &trans     &trans     &kp END    &kp C_AC_HOME  &kp C_AC_HOME            &kp LC(LEFT)  &trans              &kp LC(RIGHT)  &kp LC(C)         &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp PAGE_DOWN    &trans
 &trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)      &kp INSERT     &trans                  &kp LC(DOWN_ARROW)                 &msc MOVE_X(-20)  &msc MOVE_Y(-20)  &mkp MB3        &msc MOVE_Y(20)  &msc MOVE_X(20)  &trans
                               &trans     &trans         &trans                                                                    &mkp RCLK         &mkp LCLK         &trans
@@ -367,7 +361,7 @@
             bindings = <
 &trans  &trans  &trans        &trans           &bt BT_CLR_ALL  &ext_power EP_TOG                                 &rgb_ug RGB_BRI                   &trans  &trans           &trans           &trans           &trans  &to 0
 &trans  &trans  &kp C_VOL_DN  &kp C_VOLUME_UP  &bt BT_NXT      &out OUT_TOG                     &rgb_ug RGB_HUD  &rgb_ug RGB_TOG  &rgb_ug RGB_HUI  &trans  &rgb_ug RGB_EFF  &rgb_ug RGB_SAI  &rgb_ug RGB_SPI  &trans  &trans
-&trans  &trans  &trans        &trans           &bt BT_CLR      &trans             &SYSTO 0 1                     &rgb_ug RGB_BRD                   &trans  &trans           &rgb_ug RGB_SAD  &rgb_ug RGB_SPD  &trans  &trans
+&trans  &trans  &trans        &trans           &bt BT_CLR      &trans             &SYSTO 0 9                     &rgb_ug RGB_BRD                   &trans  &trans           &rgb_ug RGB_SAD  &rgb_ug RGB_SPD  &trans  &trans
                               &trans           &trans          &trans                                                                              &trans  &trans           &trans
             >;
 
@@ -379,14 +373,26 @@
             bindings = <
 &trans  &trans  &trans        &kp C_VOLUME_UP    &bt BT_CLR_ALL  &ext_power EP_TOG                                 &rgb_ug RGB_BRI                   &trans  &trans           &trans           &trans           &trans  &to 0
 &trans  &trans  &kp C_VOL_DN  &kp K_MUTE         &bt BT_NXT      &out OUT_TOG                     &rgb_ug RGB_HUD  &rgb_ug RGB_TOG  &rgb_ug RGB_HUI  &trans  &rgb_ug RGB_EFF  &rgb_ug RGB_SAI  &rgb_ug RGB_SPI  &trans  &trans
-&trans  &trans  &trans        &kp C_VOLUME_DOWN  &bt BT_CLR      &trans             &SYSTO 1 0                     &rgb_ug RGB_BRD                   &trans  &trans           &rgb_ug RGB_SAD  &rgb_ug RGB_SPD  &trans  &trans
+&trans  &trans  &trans        &kp C_VOLUME_DOWN  &bt BT_CLR      &trans             &SYSTO 9 0                     &rgb_ug RGB_BRD                   &trans  &trans           &rgb_ug RGB_SAD  &rgb_ug RGB_SPD  &trans  &trans
                               &trans             &trans          &trans                                                                              &trans  &trans           &trans
             >;
 
             sensor-bindings = <&rotary_bt>;
         };
 
-        layer_10 {
+        Gamepad {
+            display-name = "GAMING";
+            bindings = <
+&trans  &trans  &kp E   &kp W    &trans     &trans                                     &kp UP_ARROW             &trans     &trans     &kp UP_ARROW   &trans     &trans  &trans
+&trans  &kp F   &kp A   &kp S    &kp D      &trans                     &kp LEFT_ARROW  &trans        &kp RIGHT  &trans     &kp LEFT   &kp DOWN       &kp RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans   &trans     &trans     &lt 1 K_MUTE                    &kp DOWN                 &trans     &trans     &trans         &trans     &trans  &trans
+                        &kp TAB  &kp SPACE  &kp ENTER                                                           &kp ENTER  &kp SPACE  &kp BACKSPACE
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
+        };
+
+        FPS {
             display-name = "FPS";
             bindings = <
 &trans  &trans  &kp E   &kp W    &trans     &trans                                   &kp UP_ARROW             &trans          &mkp MB4        &mmv MOVE_UP     &mkp MB5         &trans           &trans
@@ -396,6 +402,15 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        FPS {
+            if-layers = <8 1>;
+            then-layer = <9>;
         };
     };
 };
