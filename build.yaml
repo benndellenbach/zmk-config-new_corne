@@ -1,28 +1,24 @@
-
 include:
   # -------------------------------
-  # Left half
+  # Left half (peripheral)
   # -------------------------------
   - board: eyelash_corne_left
-    shield: nice_view      # optional OLED/display
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n
-    artifact-name: eyelash_corne_studio_left
+    shield: nice_view
+    artifact-name: eyelash_corne_left
 
   # -------------------------------
-  # Right half
+  # Right half (peripheral)
   # -------------------------------
   - board: eyelash_corne_right
-    shield: nice_view      # optional OLED/display
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n
-    artifact-name: eyelash_corne_studio_right
+    shield: nice_view
+    artifact-name: eyelash_corne_right
 
   # -------------------------------
-  # Dongle
+  # Dongle (central + USB + Studio)
   # -------------------------------
   - board: eyelash_corne_dongle
-    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n
     artifact-name: eyelash_corne_dongle
 
 
