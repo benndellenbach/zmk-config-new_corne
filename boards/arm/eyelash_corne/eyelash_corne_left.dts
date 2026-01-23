@@ -3,27 +3,27 @@
 /* SoC */
 #include <nordic/nrf52840_qiaa.dtsi>
 
-/* Shared keyboard defs */
+/* Shared keyboard definitions */
 #include "eyelash_corne.dtsi"
 #include "eyelash_corne-layouts.dtsi"
 
 / {
-
-    kscan0: kscan {
-        compatible = "zmk,kscan-gpio-matrix";
-        /* row/col gpios */
-    };
-
     chosen {
         zmk,kscan = &kscan0;
         zmk,physical-layout = &default_layout;
     };
-};
 
-&left_encoder {
-    status = "okay";
-};
+    kscan0: kscan {
+        compatible = "zmk,kscan-gpio-matrix";
+        wakeup-source;
+        diode-direction = "col2row";
 
-&spi1 {
-    status = "disabled";
-};
+        row-gpios =
+            <&gpio0 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+            <&gpio0 8  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+            <&gpio0 12 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+            <&gpio0 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+            <&gpio1 9  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+
+        col-gpios =
+            <&gpio0 3  GPIO
