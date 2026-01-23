@@ -8,6 +8,13 @@
 #include "eyelash_corne.dtsi"
 #include "eyelash_corne-layouts.dtsi"
 
+/ {
+    chosen {
+        zmk,kscan = &kscan0;
+        zmk,physical-layout = &default_layout;
+    };
+};
+
 &default_transform {
     col-offset = <7>;
 };
@@ -15,10 +22,3 @@
 &spi1 {
     status = "disabled";
 };
-
-
-&spi1 {
-    status = "disabled";
-};
-
-
