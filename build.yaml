@@ -3,7 +3,6 @@ include:
   # Left half (peripheral)
   # -------------------------------
   - board: eyelash_corne_left
-    shield: nice_view
     artifact-name: eyelash_corne_left
 
   # -------------------------------
