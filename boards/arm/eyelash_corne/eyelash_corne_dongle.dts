@@ -13,9 +13,7 @@
     chosen {
         zmk,central = &zmk_split_central;
     };
-};
 
-/ {
     zmk_split_central: split_central {
         compatible = "zmk,split-central";
     };
