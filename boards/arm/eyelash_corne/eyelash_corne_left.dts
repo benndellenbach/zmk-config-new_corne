@@ -10,3 +10,12 @@
 &left_encoder {
     status = "okay";
 };
+
+&spi1 {
+    status = "disabled";
+};
+
+&bt {
+    status = "okay";
+};
+
