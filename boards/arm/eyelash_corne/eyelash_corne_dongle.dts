@@ -3,7 +3,7 @@
 /* SoC */
 #include <nordic/nrf52840_qiaa.dtsi>
 
-/* Shared keyboard definitions (no SoC) */
+/* Shared keyboard defs */
 #include "eyelash_corne.dtsi"
 
 / {
@@ -19,7 +19,15 @@
     };
 };
 
-/* 🔑 Dongle has no matrix */
+/* Dongle has no matrix */
 &default_transform {
     status = "disabled";
+};
+
+/* USB required for ZMK Studio */
+&usbd {
+    status = "okay";
+};
+
+zephyr_udc0: &usbd {
 };
