@@ -7,21 +7,14 @@
 
 #include "eyelash_corne.dtsi"
 
-/ {
-    /* Bluetooth controller label expected by ZMK/snippets */
-    bt: bt {
-        compatible = "zmk,bt";
-        status = "okay";
-    };
-
-    chosen {
-        zmk,bt = &bt;
-    };
-};
-
 &default_transform {
     col-offset = <7>;
 };
+
+&spi1 {
+    status = "disabled";
+};
+
 
 &spi1 {
     status = "disabled";
