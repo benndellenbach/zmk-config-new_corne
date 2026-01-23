@@ -1,5 +1,5 @@
 /dts-v1/;
-#include <seeed/xiao_ble.dtsi>
+#include <boards/arm/xiao_ble/xiao_ble.dtsi>
 #include "../eyelash_corne/eyelash_corne.dtsi"
 
 / {
