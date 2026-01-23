@@ -8,6 +8,12 @@
 #include "eyelash_corne-layouts.dtsi"
 
 / {
+
+    kscan0: kscan {
+        compatible = "zmk,kscan-gpio-matrix";
+        /* row/col gpios */
+    };
+
     chosen {
         zmk,kscan = &kscan0;
         zmk,physical-layout = &default_layout;
