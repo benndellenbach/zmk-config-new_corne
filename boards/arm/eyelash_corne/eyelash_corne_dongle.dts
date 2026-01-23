@@ -1,5 +1,9 @@
 /dts-v1/;
-#include <boards/arm/xiao_ble/xiao_ble.dtsi>
+
+/* Base SoC */
+#include <nordic/nrf52840_qiaa.dtsi>
+
+/* Shared Corne definitions */
 #include "../eyelash_corne/eyelash_corne.dtsi"
 
 / {
