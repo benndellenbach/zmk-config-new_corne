@@ -3,23 +3,19 @@
 /* SoC */
 #include <nordic/nrf52840_qiaa.dtsi>
 
-/* Shared keyboard definitions */
+/* Shared keyboard defs */
 #include "eyelash_corne.dtsi"
-#include "eyelash_corne-layouts.dtsi"
 
-/ {
+ / {
     chosen {
         zmk,kscan = &kscan0;
-        zmk,physical-layout = &default_layout;
     };
-};
+ };
 
-/* Shift matrix columns for right half */
 &default_transform {
     col-offset = <7>;
 };
 
-/* Disable unused SPI */
 &spi1 {
     status = "disabled";
 };
