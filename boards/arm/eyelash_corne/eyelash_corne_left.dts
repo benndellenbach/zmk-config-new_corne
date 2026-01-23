@@ -6,11 +6,6 @@
 /* Shared keyboard defs */
 #include "eyelash_corne.dtsi"
 
-/* Nice!View SPI bus */
-nice_view_spi: &spi0 {
-    status = "okay";
-};
-
  / {
     chosen {
         zmk,kscan = &kscan0;
@@ -21,6 +16,13 @@ nice_view_spi: &spi0 {
     status = "okay";
 };
 
+/* Disable ALL SPI on left half */
+&spi0 {
+    status = "disabled";
+};
+
 &spi1 {
     status = "disabled";
 };
+
+
