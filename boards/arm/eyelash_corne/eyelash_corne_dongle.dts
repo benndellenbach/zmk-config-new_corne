@@ -3,7 +3,7 @@
 /* SoC */
 #include <nordic/nrf52840_qiaa.dtsi>
 
-/* Shared, NON-layout keyboard definitions */
+/* Shared keyboard defs (NO USB inside) */
 #include "eyelash_corne.dtsi"
 
 / {
@@ -17,4 +17,9 @@
     chosen {
         zmk,central = &zmk_split_central;
     };
+};
+
+/* REQUIRED for studio-rpc-usb-uart */
+zephyr_udc0: &usbd {
+    status = "okay";
 };
