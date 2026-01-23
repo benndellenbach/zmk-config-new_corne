@@ -3,7 +3,7 @@
 /* SoC */
 #include <nordic/nrf52840_qiaa.dtsi>
 
-/* Shared keyboard defs (NO USB inside) */
+/* Shared keyboard definitions (no SoC) */
 #include "eyelash_corne.dtsi"
 
 / {
@@ -19,7 +19,7 @@
     };
 };
 
-/* REQUIRED for studio-rpc-usb-uart */
-zephyr_udc0: &usbd {
-    status = "okay";
+/* 🔑 Dongle has no matrix */
+&default_transform {
+    status = "disabled";
 };
