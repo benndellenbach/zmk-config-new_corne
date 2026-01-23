@@ -5,7 +5,6 @@
 
 /* Shared, NON-layout keyboard definitions */
 #include "eyelash_corne.dtsi"
-
 / {
     model = "Eyelash Corne Dongle";
     compatible = "eyelash,corne-dongle";
