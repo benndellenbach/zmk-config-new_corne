@@ -10,7 +10,6 @@
 
 / {
     chosen {
-        zmk,kscan = &kscan0;
         zmk,physical-layout = &default_layout;
     };
 };
@@ -22,5 +21,3 @@
 &spi1 {
     status = "disabled";
 };
-
-
