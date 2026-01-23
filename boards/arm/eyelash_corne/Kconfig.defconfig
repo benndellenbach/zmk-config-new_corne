@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: MIT
 #
 
- if SHIELD_EYELASH_CORNE_DONGLE
+if SHIELD_EYELASH_CORNE_DONGLE
 
 # Max 16 characters in keyboard name
 config ZMK_KEYBOARD_NAME
@@ -31,46 +31,3 @@ config BT_MAX_PAIRED
 endif
 
 
-if BOARD_EYELASH_CORNE_LEFT || BOARD_EYELASH_CORNE_RIGHT
-
-config BOARD_ENABLE_DCDC
-    bool "Enable DCDC mode"
-    select SOC_DCDC_NRF52X
-    default y
-
-config BOARD_ENABLE_DCDC_HV
-    bool "Enable High Voltage DCDC converter"
-    default y
-    select SOC_DCDC_NRF52X_HV
-    depends on (BOARD_EYELASH_CORNE_LEFT || BOARD_EYELASH_CORNE_RIGHT)
-
-config ZMK_SLEEP
-    default y
-
-config ZMK_SPLIT
-    default y
-
-config BT_CTLR
-    default Y
-
-if USB
-
-config USB_NRFX
-    default y
-
-config USB_DEVICE_STACK
-    default y
-
-endif # USB
-
-if ZMK_BACKLIGHT
-
-config PWM
-    default y
-
-config LED_PWM
-    default y
-
-endif # ZMK_BACKLIGHT
-
-endif # BOARD_EYELASH_CORNE_LEFT || BOARD_EYELASH_CORNE_RIGHT
