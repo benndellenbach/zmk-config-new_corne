@@ -10,7 +10,7 @@ Kconfig.defconfig
 
 # Max 16 characters in keyboard name
 config ZMK_KEYBOARD_NAME
-    default ""
+    default "EYELASH COrne"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
@@ -32,7 +32,6 @@ config BT_MAX_PAIRED
     default 6
 
 endif
-
 
 
 if BOARD_EYELASH_CORNE_LEFT || BOARD_EYELASH_CORNE_RIGHT
