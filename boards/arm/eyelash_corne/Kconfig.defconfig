@@ -3,9 +3,6 @@
 # SPDX-License-Identifier: MIT
 #
 
-
-Kconfig.defconfig
-
  if SHIELD_EYELASH_CORNE_DONGLE
 
 # Max 16 characters in keyboard name
@@ -36,9 +33,6 @@ endif
 
 if BOARD_EYELASH_CORNE_LEFT || BOARD_EYELASH_CORNE_RIGHT
 
-config BOARD
-    default "eyelash_corne"
-
 config BOARD_ENABLE_DCDC
     bool "Enable DCDC mode"
     select SOC_DCDC_NRF52X
@@ -57,7 +51,7 @@ config ZMK_SPLIT
     default y
 
 config BT_CTLR
-    default BT
+    default Y
 
 if USB
 
