@@ -7,16 +7,17 @@
 #include "eyelash_corne.dtsi"
 
 
-
 / {
     model = "Eyelash Corne Dongle";
     compatible = "eyelash,corne-dongle";
 
-    zmk_split_central: split_central {
-        compatible = "zmk,split-central";
-    };
-
     chosen {
         zmk,central = &zmk_split_central;
+    };
+};
+
+/ {
+    zmk_split_central: split_central {
+        compatible = "zmk,split-central";
     };
 };
