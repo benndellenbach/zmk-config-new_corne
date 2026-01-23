@@ -1,20 +1,22 @@
 /dts-v1/;
 
-/* Base SoC */
+/* SoC */
 #include <nordic/nrf52840_qiaa.dtsi>
 
-/* Shared Corne definitions */
-#include "../eyelash_corne/eyelash_corne.dtsi"
+/* Shared, NON-layout keyboard definitions */
+#include "eyelash_corne.dtsi"
 
 / {
     model = "Eyelash Corne Dongle";
     compatible = "eyelash,corne-dongle";
 
     chosen {
-        zmk,central = &dongle;
+        zmk,central = &zmk_split_central;
     };
 };
 
-&dongle {
-    compatible = "zmk,split-central";
+/ {
+    zmk_split_central: split_central {
+        compatible = "zmk,split-central";
+    };
 };
