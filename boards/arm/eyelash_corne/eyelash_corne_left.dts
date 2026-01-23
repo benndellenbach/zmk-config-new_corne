@@ -7,18 +7,6 @@
 
 #include "eyelash_corne.dtsi"
 
-/ {
-    /* Bluetooth controller label expected by ZMK/snippets */
-    bt: bt {
-        compatible = "zmk,bt";
-        status = "okay";
-    };
-
-    chosen {
-        zmk,bt = &bt;
-    };
-};
-
 &left_encoder {
     status = "okay";
 };
