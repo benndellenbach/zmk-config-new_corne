@@ -1,25 +1,30 @@
 ---
+---
 include:
-#  - board: eyelash_corne_left
-#    shield: nice_view
-#    #snippet: zmk-usb-logging    # Uncomment to log over USB.
-  - board: eyelash_corne_right
-    shield: nice_view
+  # -------------------------------
+  # Left half
+  # -------------------------------
+  - board: eyelash_corne_left
+    shield: nice_view      # optional OLED/display
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n
-    #snippet: zmk-usb-logging
-  - board: eyelash_corne_left
-    shield: nice_view
-    #snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n
     artifact-name: eyelash_corne_studio_left
-  - board: eyelash_corne_left
-    shield: settings_reset
-    #snippet: zmk-usb-logging
-  
-  - board: xiao_ble
-    shield: eyelash_corne_dongle
-  - board: xiao_ble
-    shield: settings_reset
+
+  # -------------------------------
+  # Right half
+  # -------------------------------
+  - board: eyelash_corne_right
+    shield: nice_view      # optional OLED/display
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n
+    artifact-name: eyelash_corne_studio_right
+
+  # -------------------------------
+  # Dongle
+  # -------------------------------
+  - board: eyelash_corne_dongle
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    artifact-name: eyelash_corne_dongle
+
 
  
